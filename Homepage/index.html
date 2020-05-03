@@ -3,6 +3,8 @@
   <head>
     <title>Portfolio | Vivian Nguyen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="https://kit.fontawesome.com/0dab7530fd.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -10,19 +12,24 @@
       <header>
         <img src= "Logo.png" width= "100" height="100" alt="VN logo">
         <!-- List of options at the top -->
-        <ul>
-          <p class="button">Home</p>
-          <p class="button">About</p>
-          <p class="button">Work</p>
-          <p class="button">Contact</p>
+        <ul class= "fullMenu">
+          <p class="menu">Home</p>
+          <p class="menu">About</p>
+          <p class="menu">Work</p>
+          <p class="menu">Contact</p>
         </ul>
       </header>
         <!-- My intro -->
       <section class="hero">
-        <h1> Hi there, I'm Vivian. </h1>
-        <p class="slogan">UX Designer based in OC</p>
-        <p class="slogan">I analyze human motivations and empathize to create a better experience.</p>
-        <p class="button">More about me</p>
+        <div class="intro">
+          <h1> Hi there, I'm </h1>
+          <h1 class="name">Vivian.</h1>
+          <p class="title">UX Designer based in OC</p>
+        </div>
+        <div class= "who">
+          <p class="slogan">I analyze human motivations and empathize to create a better experience.</p>
+          <p class="More">More about me</p>
+        </div>
       </section>
       <section class= "caseStudyOne">
         <!-- list of projects -->

@@ -34,7 +34,9 @@ h1 {
 }
 
 .name {
-  font-family: august script bold free;
+  font-family: "august script bold free";
+  position: relative;
+  z-index: 1;
 }
 
 .title {
@@ -160,9 +162,14 @@ footer {
   text-align: center;
 }
 
+footer > a {
+  text-decoration: none;
+}
+
 h3 {
   font-size: 1.8rem;
   text-align: center;
 }
+
 
 /* @media screen and (minimum-width: px {}); */

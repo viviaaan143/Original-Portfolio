@@ -3,20 +3,21 @@
   <head>
     <title>Portfolio | Vivian Nguyen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
         <script src="https://kit.fontawesome.com/0dab7530fd.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div style= "min-width: 1200px; margin: 0 auto;">
     <div class="container">
       <header>
         <img src= "Logo.png" width= "100" height="100" alt="VN logo">
         <!-- List of options at the top -->
         <ul class= "fullMenu">
-          <p class="menu">Home</p>
-          <p class="menu">About</p>
-          <p class="menu">Work</p>
-          <p class="menu">Contact</p>
+          <button class="menu">Home</button>
+          <button class="menu">About</button>
+          <button class="menu">Work</button>
+          <button class="menu">Contact</button>
         </ul>
       </header>
         <!-- My intro -->
@@ -28,39 +29,36 @@
         </div>
         <div class= "who">
           <p class="slogan">I analyze human motivations and empathize to create a better experience.</p>
-          <p class="More">More about me</p>
+          <button class="More">More about me</button>
         </div>
       </section>
-      <section class= "caseStudyOne">
         <!-- list of projects -->
-        <div>
+        <div class="DesignZen">
+          <img src= "Component 1.png" width="400" height="250" alt= "Design Zen gif">
           <h2>Design Zen</h2>
           <p>Design Zen is a cloud storage application for artists of all genres to store their work privately, share with the public, and/or collaborate with other talented artists. It’s a place that sparks inspiration and allows networking.</p>
-          <p class="button">View case study</p>
-          <img src= "DesignZen.gif" width="400" height="300" alt= "Design Zen gif">
+          <button class="view">View case study</button>
         </div>
-      </section>
-      <section class="caseStudyTwo">
-        <div>
+        <div class="BusyBus">
+        <img src= "Space Gray.png" width="200" height="400" alt="BusyBus screen">
           <h2>BusyBus</h2>
           <p>BusyBus is an intuitive application that clearly shows the location and time of bus lines and tracks the user's location. It eliminates the guessing game of "when will the bus arrive?", "is this the correct bus for me?" and users will have confidence in knowing that they are on the right track to their destination in a timely manner.</p>
-          <p class="button">View case study</p>
-          <img src= "Space Gray.png" width="200" height="400" alt="BusyBus screen">
+          <button class="view">View case study</button>
         </div>
-      </section>
     </div>
+  </div>
   </body>
   <!-- footer -->
   <footer>
-    <p>Let's get in touch!</p>
+    <h3>Let's get in touch!</h3>
         <a href="mailto:hvivian2012@yahoo.com"Email>
-          <i class="far fa-envelope"></i>
+          <img src= "Email.png" width= "50" height="40" alt="Email icon">
         </a>
       <a href="https://www.linkedin.com/in/vivian-nguyen-design"LinkedIn>
-        <i class="fab fa-linkedin"></i>
+        <img src= "LinkedIn.png" width="50" height="40" alt="LinkedIn icon">
       </a>
       <a href="https://github.com/viviaaan143"GitHub>
-        <i class="fab fa-github"></i>
+        <img src= "GitHub.png" width="50" height="40" alt="GitHub icon">
       </a>
   </footer>
 </html>

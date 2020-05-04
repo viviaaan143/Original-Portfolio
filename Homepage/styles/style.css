@@ -8,6 +8,10 @@ Font-size: 10px;
 Font-weight: lighter;
 }
 
+.container {
+  width: 1440px;
+}
+
 .menu {
   background-color: #F1D2CC;
   display: inline-block;
@@ -55,6 +59,7 @@ h1 {
 h2 {
   font-family: Lora;
   font-size: 4.8rem;
+  padding: 1rem 0 1rem 0;
 }
 
 .More {
@@ -73,15 +78,16 @@ h2 {
 
 p {
   font-size: 1.8rem;
+  padding: 1rem 0 1rem 40rem;
+  line-height: 180%;
 }
 
-.button {
+.menu {
   background-color: #F1D2CC;
   display: inline-block;
   font-size: 1.8rem;
   font-family: lora;
   padding: 15px 32px;
-  text-align: center;
 }
 
 .who {
@@ -90,12 +96,72 @@ p {
   padding-bottom: 6rem;
 }
 
+.DesignZen {
+  padding: 10rem 20rem 10rem 20rem;
+  position: relative;
+}
+
+.DesignZen > h2 {
+  position: relative;
+}
+.DesignZen > p {
+  position: relative;
+  right: 40rem;
+}
+
+.DesignZen > img {
+  position:absolute;
+  margin-left: 60rem;
+}
+
+.DesignZen > button {
+  background-color: #F1D2CC;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-family: lora;
+  padding: 15px 32px;
+  position: relative;
+}
+
+.BusyBus {
+  background-color: rgba(221, 221, 221, 0.3);
+  padding: 10rem 20rem 10rem 20rem;
+  position:relative;
+}
+
+.BusyBus > h2 {
+  position: relative;
+  left: 40rem;
+}
+.BusyBus > p {
+  position: relative;
+}
+
+.BusyBus > img {
+  position: absolute;
+  bottom: 5rem;
+}
+
+.BusyBus > button {
+  background-color: #F1D2CC;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-family: lora;
+  padding: 15px 32px;
+  position: relative;
+  margin-left: 40rem;
+}
 
 footer {
   background-color: rgba(222, 210, 194, 0.8);
   font-family: Lora;
   font-size: 1.8rem;
   padding: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.8rem;
   text-align: center;
 }
 

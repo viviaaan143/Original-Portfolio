@@ -1,0 +1,80 @@
+html {
+  text-align: center;
+  font-family: "roboto";
+  font-weight:lighter;
+  font-size: 10px;
+}
+
+.container{
+  width: 50%;
+  text-align:center;
+  display:inline-block;
+}
+
+h1 {
+  font-family: "Playfair display";
+  font-size: 7rem;
+}
+
+h2 {
+  font-family: "Playfair display";
+  font-size: 3.6rem;
+  padding-top: 2rem;
+}
+
+h3 {
+font-family: "Playfair display";
+font-size: 7rem;
+background-color: #CDC6BB;
+}
+
+h4{
+font-size: 3.6rem;
+font-family: "Playfair display";
+padding-top: 2rem;
+}
+
+h5 {
+font-weight: bold;
+font-size: 2rem;
+}
+
+h6 {
+font-size: 2rem;
+font-weight: 100;
+line-height: 1px;
+}
+
+p {
+  font-size: 2.4rem;
+  text-align: left;
+  line-height: 200%;
+}
+
+footer {
+  background-color: rgba(222, 210, 194, 0.8);
+  font-family: "Lora";
+  font-size: 1.8rem;
+  padding: 1rem;
+  text-align: center;
+}
+footer > p {
+  text-align:center;
+}
+footer > a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #F1D2CC;
+  border-radius: 3px;
+  font-size: 1.8rem;
+  font-family: "lora";
+  padding: 12px 24px;
+}
+
+ol {
+  font-size: 2rem;
+  text-align: left;
+  line-height: 200%;
+}

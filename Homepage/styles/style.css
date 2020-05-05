@@ -3,35 +3,69 @@ Box-sizing: border-box;
 }
 
 Html {
-Font-family: roboto;
+Font-family: "roboto";
 Font-size: 10px;
 Font-weight: lighter;
 }
 
-.container {
-  width: 100%;
-  overflow-x: hidden;
+.body {
+  margin: 20px;
 }
 
-.menu {
-  background-color: #F1D2CC;
-  display: inline-block;
-  font-family: lora;
+.mylinks {
+  float: right;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+a {
+  color: black;
+}
+
+li {
   font-size: 1.8rem;
-  margin: 2rem;
-  padding: 15px 32px;
-  text-align: center;
+  font-family: "lora";
+  padding-top: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  display: inline-block;
+  color:#000;
+}
+
+a:hover {
+  color:#F1D2CC;
+} /* mouse over*/
+
+a:active {
+  text-decoration: underline;
+} /* selected */
+
+li > a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
 }
 
 .intro {
-padding-left: 40rem;
+  background-color:rgba(237, 171, 98, 0.6);
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
-h1 {
-  font-family: playfair display;
+h1{
+  font-family: "playfair display";
   font-size: 12rem;
   padding-top: 40px;
   text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
 }
 
 .name {
@@ -40,124 +74,101 @@ h1 {
   z-index: 1;
 }
 
-.title {
-  font-family: lora;
-  font-size: 2.4rem;
-  padding-left: 7.5rem;
-}
-
-.slogan {
-  font-family: roboto;
-  font-size: 3.5rem;
-  font-weight: lighter;
-  padding-left: 40rem;
-  padding-right: 40rem;
-  padding-bottom: 2rem;
-}
-
-.fullMenu {
-  float: right;
-}
-
 h2 {
   font-family: Lora;
   font-size: 4.8rem;
   padding: 1rem 0 1rem 0;
 }
 
-.More {
-  background-color: #000000;
-  color: #ffffff;
-  display: inline-block;
-  font-family: Lora;
-  font-size: 1.8rem;
-  padding: 15px 32px;
-  text-align: center;
-}
-
-.hero {
-  background: rgba(237, 171, 98, 0.6);
-}
-
-p {
-  font-size: 1.8rem;
-  padding: 1rem 0 1rem 40rem;
-  line-height: 180%;
-}
-
-.menu {
-  background-color: #F1D2CC;
-  display: inline-block;
-  font-size: 1.8rem;
+.title {
   font-family: lora;
-  padding: 15px 32px;
-}
-
-.who {
-  text-align:center;
-  margin-top: 4rem;
-  padding-bottom: 6rem;
-}
-
-.DesignZen {
-  padding: 10rem 20rem 10rem 20rem;
-  position: relative;
-}
-
-.DesignZen > h2 {
-  position: relative;
-}
-.DesignZen > p {
-  position: relative;
-  right: 40rem;
-}
-
-.DesignZen > img {
-  position:absolute;
-  margin-left: 60rem;
-}
-
-.DesignZen > button {
-  background-color: #F1D2CC;
-  display: inline-block;
-  font-size: 1.8rem;
-  font-family: lora;
-  padding: 15px 32px;
-  position: relative;
-}
-
-.BusyBus {
-  background-color: rgba(221, 221, 221, 0.3);
-  padding: 10rem 20rem 10rem 20rem;
+  font-size: 2rem;
+  width: 50%;
+  text-align:left;
+  margin: 0 auto;
   position:relative;
+  left: 8rem;
 }
 
-.BusyBus > h2 {
-  position: relative;
-  left: 40rem;
+.slogan {
+  font-size: 3rem;
+  font-weight: lighter;
+  padding-bottom: 2rem;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 4rem;
 }
-.BusyBus > p {
+
+.more {
+  background-color: #000000;
+  border-radius: 3px;
+  color: #ffffff;
+  display: block;
+  font-family: "Lora";
+  font-size: 1.8rem;
+  padding: 12px 24px;
+  margin: 0 auto;
+}
+
+h1 span {
+  position: absolute;
+  background-color:rgba(236, 162, 120, 0.8);
+  width:28rem; height:10px; bottom:8px;
+  left: 6rem;
+  z-index:-1;
+}
+
+
+.DesignZen{
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  position: relative;
+}
+
+.DesignZen > p, .BusyBus > p{
+  font-size: 1.8rem;
+  line-height: 180%;
+  padding-bottom: 2rem;
+  width: 40%;
+}
+
+.DesignZen > button, .BusyBus > button {
+  background-color: #F1D2CC;
+  border-radius: 3px;
+  font-size: 1.8rem;
+  font-family: "lora";
+  padding: 12px 24px;
+}
+
+.DesignZen > img{
+  position: absolute;
+  left: 50%;
+  bottom: 15%
+}
+
+ .BusyBus {
+  background-color: rgba(221, 221, 221, 0.3);
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
   position: relative;
 }
 
 .BusyBus > img {
-  position: absolute;
-  bottom: 5rem;
-}
-
-.BusyBus > button {
-  background-color: #F1D2CC;
-  display: inline-block;
-  font-size: 1.8rem;
-  font-family: lora;
-  padding: 15px 32px;
-  position: relative;
-  margin-left: 40rem;
+ position: absolute;
+ left: 57%;
+ bottom: 15%;
 }
 
 footer {
   background-color: rgba(222, 210, 194, 0.8);
-  font-family: Lora;
+  font-family: "Lora";
   font-size: 1.8rem;
   padding: 2rem;
   text-align: center;
@@ -167,22 +178,40 @@ footer > a {
   text-decoration: none;
 }
 
-h3 {
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-h1 span {
-   position: absolute;
-   background-color:rgba(236, 162, 120, 0.8);
-   width:320px; height:10px; bottom:8px;
-   left: 5rem;
-   z-index:-1;
-}
-
-/* @media only screen and (min-width: 1025px) {
+@media only screen and (max-width: 768px) {
   .container {
     margin: 0 auto;
-    overflow: hidden;
-    width: 100rem;
-  } */
+    width: 100%;
+    display: block;
+    text-align:center;
+  }
+
+  h1 {
+    font-size: 9rem;
+  }
+
+  h1 span {
+    position: absolute;
+    background-color:rgba(236, 162, 120, 0.8);
+    width:21rem; height:7.5px; bottom:6px;
+    left: 4.5rem;
+    z-index:-1;
+  }
+
+.BusyBus, .DesignZen {
+  padding: 4rem 0 4rem 0;
+}
+
+.BusyBus > p, .DesignZen > p{
+  text-align: center;
+}
+  .BusyBus > img {
+    margin: auto;
+    display: inline-block;
+    padding: 0;
+  }
+
+  .DesignZen > img {
+      left: auto;
+  }
+}

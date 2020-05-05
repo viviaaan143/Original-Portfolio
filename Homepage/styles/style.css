@@ -2,55 +2,73 @@
 Box-sizing: border-box;
 }
 
-Html {
+Html, body {
 Font-family: "roboto";
 Font-size: 10px;
 Font-weight: lighter;
+width: 100%;
+height: 100%;
+margin: 0;
 }
 
-.body {
-  margin: 20px;
+/* div for menu options */
+.menu {
+  margin: 0 30px 0 0;
+  font-family: "Lora";
+  font-size: 1.8rem;
 }
 
-.mylinks {
-  float: right;
+/* links for each menu item */
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  line-height: 70px;
 }
 
+/* burger menu and full menu */
 .topnav {
-  overflow: hidden;
-  position: relative;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
 }
 
+/* links */
 a {
   color: black;
 }
 
-li {
-  font-size: 1.8rem;
-  font-family: "lora";
-  padding-top: 3rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  display: inline-block;
-  color:#000;
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 50px;
+  line-height: 70px;
+  display: none;
+  width: 50px;
+  float: right;
 }
 
-a:hover {
-  color:#F1D2CC;
-} /* mouse over*/
+/* hides burger menu */
+#toggle {
+  display: none;
+}
 
+ /* mouse over*/
+ a:hover {
+  color:#F1D2CC;
+}
+
+/* selected */
 a:active {
   text-decoration: underline;
-} /* selected */
-
-li > a {
-  text-decoration: none;
 }
 
 .container {
   width: 100%;
 }
 
+/* Introduction: name, title, slogan, button */
 .intro {
   background-color:rgba(237, 171, 98, 0.6);
   margin: 0 auto;
@@ -100,6 +118,7 @@ h2 {
   padding-top: 4rem;
 }
 
+/* About me button */
 .more {
   background-color: #000000;
   border-radius: 3px;
@@ -111,6 +130,7 @@ h2 {
   margin: 0 auto;
 }
 
+/* Highlight */
 h1 span {
   position: absolute;
   background-color:rgba(236, 162, 120, 0.8);
@@ -207,6 +227,10 @@ footer > a {
     font-size: 2rem;
   }
 
+  .title {
+    width: 75%;
+  }
+
 .BusyBus, .DesignZen {
   padding: 4rem 0 4rem 0;
 }
@@ -233,5 +257,27 @@ footer > a {
     position: relative;
     padding-top: 2rem;
     padding-bottom: 1rem;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu{
+    text-align: center;
+    width: 100%;
+    display:none;
+    background-color: white;
+  }
+
+  .menu a{
+    display: block;
+    border-bottom: 1px solid black;
+    margin: 0;
+  }
+
+  #toggle:checked + .menu {
+    display:block;
   }
 }

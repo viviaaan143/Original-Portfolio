@@ -188,6 +188,8 @@ footer > a {
 
   h1 {
     font-size: 9rem;
+    width: 75%;
+    display: inline-block;
   }
 
   h1 span {
@@ -198,20 +200,38 @@ footer > a {
     z-index:-1;
   }
 
+  .slogan {
+    text-align: center;
+    width: 75%;
+    display: inline-block;
+    font-size: 2rem;
+  }
+
 .BusyBus, .DesignZen {
   padding: 4rem 0 4rem 0;
 }
 
 .BusyBus > p, .DesignZen > p{
   text-align: center;
+  width: 75%;
+  display: inline-block;
+
+}
+.DesignZen > img {
+    left: 0;
+    right: 0;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
 }
   .BusyBus > img {
-    margin: auto;
-    display: inline-block;
-    padding: 0;
-  }
-
-  .DesignZen > img {
-      left: auto;
+    left: 0;
+    right: 0;
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
 }

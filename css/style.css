@@ -257,26 +257,28 @@ footer > a {
   padding-top: 2rem;
 }
 
+.logistics{
+column-count: 3;
+
+}
+
 #myrole {
-  width: 25%;
-  float:left;
-  padding-left: 25rem;
+  background-color: green;
+  display:block;
 }
 
 #deliverables {
-  width: 50%;
-  float: left;
-  padding-bottom: 20px;
+  background-color: purple;
+  break-inside: avoid-column;
 }
 
 #tools {
-  width: 25%;
-  float:right;
-  padding-right: 25rem;
+  background-color:yellow;
+
 }
 
 h2 {
-  font-family: Lora;
+  font-family: "Lora";
   font-size: 4.8rem;
   padding: 1rem 0 1rem 0;
 }

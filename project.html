@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0dab7530fd.js" crossorigin="anonymous"></script>
+    <title>Design Zen Case Study</title>
+  </head>
+  <body>
+    <header>
+      <img class= "logo" src= "images/logo.png" width= "100" height="100" alt="VN logo">
+      <section class="topnav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+      <!-- List of options at the top -->
+        <div class= "menu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Work</a>
+          <a href="#">Contact</a>
+        </div>
+      </section>
+    </header>
+    <div class="container">
+    <section class="summary">
+      <h1 class="casestudy">Design Zen</h1>
+      <img src= "images/dzlike.gif" alt= "Design Zen gif">
+      <p> Design Zen is a cloud storage application for artists of all genres to store their work privately, share with the public, and/or collaborate with other talented artists. It’s a place that sparks inspiration and allows networking.</p>
+      <button class="prototype">Link to prototype</button>
+    </section>
+      <section class= "logisitics">
+        <div id="myrole">
+          <h6 class="heading">My role</h6>
+          <h6>- UX research</h6>
+          <h6>- Brand & identity</h6>
+          <h6>- Visual design</h6>
+        </div>
+        <div id="deliverables">
+          <h6 class="heading">Deliverables</h6>
+          <h6>- User surveys</h6>
+          <h6>- Competitive analysis</h6>
+          <h6>- User personas</h6>
+          <h6>- User stories</h6>
+          <h6>- User flows</h6>
+          <h6>- Content strategy</h6>
+          <h6>- Wireframes(low-fi and high-fi)</h6>
+          <h6>- Prototypes</h6>
+          <h6>- Usability testing</h6>
+          <h6>- Logo design</h6>
+          <h6>- Style guide</h6>
+          <h6>- Preference testing</h6>
+        </div>
+        <div id="tools">
+          <h6 class="heading">Tools</h6>
+          <h6>- Figma</h6>
+          <h6>- InVision</h6>
+          <h6>- UsabilityHub</h6>
+        </div>
+      </section>
+
+      <section class="summary">
+      <p class= "title">The Problem</p>
+      <p>It’s difficult to track artistic progress by using multiple applications, like iPhoto for storage and Instagram to post. There isn’t a creative site that allows posting while also having the ability to store their work privately.</p>
+      <p class= "title">The Solution</p>
+      <p>Create an application that has a reliable and consistent user flow for artists to store and/or share their work.</p>
+      <img src= "images/dzlike.gif" alt= "Design Zen gif">
+    </section>
+
+    <h3>Discovery</h3>
+    <section class="discovery">
+      <p class="title">User Survey</p>
+      <p>Knowing that I must first identify what users wanted in a cloud storage application I conducted a survey to see if the features such as adding content, creating documents/notes/spreadsheets, uploading content, sharing items, and allowing real time collaboration were important to users or interesting. This helped identify MVP and focus on these features. First I was able to identify that most of my participants used cloud storage already for school, photo storage, and sharing content with people. While the feature of saving content found on the internet got only 61.5% interest, other features like organizing content, creating notes/documents /spreadsheets, sharing options, uploading, and collaborating peaked the interest of the large majority. I also assessed if people would like this site to be for business related purposes or for creative purposes such as ones related to hobby or social media, and the latter got higher votes. This gave me an idea of where to lead the project. </p>
+      <img class="usersurvey" src= "images/usersurvey.png" alt= "Pie chart of user frustrations">
+      <p class= "title">User Persona</p>
+      <img class= "persona1" src= "images/user1.jpg" alt= "Girl at school">
+      <p class="persona">Jacqueline Cram, 19</p>
+      <p class="persona">Psychology major at UCSB</p>
+      <p class="persona">Santa Barbara, CA</p>
+      <h5>Goals:</h5>
+      <ul>
+        <li>Allow her to upload, share, and save content</li>
+        <li>Choice to publish or privatize work</li>
+        <li>Collaboration options</li>
+      </ul>
+      <h5>Pains:</h5>
+      <ul>
+        <li>Required sign in</li>
+        <li>Apps cost money after a certain amount of storage is used</li>
+        <li>Wifi connection required</li>
+      </ul>
+      <img class= "persona2" src= "images/user2.jpg" alt="Middle aged man smiling">
+      <p class="persona">Paul Renolds, 48</p>
+      <p class="persona">Teacher</p>
+      <p class="persona">Charlottesville, Virginia</p>
+      <h5>Goals:</h5>
+      <ul>
+        <li>Organize content his way</li>
+        <li>Allow privacy</li>
+        <li>Sharing with people who don't have an account</li>
+      </ul>
+      <h5>Pains:</h5>
+      <ul>
+        <li>Some sites are hard to learn</li>
+        <li>Untrustworthy sites</li>
+        <li>Spam</li>
+      </ul>
+      <p>These two personas were derived from trends and patterns in the user surveys. The target market are those who use cloud storage for recreational use. Jacqueline is a student who wants to be able to collaborate and grow her connections while Paul, who is older and working, wants to share pictures with family he wants to keep in touch with.</p>
+      <p class="title">Competitive Analysis</p>
+      <section class="pinterest">
+        <img class= "pinterestlogo" src="images/pinterest.png" alt="Pinterest logo">
+        <p>Pinterest is a social media platform that similarly allows creative sharing of pictures and videos with goals of inspiration. Pinterest is a wonderful platform for businesses actually. Tags allow similar content to be exposed to many users with the same interest. However, there are some weaknesses and threats. According to my research, 71% of Pinterest users are female due to the belief that it has mostly feminine content and does not appeal to male audiences. There are also a few issues with the pins too. Some spammers abuse pins by using misleading links to get more clicks on their profile. Another problem is that some people find it easy to wrongly pin something. This caused me to want to focus on creating an inclusive site and allowing users to control content they post and activity they see such as using the commonly used “like” button signified by a heart.</p>
+      </section>
+      <section class="dropbox">
+        <img class="dropboxlogo" src="images/dropbox.svg" alt="DropBox logo">
+        <p>DropBox is a cloud storage site that is used mostly by businesses and freelance professionals. It’s a great application because unlike many other sites, you can work offline making it accessible wherever you are. Some weaknesses are the lack of security, limited search function, and users cannot edit in real time. The ability to edit in real time had an interest of 92.9% of people according to the survey so this was a very important feature to have.</p>
+      </section>
+      <section class="userstories">
+        <p class="title">User Stories</p>
+        <img class="userstoriesscreenshot" src= "images/userstories.png" alt="User stories by priorities">
+        <p>I prioritized these user stories by understanding what my respondents expected in a basic application and from there building by what they were most interested by.</p>
+      </section>
+      <section>
+        <p class="title">User Flow</p>
+        <p>As the user logs in they can upload media to their profile or create a new document. From there they can edit as they wish. Once they finish they will choose their sharing preference: private (so they will only store their work), public (share with anyone even people without accounts), or collaborate. After that they have the option of adding a description or even tags for either themself or others to find easily. They can also add it to a folder. Finally, it will be uploaded.</p>
+        <img class= "userflow" src="images/userflow.png" alt="Sketch of user flow">
+        <p class= "caption">User flow of adding content and sharing preferences</p>
+      </section>
+      <section class="lowfi">
+        <p class="title">Sketch and Low-fi Wireframe</p>
+        <img class="sketch" src="images/sketch.jpg" alt="Sketch of privacy setting">
+        <img class="lowfimockup" src="images/lowfi.jpg" alt="Low Fi Mockup">
+        <p class="caption">These screens are for the privacy setting which offers private, collaborate, or public.</p>
+      </section>
+      <section>
+        <p class="title">Usability Test: Round One</p>
+        <p>Tasks</p>
+        <ol>
+          <li>You come upon this new site. How would you sign up for an account?</li>
+          <li>How would you add a piece of content</li>
+          <li>You want to create a folder to organize your data. How would you do this?</li>
+        </ol>
+        <p>Results: All participants were able to successfully identify pages and complete their tasks. However, some users couldn’t tell when they succeeded because feedback was too subtle and there was no obvious button to perform the function of adding content. </p>
+        </section>
+        <section class="visual">
+          <p class="title">Visual Design</p>
+          <p>The main colors used are green to evoke feelings of safety and growth, and pink to give hints of liveliness and playfulness.</p>
+          <img class="colors" src="images/colors.png" alt="Color, icon, and typography guide">
+          <p>The name was inspired by the therapeutic feeling that organization gives as well as the peace that artists feel when they are immersed in their passion.</p>
+          <img class="logosketch" src="images/logosketch.png" alt="Sketches of logos">
+          <p>I wanted the logo to be stacked rocks but there were a number of problems such as it was heavily associated with yoga products, it was indistinguishable to people, and it was hard to scale it. I also planned for the colors to be different shades of green but the pink adds a nice pop of liveliness. The logo is the shape of a paint holder to reinforce the site mainly serves artists. </p>
+          <img class="dzlogo"src="images/dzlogo.png" alt="Design Zen logo">
+        </section>
+        <p class="title">Preference Test</p>
+        <section class="preference">
+          <p>This test helped me solidfy design choices regarding color schemes and layout.</p>
+          <img class="s1v1" src= "images/homepage1.jpg" alt="Homepage version 1">
+          <img class="s1v2" src= "images/homepage2.jpg" alt="Homepage version 2">
+          <img class="s2v1" src= "images/dashboard1.jpg" alt="Dashboard version 1">
+          <img class="s2v2" src= "images/dashboard2.jpg" alt="Dashboard version 2">
+          <img class="s3v1" src="images/signup1.jpg" alt="Sign up page version 1">
+          <img class="s3v2" src="images/signup2.jpg" alt="Sign up page version 2">
+        </section>
+        <section class= "usabilitytest2">
+          <p>I had users perform the same tasks as the previous usability tests and found the results much more successful. They were able to recognize pages and navigate the site much quicker.</p>
+          <div id ="before">
+            <img class="v1" src="images/v1.png" alt= "Previous version of upload options">
+            <p class="caption">Before</p>
+          </div>
+          <div id= "after">
+            <img class= "v2" src="images/v2.png" alt= "Revised version of upload options">
+            <p class="caption">After</p>
+          </div>
+          <p>I made several changes in my high fidelity mockup by obviously adding color for notifications and creating a large ‘add’ button at the top for users to easily identify, which did prove to be more effective. Users were able to quickly complete their tasks this time around. The biggest feedback I got from this test was about the new options. I changed the wording from “create new” to “new document” and “upload new” to “upload image”. I also changed the three options to be visually equal.</p>
+        </section>
+      </section>
+      <h3>Conclusion</h3>
+      <section class="conclusion">
+        <p>The layout is simple and achieved the goal of having a consistent branding feel. I learned how to develop this through playing with colors and playing around with different logo iterations. I also learned that through tests, whether usability tests or preference tests, you can learn SO much.
+
+          All in all, I’ve learned so much! First, branding is so important to communicating to audiences so if something isn’t working listen to your users. It’s important to not get attached to one idea. I had really loved a different logo I made previously. However, users couldn't identify what the logo was and if it were to be scaled down to a favicon the logo would be indistinguishable. I had to let go of this idea that worked so well in my mind and see what would be something users could easily identify and associate with the brand.
+
+          I've also learned that user testing is such an awesome tool because it tells you so much as to what is effective, what isn’t working, what do users typically prefer, etc. The more user testing, the better!
+          Looking in retrospect I would have also added more tasks to my usability test such as “While on the homepage how could you tell if you are following someone or not?” This would help me gauge other features that are not working or that is well done. With more time, I would test on more specific features and distribute the task.</p>
+      </section>
+    </div>
+  <!-- footer -->
+    <footer>
+      <h3 class="links">Let's get in touch!</h3>
+      <a href="mailto:hvivian2012@yahoo.com"Email;>
+        <img src= "images/email.png" width= "50" height= "45" alt= "Email icon">
+      </a>
+      <a href="https://www.linkedin.com/in/vivian-nguyen-design"LinkedIn;>
+        <img src= "images/linkedin.png" width="50" height= "45" alt="LinkedIn icon">
+      </a>
+      <a href="https://github.com/viviaaan143"GitHub;>
+        <img src= "images/github.png" width= "50" height= "45" alt= "GitHub icon">
+      </a>
+    </footer>
+  </body>
+</html>

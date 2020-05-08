@@ -15,6 +15,13 @@ Html, body{
   width:100%;
   margin: 0 auto;
 }
+
+.summary, .discovery, .conclusion {
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  width: 48%;
+}
+
 /* div for menu options */
 .menu {
   font-family: "Lora";
@@ -43,14 +50,15 @@ a {
   color: black;
 }
 
+/* burger menu lines */
 label {
+  color: #CDC6BB;
   display: none;
   float: right;
   font-size: 50px;
   line-height: 70px;
   margin: 0 40px 0 0;
   width: 50px;
-  color: #CDC6BB;
 }
 
 /* hides burger menu */
@@ -59,7 +67,7 @@ label {
 }
 
  /* mouse over*/
- a:hover {
+a:hover {
   color:#F1D2CC;
 }
 
@@ -73,26 +81,42 @@ a:active {
   color: #000;
 }
 
+/* About me button */
+.more {
+  background-color: #000000;
+  border-radius: 3px;
+  color: #ffffff;
+  display: block;
+  font-family: "Lora";
+  font-size: 1.8rem;
+  padding: 12px 24px;
+  margin: 0 auto;
+}
+
+/* all buttons */
 button {
-background-color: #F1D2CC;
-border-radius: 3px;
-font-family: "Lora";
-font-size: 1.8rem;
-padding: 12px 24px;
+  background-color: #F1D2CC;
+  border-radius: 3px;
+  font-family: "Lora";
+  font-size: 1.8rem;
+  padding: 12px 24px;
 }
 
 button:hover {
   background-color: #DABEB8;
 }
 
+/* my role, deliverables, and tools */
 .logisitics {
   width: 100%;
 }
 
-.summary, .discovery, .conclusion {
-  width: 48%;
-  margin: 0 auto;
-  padding-bottom: 5rem;
+/* "My role", "Deliverables", "Tools" */
+.heading {
+  font-family: "Playfair display";
+  font-size: 3.6rem;
+  font-weight: bold;
+  padding-top: 2rem;
 }
 
 /* Introduction: name, title, slogan, button */
@@ -103,26 +127,28 @@ button:hover {
   padding-top: 3rem;
 }
 
+/* picture captions */
 .caption {
   font-size: 2rem;
   line-height: 120%;
 }
 
-h1{
-  font-family: "playfair display";
-  font-size: 12rem;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 40px;
-  text-align: left;
-  width: 50%;
-}
-
 .name {
   font-family: "august script bold free";
+  line-height: 110%;
   position: relative;
   z-index: 1;
-  line-height: 110%;
+}
+
+/* Highlight */
+h1 span {
+  background-color:rgba(236, 162, 120, 0.8);
+  bottom: 2rem;
+  height:10px;
+  left: 6rem;
+  position: absolute;
+  width:28rem;
+  z-index:-1;
 }
 
 /* My title */
@@ -146,30 +172,17 @@ h1{
   width: 50%;
 }
 
-/* About me button */
-.more {
-  background-color: #000000;
-  border-radius: 3px;
-  color: #ffffff;
-  display: block;
-  font-family: "Lora";
-  font-size: 1.8rem;
-  padding: 12px 24px;
-  margin: 0 auto;
-}
-
-/* Highlight */
-h1 span {
-  background-color:rgba(236, 162, 120, 0.8);
-  bottom: 2rem;
-  height:10px;
-  left: 6rem;
-  position: absolute;
-  width:28rem;
-  z-index:-1;
-}
-
 .designzen{
+  padding-bottom: 5rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-top: 5rem;
+  position: relative;
+  width: 100%;
+}
+
+.busybus {
+  background-color: rgba(221, 221, 221, 0.3);
   padding-bottom: 5rem;
   padding-left: 20rem;
   padding-right: 20rem;
@@ -185,6 +198,18 @@ h1 span {
   width: 40%;
 }
 
+.designzen > img{
+  bottom: 15%;
+  left: 50%;
+  position: absolute;
+}
+
+.busybus > img {
+  bottom: 8%;
+  left: 57%;
+  position: absolute;
+}
+
 .designzen > button, .busybus > button {
   background-color: #F1D2CC;
   border-radius: 3px;
@@ -197,83 +222,33 @@ h1 span {
   background-color: #DABEB8;
 }
 
-.designzen > img{
-  bottom: 15%;
-  left: 50%;
-  position: absolute;
-}
-
- .busybus {
-  background-color: rgba(221, 221, 221, 0.3);
-  padding-bottom: 5rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
-  padding-top: 5rem;
-  position: relative;
-  width: 100%;
-}
-
-.busybus > img {
-  bottom: 8%;
-  left: 57%;
-  position: absolute;
-}
-
-footer {
-  background-color: rgba(222, 210, 194);
-  padding: 2rem;
-  text-align: center;
-
-}
-
-footer > a {
-  text-decoration: none;
-  font-size: 50px;
-}
-
-.links {
-  background-color: rgba(222, 210, 194);
-  font-family: "Lora";
-  font-weight: lighter;
-  font-size: 2rem;
-  margin: 0 auto;
-}
-
+/* Title of section */
 .title {
   font-family: "Playfair display";
   font-size: 3.6rem;
-  padding-top: 8rem;
-    line-height: 100%;
-}
-
-.test1 {
-  font-family: "Playfair display";
-  font-size: 3.6rem;
+  font-weight: bold;
   padding-top: 8rem;
 }
 
+/* First title (different to change spacing) */
 #firsttitle {
   font-family: "Playfair display";
   font-size: 3.6rem;
 }
 
-.casestudy {
+/* Title of the page */
+.toptitle {
   font-family: "Playfair display";
   font-size: 7rem;
+  font-weight: lighter;
   text-align: center;
   width: 100%;
 }
 
-.heading {
-  font-family: "Playfair display";
-  font-size: 3.6rem;
-  padding-top: 2rem;
-}
-
+/* Change to be side by side */
 .logistics{
   display: flex;
   justify-content: center;
-
 }
 
 #myrole {
@@ -281,11 +256,54 @@ footer > a {
 }
 
 #deliverables {
-    text-align: center;
+  text-align: center;
 }
 
 #tools {
-    text-align: center;
+  text-align: center;
+}
+
+.biographypage {
+  margin: auto;
+  width: 60%;
+}
+
+.biointro {
+  font-family: "Playfair display";
+  font-size: 7rem;
+  text-align: left;
+  width: 100%;
+}
+
+.bioname {
+  font-family: "august script bold free";
+  display: inline-block;
+  line-height: 110%;
+  padding-bottom: 10rem;
+  text-align: left;
+}
+
+/* block quote */
+.block {
+  font-size: 4.8rem;
+  line-height: 167%;
+}
+
+.imagestakenbyme {
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* text */
+h1{
+  font-family: "playfair display";
+  font-size: 12rem;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 40px;
+  text-align: left;
+  width: 50%;
 }
 
 h2 {
@@ -298,18 +316,25 @@ h3 {
   background-color: #CDC6BB;
   font-family: "Playfair display";
   font-size: 7rem;
-  text-align:center;
   font-weight: lighter;
+  text-align: center;
+  padding: 3rem;
+}
+
+h4 {
+  font-family: "Playfair display";
+  font-size: 3.6rem;
+  font-weight: lighter;
+  text-align: left;
 }
 
 h5 {
   font-size: 2rem;
   font-weight: bold;
-  text-align: left;
   margin: 0 auto;
   display: inline-block;
-  font-size: 2rem;
   line-height: 200%;
+  text-align: left;
   width: 100%;
 }
 
@@ -325,9 +350,15 @@ p {
   text-align: left;
 }
 
+/* description of personas */
 .persona {
   font-size: 2rem;
   text-align: left;
+}
+
+.person1, .person2 {
+  position:relative;
+  width: 100%
 }
 
 li {
@@ -344,217 +375,184 @@ ol {
 
 .listoftasks {
   font-size: 2rem;
-text-align: left;
-width: 100%;
-}
-
-.person1, .person2 {
-  position:relative;
-  width: 100%
+  text-align: left;
+  width: 100%;
 }
 
 /* images */
 .summary img {
-  width: 45rem;
-  height: 40rem;
   border: 1px solid #B0B0B0;
+  display: block;
+  height: 40rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  width: 45rem;
 }
 
 .usersurvey{
-  width: 60rem;
+  display: block;
   height: 22rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  width: 60rem;
 }
 
 .persona1, .persona2 {
-  width: 35rem;
+  float:left;
   height: 25rem;
   margin-right: 3rem;
   margin-bottom: 3rem;
-  float:left;
+  width: 35rem;
 }
 
 .pinterestlogo, .dropboxlogo {
-  width: 15rem;
+  display: block;
   height: 15rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  width: 15rem;
 }
 
-.userstoriesscreenshot {
-  width: 100%;
+.userstoriesscreenshot, .userflow, .colors {
+  display: block;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  text-align:center;
-}
-
-.userflow {
   width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
 
 .sketch{
-  width: 40rem;
+  display: block;
   height: 28rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  width: 40rem;
 }
 
 .lowfimockup {
-  width: 40rem;
-  height: 28rem;
   border: 1px solid #B0B0B0;
+  display: block;
+  height: 28rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-}
-
-.colors{
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  width: 40rem;
 }
 
 .logosketch {
-  width: 50rem;
+  display: block;
   height: 20rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  width: 50rem;
 }
 
 .dzlogo {
-  width: 30rem;
+  display: block;
   height: 30rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  width: 30rem;
 }
 
 .test1, .test2, .test3 {
-  width: 50rem;
+  display: block;
   height: 40rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  width: 50rem;
 }
 
 .s1v1, .s1v2, .s2v1, .s2v2, .s3v1, .s3v2{
-  width: 50rem;
-  height: 40rem;
   border: 1px solid #B0B0B0;
+  display: block;
+  height: 40rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  width: 50rem;
 }
 
 .v1, .v2 {
-  width: 30rem;
+  display: block;
   height: 24rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  width: 30rem;
 }
 
 .prototype {
+  display: inherit;
   margin-left: auto;
   margin-right: auto;
-  display: inherit;
 }
 
 #before{
-  width: 50%;
-  float: left;
   clear:left;
+  float: left;
   padding-right: 3rem;
-}
-#after{
   width: 50%;
+}
+
+#after{
   float: right;
   padding-left: 3rem;
+  width: 50%;
 }
+
+.picofme {
+  display: block;
+  float:right;
+  height: 600px;
+  width: 400px;
+}
+
+.mypic1, .mypic2, .mypic3, .mypic4 {
+  height: 400px;
+  width: 300px;
+}
+
+/* footer */
+footer {
+  background-color: rgba(222, 210, 194);
+  padding: 2rem;
+  text-align: center;
+}
+
+footer > a {
+  text-decoration: none;
+  font-size: 50px;
+}
+
+.links {
+  background-color: rgba(222, 210, 194);
+  font-family: "Lora";
+  font-weight: lighter;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
 .email {
-  width: 50px;
   height: 30px;
+  width: 50px;
 }
 
 .linkedin, .github{
-  width: 50px;
   height: 45px;
+  width: 50px;
 }
 
 @media only screen and (max-width: 768px) {
   .container {
     margin: 0 auto;
-    width: 100%;
-    text-align:center;
     overflow-x: hidden;
+    text-align:center;
+    width: 100%;
   }
 
-  h1 {
-    display: inline-block;
-    font-size: 9rem;
-  }
-
-  h1 span {
-    bottom: 14px;
-    height:7.5px;
-    left: 45px;
-    width:21rem;
-  }
-
-  .slogan {
-    display: inline-block;
-    font-size: 2rem;
-    text-align: center;
+  .summary, .discovery, .conclusion, .biographypage {
     width: 75%;
   }
 
-.busybus, .designzen {
-  padding: 4rem 0 4rem 0;
-}
-
-.busybus > p, .designzen > p {
-  display: inline-block;
-  text-align: center;
-  width: 75%;
-}
-
-.designzen > img {
-    height: 200px;
-    left:0;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    position: relative;
-    right: 0;
-    width: 300px;
-}
-
-  .busybus > img {
-    left: 0;
-    position: relative;
-    right: 0;
-  }
-
-  .busybus > button, .designzen > button{
-    padding: 4px;
-    width: 25%;
-  }
-
+  /* for the burger menu */
   label {
     cursor: pointer;
     display: block;
@@ -575,96 +573,156 @@ width: 100%;
     z-index: 2;
   }
 
+  a:hover {
+    color:#000;
+  }
+
   #toggle:checked + .menu {
     display:block;
   }
 
-  a:hover {
-   color:#000;
- }
+  h1 span {
+    bottom: 14px;
+    height:7.5px;
+    left: 45px;
+    width:21rem;
+  }
 
- .summary, .discovery, .conclusion {
-   width: 75%;
- }
+  .slogan {
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    width: 75%;
+  }
 
+  .busybus, .designzen {
+    padding: 4rem 0 4rem 0;
+  }
+
+  .busybus > p, .designzen > p {
+    display: inline-block;
+    text-align: center;
+    width: 75%;
+  }
+
+  .designzen > img {
+    height: 200px;
+    left:0;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    position: relative;
+    right: 0;
+    width: 300px;
+  }
+
+  .busybus > img {
+    left: 0;
+    position: relative;
+    right: 0;
+  }
+
+  .busybus > button, .designzen > button{
+    padding: 9px 18px;
+    width: 25%;
+  }
+
+/* Images */
  .summary img {
-   width: 33.75rem;
-   height: 30rem;
    border: 1px solid #B0B0B0;
+   height: 30rem;
+   width: 33.75rem;
  }
 
  .usersurvey{
-   width: 100%;
    height: 100%;
+   width: 100%;
 }
 
  .persona1, .persona2 {
-   width: 26.25rem;
    height: 18.75rem;
+   width: 26.25rem;
  }
 
  .pinterestlogo, .dropboxlogo {
-   width: 11.25rem;
    height: 11.25rem;
+   width: 11.25rem;
  }
 
  .userstoriesscreenshot {
    height: 100%;
    width: 100%;
-}
+ }
 
  .userflow {
-   width: 37.5rem;
    height: 43rem;
-}
+   width: 37.5rem;
+ }
 
  .sketch{
-   width: 30rem;
    height: 21rem;
-}
+   width: 30rem;
+ }
 
  .lowfimockup {
-   width: 30rem;
    height: 21rem;
+   width: 30rem;
  }
 
  .colors{
-   width: 37.5rem;
    height: 22.5rem;
-}
+   width: 37.5rem;
+ }
 
  .logosketch {
-   width: 37.5rem;
    height: 15rem;
+  width: 37.5rem;
  }
 
  .dzlogo {
-   width: 22.5rem;
    height: 22.5rem;
+   width: 22.5rem;
  }
 
  .test1, .test2, .test3 {
-   width: 37.5rem;
    height: 30rem;
+   width: 37.5rem;
  }
 
  .s1v1, .s1v2, .s2v1, .s2v2, .s3v1, .s3v2{
-   width: 37.5rem;
    height: 30rem;
-}
+   width: 37.5rem;
+ }
 
  .v1, .v2 {
-   width: 22.5rem;
    height: 18rem;
-}
+   width: 22.5rem;
+ }
 
- h2 {
+ .picofme {
+   height: 100%;
+   padding-bottom: 5rem;
+   width: 100%;
+  }
+
+  .imagestakenbyme {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* text */
+  h1 {
+    display: inline-block;
+    font-size: 9rem;
+  }
+
+  h2 {
    font-size: 3.6rem;
- }
+  }
 
- h3 {
+  h3 {
    font-size: 5.25rem;
- }
+  }
 
  h5, h6, li, ol, .persona{
    font-size: 1.5rem;
@@ -678,7 +736,16 @@ width: 100%;
  font-size: 1.5rem;
 }
 
- .logistics{
+.logistics{
    display: block;
  }
+
+  .bioname {
+    width:100%;
+  }
+
+  .block {
+    line-height: 150%;
+    font-size: 3.6rem;
+  }
 }

@@ -11,6 +11,10 @@ Html, body{
   width: 100%;
 }
 
+img {
+  max-width:100%;
+}
+
 .container {
   width:100%;
   margin: 0 auto;
@@ -93,7 +97,47 @@ a:active {
   margin: 0 auto;
 }
 
-/* all buttons */
+input[type=text], input[type=email], textarea{
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  float:right;
+  margin-left: 10px;
+}
+
+.column {
+  float:left;
+  width:50%;
+  margin-top: 10rem;
+  padding:0;
+}
+
+.contactme {
+  text-align:center;
+}
+
+/* keeps text next to boxes */
+.yourinfo {
+  text-align: right;
+}
+
+form {
+  width:80%;
+}
+
+.sendbutton {
+ background-color: #F1D2CC;
+ border-radius: 3px;
+ font-family: "Lora";
+ font-size: 1.8rem;
+ padding: 12px 24px;
+ float:right;
+ margin-top: 2rem;
+ width:50%;
+ height: 100%;
+}
+
 button {
   background-color: #F1D2CC;
   border-radius: 3px;
@@ -102,8 +146,9 @@ button {
   padding: 12px 24px;
 }
 
-button:hover {
+button:hover, .sendbutton:hover {
   background-color: #DABEB8;
+  cursor:pointer;
 }
 
 /* my role, deliverables, and tools */
@@ -128,6 +173,20 @@ button:hover {
 }
 
 /* picture captions */
+.caption1 {
+  font-size: 2rem;
+  line-height: 120%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.caption2 {
+  font-size: 2rem;
+  line-height: 120%;
+  margin: 20px auto;
+  width: 40rem;
+}
+
 .caption {
   font-size: 2rem;
   line-height: 120%;
@@ -138,6 +197,11 @@ button:hover {
   line-height: 110%;
   position: relative;
   z-index: 1;
+}
+
+@font-face {
+  font-family: "August script bold free";
+  src: url(august.ttf) format('truetype');
 }
 
 /* Highlight */
@@ -169,7 +233,7 @@ h1 span {
   padding-bottom: 2rem;
   padding-top: 4rem;
   text-align: center;
-  width: 50%;
+  max-width: 40%;
 }
 
 .designzen{
@@ -588,11 +652,15 @@ footer > a {
     width:21rem;
   }
 
+  .mytitle {
+    font-size: 1.5rem;
+  }
+
   .slogan {
     display: inline-block;
     font-size: 2rem;
     text-align: center;
-    width: 75%;
+    max-width: 80%;
   }
 
   .busybus, .designzen {
@@ -623,7 +691,7 @@ footer > a {
 
   .busybus > button, .designzen > button{
     padding: 9px 18px;
-    width: 25%;
+    width: 50%;
   }
 
 /* Images */
@@ -655,7 +723,7 @@ footer > a {
 
  .userflow {
    height: 43rem;
-   width: 37.5rem;
+   width: 100%;
  }
 
  .sketch{
@@ -747,5 +815,24 @@ footer > a {
   .block {
     line-height: 150%;
     font-size: 3.6rem;
+  }
+
+  .column{
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  input[type=text], input[type=email], textarea{
+    padding-bottom: 0;
+  }
+
+  .sendbutton {
+     margin-top: 2rem;
+     width: 80%;
+   }
+
+footer {
+    padding: 0 0 5rem 0;
+    line-height: 2px;
   }
 }

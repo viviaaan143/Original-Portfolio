@@ -152,8 +152,25 @@ button:hover, .sendbutton:hover {
 }
 
 /* my role, deliverables, and tools */
-.logisitics {
-  width: 100%;
+#myrole {
+float:left;
+padding-left: 4rem;
+text-align: center;
+width: 33.33%;
+}
+
+#deliverables {
+float:left;
+text-align: center;
+width: 33.33%;
+}
+
+#tools {
+  float:left;
+  padding-bottom: 35rem;
+  padding-right: 4rem;
+  text-align: center;
+  width: 33.33%;
 }
 
 /* "My role", "Deliverables", "Tools" */
@@ -305,17 +322,18 @@ h1 span {
   font-family: "Playfair display";
   font-size: 7rem;
   font-weight: lighter;
+  padding-bottom: 2rem;
   text-align: center;
   width: 100%;
 }
 
 /* Change to be side by side */
 .logistics{
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
-#myrole {
+/* #myrole {
   text-align: center;
 }
 
@@ -325,7 +343,7 @@ h1 span {
 
 #tools {
   text-align: center;
-}
+} */
 
 .biographypage {
   margin: auto;
@@ -404,14 +422,18 @@ h5 {
 
 h6 {
   font-size: 2rem;
-  font-weight: 100;
-  line-height: 1px;
+  line-height: 150%;
 }
 
 p {
   font-size: 2.4rem;
   line-height: 200%;
   text-align: left;
+  padding-bottom: 2rem;
+}
+
+span {
+  font-weight:bold;
 }
 
 /* description of personas */
@@ -451,6 +473,7 @@ ol {
   margin-left: auto;
   margin-right: auto;
   width: 45rem;
+  margin-bottom: 2rem;
 }
 
 .usersurvey{

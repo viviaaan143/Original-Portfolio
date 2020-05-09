@@ -51,8 +51,6 @@ img {
 
 /* burger menu and full menu */
 .topnav {
-  height: 70px;
-  line-height: 70px;
   text-align: right;
   padding-top: 5rem;
 }
@@ -129,10 +127,6 @@ input[type=text], input[type=email], textarea{
 /* keeps text next to boxes */
 .yourinfo {
   text-align: right;
-}
-
-form {
-  width:80%;
 }
 
 .sendbutton {
@@ -346,7 +340,6 @@ h1 span {
   font-size: 7rem;
   text-align: left;
   width: 100%;
-  /* display: inline; */
 }
 
 .bioname {
@@ -555,6 +548,8 @@ ol {
   margin-right: auto;
   height: 100%;
   width:100%;
+  padding: 1rem;
+  text-align: center;
 }
 
 .prototype {

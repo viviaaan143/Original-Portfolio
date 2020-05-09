@@ -105,7 +105,7 @@ a:active {
 }
 
 input[type=text], input[type=email], textarea{
-  width: 25%;
+  width: 50%;
   padding: 12px;
   border: 1px solid #CCC;
   border-radius: 4px;
@@ -113,21 +113,23 @@ input[type=text], input[type=email], textarea{
 }
 
 .column1{
-  margin-top: 2rem;
-  width: 100%;
-  padding-left: 10rem;
-}
-
-.column2{
-  margin-top: 2rem;
-  width: 100%;
-padding-right: 10rem;
-
+  margin-top: 10rem;
+  width: 40%;
+  float:left;
+  display: inline-block;
 }
 
 .contactme {
-  /* text-align:center; */
+  text-align:left;
   width: 100%;
+}
+
+.column2{
+  margin-top: 10rem;
+  width: 45%;
+  padding-right: 10rem;
+  float: right;
+  display: inline-block;
 }
 
 /* keeps text next to boxes */
@@ -143,7 +145,7 @@ padding-right: 10rem;
  padding: 12px 24px;
  float:right;
  margin-top: 2rem;
- width:25%;
+ width:50%;
  height: 100%;
 }
 
@@ -850,12 +852,34 @@ footer > a {
   }
 
   input[type=text], input[type=email], textarea{
-    padding-bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .column1{
+    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .column2{
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .yourinfo {
+    text-align:center;
   }
 
   .sendbutton {
-     margin-top: 2rem;
-     width: 80%;
+     width: 100%;
+   }
+
+   .contactme {
+     text-align: center;
    }
 
 footer {

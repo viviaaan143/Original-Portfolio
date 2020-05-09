@@ -33,6 +33,13 @@ img {
   margin: 0 30px 0 0;
 }
 
+.vnlogo {
+  width: 125px;
+  height: 125px;
+  float:left;
+  margin-left: 2rem;
+}
+
 /* links for each menu item */
 .menu a {
   clear: right;
@@ -63,6 +70,7 @@ label {
   line-height: 70px;
   margin: 0 40px 0 0;
   width: 50px;
+  padding-top: 2rem;
 }
 
 /* hides burger menu */
@@ -154,7 +162,7 @@ button:hover, .sendbutton:hover {
 /* my role, deliverables, and tools */
 #myrole {
 float:left;
-padding-left: 4rem;
+padding-left: 12rem;
 text-align: center;
 width: 33.33%;
 }
@@ -168,7 +176,7 @@ width: 33.33%;
 #tools {
   float:left;
   padding-bottom: 35rem;
-  padding-right: 4rem;
+  padding-right: 12rem;
   text-align: center;
   width: 33.33%;
 }
@@ -327,24 +335,6 @@ h1 span {
   width: 100%;
 }
 
-/* Change to be side by side */
-.logistics{
-  /* display: flex;
-  justify-content: center; */
-}
-
-/* #myrole {
-  text-align: center;
-}
-
-#deliverables {
-  text-align: center;
-}
-
-#tools {
-  text-align: center;
-} */
-
 .biographypage {
   margin: auto;
   width: 60%;
@@ -355,14 +345,15 @@ h1 span {
   font-size: 7rem;
   text-align: left;
   width: 100%;
+  /* display: inline; */
 }
 
 .bioname {
   font-family: "august script bold free";
-  display: inline-block;
   line-height: 110%;
   padding-bottom: 10rem;
   text-align: left;
+  display: inline-block;
 }
 
 /* block quote */
@@ -559,11 +550,10 @@ ol {
 }
 
 .v1, .v2 {
-  display: block;
-  height: 24rem;
   margin-left: auto;
   margin-right: auto;
-  width: 30rem;
+  height: 100%;
+  width:100%;
 }
 
 .prototype {
@@ -575,18 +565,15 @@ ol {
 #before{
   clear:left;
   float: left;
-  padding-right: 3rem;
   width: 50%;
 }
 
 #after{
   float: right;
-  padding-left: 3rem;
   width: 50%;
 }
 
 .picofme {
-  display: block;
   float:right;
   height: 600px;
   width: 400px;
@@ -833,11 +820,31 @@ footer > a {
 
   .bioname {
     width:100%;
+    padding-bottom: 5rem;
   }
 
   .block {
     line-height: 150%;
     font-size: 3.6rem;
+  }
+
+  #myrole, #deliverables {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+
+  #tools {
+    padding: 0;
+    font-size: 1.5rem;
+    padding-bottom: 26rem;
+  }
+
+  #before{
+    width: 100%;
+  }
+
+  #after{
+    width: 100%;
   }
 
   .column{

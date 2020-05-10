@@ -106,8 +106,8 @@ a:active {
 }
 
 input[type=text], input[type=email], textarea{
-  width: 50%;
-  padding: 12px;
+  width: 75%;
+  padding: 16px;
   border: 1px solid #CCC;
   border-radius: 4px;
   margin-left: 10px;
@@ -127,10 +127,9 @@ input[type=text], input[type=email], textarea{
 
 .column2{
   margin-top: 10rem;
-  width: 45%;
-  padding-right: 10rem;
+  width: 40%;
+  padding-right: 15rem;
   float: right;
-  display: inline-block;
 }
 
 /* keeps text next to boxes */
@@ -146,7 +145,7 @@ input[type=text], input[type=email], textarea{
  padding: 12px 24px;
  float:right;
  margin-top: 2rem;
- width:50%;
+ width:75%;
  height: 100%;
 }
 
@@ -851,6 +850,7 @@ footer > a {
   #after{
     width: 100%;
   }
+
 
   input[type=text], input[type=email], textarea{
     width: 100%;

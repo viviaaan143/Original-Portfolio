@@ -106,53 +106,38 @@ a:active {
 }
 
 input[type=text], input[type=email], textarea{
-  width: 75%;
+  width: 100%;
   padding: 16px;
   border: 1px solid #CCC;
-  border-radius: 4px;
-  margin-left: 10px;
-  vertical-align: middle;
 }
 
 .column1{
   margin-top: 10rem;
-  width: 40%;
-  float:left;
-  display: inline-block;
-}
-
-.contactme {
-  text-align:left;
   width: 100%;
 }
 
-.column2{
-  margin-top: 10rem;
-  width: 40%;
-  padding-right: 10rem;
-  float: right;
-  align-items: center;
+.contactme {
+  text-align:center;
 }
 
-/* keeps text next to boxes */
-.yourinfo {
-  text-align: right;
+.column2{
+  width: 50%;
+  margin: 0 auto;
+  text-align:center;
 }
 
 .sendbutton {
  background-color: #F1D2CC;
- border-radius: 3px;
  font-family: "Lora";
  font-size: 1.8rem;
  padding: 12px 24px;
- float:right;
- margin-top: 2rem;
- width:75%;
+ width:25%;
  height: 100%;
 }
 
 button {
   background-color: #F1D2CC;
+  opacity: 0.8;
   border-radius: 3px;
   font-family: "Lora";
   font-size: 1.8rem;
@@ -197,9 +182,8 @@ width: 33.33%;
 /* Introduction: name, title, slogan, button */
 .intro {
   background-color:rgba(237, 171, 98, 0.6);
-  margin: 0 auto;
+  margin-top: 1rem;
   padding-bottom: 3rem;
-  padding-top: 3rem;
 }
 
 /* picture captions */
@@ -302,14 +286,6 @@ h1 span {
   bottom: 8%;
   left: 57%;
   position: absolute;
-}
-
-.designzen > button, .busybus > button {
-  background-color: #F1D2CC;
-  border-radius: 3px;
-  font-family: "lora";
-  font-size: 1.8rem;
-  padding: 12px 24px;
 }
 
 .designzen > button:hover, .busybus > button:hover {
@@ -626,6 +602,10 @@ footer > a {
     overflow-x: hidden;
     text-align:center;
     width: 100%;
+  }
+
+  .intro {
+    /* margin-top: 8rem; */
   }
 
   .summary, .discovery, .conclusion, .biographypage {

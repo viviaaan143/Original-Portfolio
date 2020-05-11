@@ -18,7 +18,7 @@ img {
 .container {
   width:100%;
   margin: 0 auto;
-  height: 100%;
+  min-height: 100%;
 }
 
 .summary, .discovery, .conclusion {
@@ -83,9 +83,9 @@ a:hover {
   color:#F1D2CC;
 }
 
-/* selected */
-a:active {
-  text-decoration: underline;
+/* selected page*/
+#active {
+color:rgb(236, 162, 120);
 }
 
 .more:hover {
@@ -126,7 +126,7 @@ input[type=text], input[type=email], textarea{
   text-align:center;
 }
 
-.sendbutton {
+.submitbutton {
  background-color: #F1D2CC;
  font-family: "Lora";
  font-size: 1.8rem;
@@ -144,7 +144,7 @@ button {
   padding: 12px 24px;
 }
 
-button:hover, .sendbutton:hover {
+button:hover, .submitbutton:hover {
   background-color: #DABEB8;
   cursor:pointer;
 }
@@ -605,7 +605,7 @@ footer > a {
   }
 
   .intro {
-    /* margin-top: 8rem; */
+    margin-top: 8rem;
   }
 
   .summary, .discovery, .conclusion, .biographypage {
@@ -622,6 +622,9 @@ footer > a {
     display:none;
     text-align: center;
     width: 100%;
+    position: absolute;
+    padding-top: 8rem;
+    opacity: 0.95;
   }
 
   .menu a{
@@ -833,7 +836,10 @@ footer > a {
     width: 100%;
   }
 
-
+#active {
+  color:gray;
+  text-decoration: underline;
+}
   input[type=text], input[type=email], textarea{
     width: 100%;
     padding: 15px;
@@ -857,7 +863,7 @@ footer > a {
     text-align:center;
   }
 
-  .sendbutton {
+  .submitbutton {
      width: 100%;
    }
 

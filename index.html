@@ -16,9 +16,9 @@
         <input type="checkbox" id="toggle"/>
         <!-- List of options at the top -->
         <div class= "menu">
-          <a href="index.html">Home</a>
+          <a id="active" href="index.html">Home</a>
           <a href="biography.html">About</a>
-          <a href="project.html">Work</a>
+          <a href="index.html#target">Work</a>
           <a href="contact.html">Contact</a>
         </div>
         </div>
@@ -30,15 +30,15 @@
         <h1 class="name">Vivian.<span>&nbsp;</span></h1>
         <p class="mytitle">UX Designer based in OC</p>
         <p class="slogan">I analyze human motivations and empathize to create a better experience.</p>
-        <button class="more">More about me</button>
+        <button class="more" onclick="location.href='biography.html'">More about me</button>
       </div>
 
         <!-- list of projects -->
-      <div class="designzen">
+      <div id="target" class="designzen">
         <h2>Design Zen</h2>
         <img src= "images/designzenprototype.png" width="400" height="250" alt= "Design Zen gif">
         <p>Design Zen is a cloud storage application for artists of all genres to store their work privately, share with the public, and/or collaborate with other talented artists. It’s a place that sparks inspiration and allows networking.</p>
-        <button>View case study</button>
+        <button onclick="location.href='project.html'">View case study</button>
       </div>
 
       <div class="busybus">

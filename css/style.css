@@ -35,10 +35,10 @@ img {
 }
 
 .vnlogo {
-  width: 125px;
-  height: 125px;
   float:left;
+  height: 125px;
   margin-left: 2rem;
+  width: 125px;
 }
 
 /* links for each menu item */
@@ -52,8 +52,8 @@ img {
 
 /* burger menu and full menu */
 .topnav {
-  text-align: right;
   padding-top: 5rem;
+  text-align: right;
 }
 
 /* links */
@@ -69,8 +69,8 @@ label {
   font-size: 50px;
   line-height: 70px;
   margin: 0 40px 0 0;
-  width: 50px;
   padding-top: 2rem;
+  width: 50px;
 }
 
 /* hides burger menu */
@@ -101,18 +101,18 @@ color:rgb(236, 162, 120);
   display: block;
   font-family: "Lora";
   font-size: 1.8rem;
-  padding: 12px 24px;
   margin: 0 auto;
+  padding: 12px 24px;
 }
 
 input[type=text], input[type=email], textarea{
-  width: 100%;
-  padding: 16px;
   border: 1px solid #CCC;
+  padding: 16px;
+  width: 100%;
 }
 
 .column1{
-  margin-top: 10rem;
+  margin-top: 5rem;
   width: 100%;
 }
 
@@ -121,26 +121,26 @@ input[type=text], input[type=email], textarea{
 }
 
 .column2{
-  width: 50%;
   margin: 0 auto;
   text-align:center;
+  width: 50%;
 }
 
 .submitbutton {
  background-color: #F1D2CC;
  font-family: "Lora";
  font-size: 1.8rem;
+ height: 100%;
  padding: 12px 24px;
  width:25%;
- height: 100%;
 }
 
 button {
   background-color: #F1D2CC;
-  opacity: 0.8;
   border-radius: 3px;
   font-family: "Lora";
   font-size: 1.8rem;
+  opacity: 0.8;
   padding: 12px 24px;
 }
 
@@ -244,10 +244,10 @@ h1 span {
   font-size: 3rem;
   font-weight: lighter;
   margin: 0 auto;
+  max-width: 40%;
   padding-bottom: 2rem;
   padding-top: 4rem;
   text-align: center;
-  max-width: 40%;
 }
 
 .designzen{
@@ -329,11 +329,11 @@ h1 span {
 }
 
 .bioname {
+  display: inline-block;
   font-family: "august script bold free";
   line-height: 110%;
   padding-bottom: 10rem;
   text-align: left;
-  display: inline-block;
 }
 
 /* block quote */
@@ -370,8 +370,8 @@ h3 {
   font-family: "Playfair display";
   font-size: 7rem;
   font-weight: lighter;
-  text-align: center;
   padding: 3rem;
+  text-align: center;
 }
 
 h4 {
@@ -382,11 +382,11 @@ h4 {
 }
 
 h5 {
+  display: inline-block;
   font-size: 2rem;
   font-weight: bold;
-  margin: 0 auto;
-  display: inline-block;
   line-height: 200%;
+  margin: 0 auto;
   text-align: left;
   width: 100%;
 }
@@ -441,10 +441,10 @@ ol {
   border: 1px solid #B0B0B0;
   display: block;
   height: 40rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   width: 45rem;
-  margin-bottom: 2rem;
 }
 
 .usersurvey{
@@ -530,12 +530,12 @@ ol {
 }
 
 .v1, .v2 {
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
-  height: 100%;
-  width:100%;
   padding: 1rem;
   text-align: center;
+  width:100%;
 }
 
 .prototype {
@@ -574,8 +574,8 @@ footer {
 }
 
 footer > a {
-  text-decoration: none;
   font-size: 50px;
+  text-decoration: none;
 }
 
 .links {
@@ -620,24 +620,22 @@ footer > a {
 
   .menu{
     display:none;
+    font-size: 2.4rem;
+    padding-top: 8rem;
+    position: absolute;
     text-align: center;
     width: 100%;
-    position: absolute;
-    padding-top: 8rem;
-    opacity: 0.95;
   }
 
   .menu a{
     background-color: rgba(222, 210, 194);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #787878;
     display: block;
     margin: 0;
-    position: relative;
-    z-index: 2;
   }
 
   a:hover {
-    color:#000;
+    color:#fff;
   }
 
   #toggle:checked + .menu {
@@ -658,7 +656,6 @@ footer > a {
   .slogan {
     display: inline-block;
     font-size: 2rem;
-    text-align: center;
     max-width: 80%;
   }
 
@@ -808,23 +805,21 @@ footer > a {
  }
 
   .bioname {
-    width:100%;
     padding-bottom: 5rem;
+    width:100%;
   }
 
   .block {
-    line-height: 150%;
     font-size: 3.6rem;
+    line-height: 150%;
   }
 
   #myrole, #deliverables {
-    font-size: 1.5rem;
     padding: 0;
   }
 
   #tools {
     padding: 0;
-    font-size: 1.5rem;
     padding-bottom: 26rem;
   }
 
@@ -836,26 +831,23 @@ footer > a {
     width: 100%;
   }
 
-#active {
-  color:gray;
-  text-decoration: underline;
-}
+  #active {
+    color:gray;
+    background-color: rgb(236, 162, 120);
+  }
+
   input[type=text], input[type=email], textarea{
-    width: 100%;
-    padding: 15px;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
   }
 
   .column1{
-    margin-top: 5rem;
-    width: 100%;
-    text-align: center;
     display: block;
+    text-align: center;
+    width: 100%;
   }
 
   .column2{
-    margin: 0 auto;
     width: 80%;
   }
 
@@ -867,12 +859,8 @@ footer > a {
      width: 100%;
    }
 
-   .contactme {
-     text-align: center;
-   }
-
 footer {
-    padding: 0 0 5rem 0;
     line-height: 2px;
+    padding: 0 0 5rem 0;
   }
 }

@@ -85,7 +85,7 @@ a:hover {
 
 /* selected page*/
 #active {
-color:rgb(236, 162, 120);
+background-color:rgb(236, 162, 120);
 }
 
 .more:hover {
@@ -768,9 +768,23 @@ footer > a {
    width: 100%;
   }
 
+  .mypic1, .mypic2{
+    height: 50%;
+    width: 50%;
+    float:left;
+    display: block;
+    padding:0;
+  }
+  .mypic3, .mypic4 {
+    height: 50%;
+    width: 50%;
+    float:right;
+    display: block;
+    padding:0;
+  }
+
   .imagestakenbyme {
     padding: 0;
-    text-align: center;
     width: 100%;
   }
 
@@ -818,9 +832,23 @@ footer > a {
     padding: 0;
   }
 
-  #tools {
+  #myrole {
+    display:block;
     padding: 0;
-    padding-bottom: 26rem;
+    width: 100%;
+  }
+
+  #deliverables {
+    display:block;
+    padding: 0;
+    width: 100%;
+  }
+
+  #tools {
+  display:block;
+  margin-bottom: 10rem;
+  padding: 0;
+  width: 100%;
   }
 
   #before{
@@ -834,6 +862,10 @@ footer > a {
   #active {
     color:gray;
     background-color: rgb(236, 162, 120);
+  }
+
+  #active:hover {
+    color: white;
   }
 
   input[type=text], input[type=email], textarea{
@@ -864,3 +896,10 @@ footer {
     padding: 0 0 5rem 0;
   }
 }
+
+@media only screen and (max-width: 565px) {
+  .mypic1, .mypic2, .mypic3, .mypic4 {
+    height: 400px;
+    width: 300px;
+  }
+  }

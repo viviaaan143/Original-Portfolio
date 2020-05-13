@@ -138,7 +138,7 @@ top: 10px;
 
 /* Overlay */
 .menu >div {
-background: rgba(0,0,0,0.95);
+background: rgba(0,0,0,0.98);
 border-radius: 50%;
 width: 200vw;
 height: 200vw;
@@ -163,6 +163,8 @@ transition: all 0.4s ease;
   color: gray;
   font-size: 2rem;
   padding: 2rem;
+  text-align: center;
+  width: auto;
 }
 
 .menu >div >div > ul >li > a {
@@ -484,14 +486,15 @@ p {
 
 span {
   font-weight:bold;
+  font-size: 2rem;
 }
 
 /* description of personas */
 .persona {
   font-size: 2rem;
   text-align: center;
-  width: 60%;
   line-height: normal;
+  font-size: 1.5rem;
 }
 
 .person1 {
@@ -499,9 +502,8 @@ span {
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
-  /* width:40%; */
+  width:50%;
   float:left;
-  display:inline-block;
 }
 
 .person2 {
@@ -509,14 +511,14 @@ span {
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
-  /* width:40%; */
-  float:left;
+  width:50%;
+  float:right;
 }
 
 li {
   font-size: 2rem;
   text-align: left;
-  width: 60%;
+  line-height: normal;
 }
 
 ol {
@@ -554,14 +556,6 @@ ol {
   width: 300px;
   height:225px;
 }
-
-/* .persona1, .persona2 {
-  float:left;
-  height: 25rem;
-  margin-right: 3rem;
-  margin-bottom: 3rem;
-  width: 35rem;
-} */
 
 .pinterestlogo, .dropboxlogo {
   display: block;

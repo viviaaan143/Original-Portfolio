@@ -34,8 +34,6 @@ img {
 }
 
 
-
-
 .menu-wrap {
   z-index: 2;
 }
@@ -114,6 +112,8 @@ top: 10px;
 /* Show menu */
 .toggler:checked ~ .menu {
   visibility: visible;
+  overflow-y:auto;
+
 }
 
 .toggler:checked ~ .menu > div {

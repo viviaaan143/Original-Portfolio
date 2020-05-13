@@ -656,8 +656,9 @@ ol {
 
 
 .picofme {
-  width: 300px;
+  width: 400px;
   height: 500px;
+  margin-top: 5rem;
 }
 
 .biogreeting {
@@ -676,8 +677,13 @@ ol {
   width: 50%;
 }
 
+.biographypage {
+  min-width: 860px;
+}
+
 .biopic {
-  margin-top: auto;
+  width: 50%;
+  float:right;
 }
 
 .biointro {
@@ -874,8 +880,8 @@ footer > a {
  }
 
  .picofme {
-   /* width: 260px;
-   height: 400px; */
+   height: 475px;
+   width: 300px;
    padding-bottom: 5rem;
   }
 

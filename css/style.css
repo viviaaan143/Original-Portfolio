@@ -654,13 +654,6 @@ ol {
   margin-right: auto;
 }
 
-
-.picofme {
-  width: 400px;
-  height: 500px;
-  margin-top: 5rem;
-}
-
 .biogreeting {
   font-size: 8rem;
   width: 100%;
@@ -677,19 +670,16 @@ ol {
   width: 50%;
 }
 
-.biographypage {
-  min-width: 860px;
+.biotop{
+  display: flex;
 }
 
 .biopic {
-  width: 50%;
-  float:right;
+  min-width: 50%;
 }
 
 .biointro {
-  width: 50%;
-  float: left;
-  display: inline;
+    display: inline;
     font-family: "Playfair display";
     font-size: 7rem;
     text-align: left;
@@ -754,10 +744,6 @@ footer > a {
   .biointro {order:1;}
   .bioname{order:2;}
   }
-
-/* .biointro {
-  width: 100%;
-} */
 
   h1 span {
     bottom: 14px;
@@ -880,7 +866,7 @@ footer > a {
  }
 
  .picofme {
-   height: 475px;
+   height: 500px;
    width: 300px;
    padding-bottom: 5rem;
   }

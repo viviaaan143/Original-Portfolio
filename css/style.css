@@ -654,10 +654,10 @@ ol {
   margin-right: auto;
 }
 
+
 .picofme {
-  width: 260px;
-  height: 400px;
-  float:right;
+  width: 300px;
+  height: 500px;
 }
 
 .biogreeting {
@@ -678,13 +678,7 @@ ol {
 
 .biopic {
   margin-top: 5rem;
-  width: 50%;
   float:right;
-}
-
-.picofme {
-  width: 350px;
-  height: 475px;
 }
 
 .biointro {
@@ -759,9 +753,10 @@ footer > a {
 /* .biointro {
   width: 100%;
 } */
-/* .biopic {
-  width: 75%;
-} */
+.biopic {
+  margin:auto;
+  width: 100%;
+}
 
   h1 span {
     bottom: 14px;
@@ -884,9 +879,9 @@ footer > a {
  }
 
  .picofme {
-   height: 100%;
+   /* width: 260px;
+   height: 400px; */
    padding-bottom: 5rem;
-   width: 100%;
   }
 
   .mypic1, .mypic2{

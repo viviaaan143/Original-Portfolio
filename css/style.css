@@ -684,8 +684,14 @@ ol {
 }
 
 .biopic {
+  margin-top: 5rem;
   width: 50%;
   float:right;
+}
+
+.picofme {
+  width: 350px;
+  height: 475px;
 }
 
 .biointro {
@@ -752,6 +758,10 @@ footer > a {
   .biointro {order:1;}
   .bioname{order:2;}
   }
+
+/* .biopic {
+  width: 75%;
+} */
 
   h1 span {
     bottom: 14px;

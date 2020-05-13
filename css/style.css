@@ -28,40 +28,162 @@ img {
 }
 
 .vnlogo {
-  float:left;
   height: 125px;
-  margin-left: 2rem;
+  display: inline-block;
   width: 125px;
 }
 
-/* div for menu options */
+
+
+
 .menu-wrap {
-  font-family: "Lora";
-  font-size: 1.8rem;
+  z-index: 2;
 }
 
-/* links for each menu item */
-.menu a {
-  color: gray;
-  text-decoration: none;
-  display:inline;
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity:0;
+  padding-top: 50px;
 }
 
-.menu li {
-  line-height: 5rem;
-  float:right;
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
   padding: 1rem;
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
-
-/* hides checkbox menu */
-.toggler {
-  display: none;
+/* Hamburger line */
+.hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  color:red;
+  background: #CDC6BB;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  transition: all 0.4s ease;
+}
+/* Top and bottom lines */
+.menuwrap, .hamburger > div:before,
+.menuwrap, .hamburger > div:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: -10px;
+  width: 100%;
+  height: 5px;
+  background: inherit;
 }
 
- /* mouse over*/
+/* Moves line down */
+.menu-wrap, .hamburger > div:after {
+top: 10px;
+}
+
+/* Toggler animate */
+.toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turn lines into X */
+.toggler:checked + .hamburger > div:before,
+.toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate on hover when checked */
+.toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show menu */
+.toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 0.8s;
+}
+
+.toggler:checked ~ .menu > div > div  {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.menu {
+  position:fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  visibility: hidden;
+}
+
+/* Overlay */
+.menu >div {
+background: rgba(0,0,0,0.95);
+border-radius: 50%;
+width: 200vw;
+height: 200vw;
+display: flex;
+flex: none;
+align-items:center;
+justify-content:center;
+transform: scale(0);
+transition: all 0.4s ease;
+}
+
+#absolute {
+  position:absolute;
+  width: 100%;
+  z-index:-11;
+}
+
+.menu >div >div {
+  text-align:center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu >div >div > ul >li {
+  list-style: none;
+  color: gray;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.menu >div >div > ul >li > a {
+  color: #CDC6BB;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
 a:hover {
-  color:#F1D2CC;
+  font-size: 4rem;
+  transition: all 0.4s ease;
 }
 
 .more:hover {
@@ -71,7 +193,7 @@ a:hover {
 
 /* About me button */
 .more {
-  background-color: #000000;
+  background-color: black;
   border-radius: 3px;
   color: #ffffff;
   display: block;
@@ -592,158 +714,12 @@ footer > a {
     width: 100%;
   }
 
-  .menu-wrap {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 2;
-  }
-
-  .menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 3;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    opacity:0;
-  }
-
-  .hamburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    /* background: rgba(236,162,120,0.8); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Hamburger line */
-  .hamburger > div {
-    position: relative;
-    width: 100%;
-    height: 5px;
-    color:red;
-    background: #CDC6BB;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    transition: all 0.4s ease;
-  }
-  /* Top and bottom lines */
-  .menuwrap, .hamburger > div:before,
-  .menuwrap, .hamburger > div:after {
-    content: '';
-    position: absolute;
-    z-index: 2;
-    top: -10px;
-    width: 100%;
-    height: 5px;
-    background: inherit;
-  }
-
-  /* Moves line down */
-  .menu-wrap, .hamburger > div:after {
-  top: 10px;
-  }
-
-  /* Toggler animate */
-  .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-  }
-
-  /* Turn lines into X */
-  .toggler:checked + .hamburger > div:before,
-  .toggler:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-
-  /* Rotate on hover when checked */
-  .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
-  }
-
-  /* Show menu */
-
-  .toggler:checked ~ .menu {
-    visibility: visible;
-  }
-
-  .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    transition-duration: 0.8s;
-  }
-
-  .toggler:checked ~ .menu > div > div  {
-    opacity: 1;
-    transition: opacity 0.4s ease;
-  }
-  .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    overflow:hidden;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    visibility: hidden;
-  }
-
-  .menu >div {
-  background: rgba(0,0,0,0.95);
-  border-radius: 50%;
-  width: 200vw;
-  height: 200vw;
-  display: flex;
-  flex: none;
-  align-items:center;
-  justify-content:center;
-  transform: scale(0);
-  transition: all 0.4s ease;
-  }
-
-  .menu >div >div {
-    text-align:center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
-
-  .menu >div >div > ul >li {
-    list-style: none;
-    color: gray;
-    font-size: 2rem;
-    padding: 2rem;
-  }
-
-  .menu >div >div > ul >li > a {
-    color: #CDC6BB;
-    text-decoration: none;
-    transition: all 0.4s ease;
-  }
-
-  a:hover {
-    font-size: 4rem;
-    transition: all 0.4s ease;
-  }
-
-  .intro {
-    margin-top: 15rem;
-  }
-
   .summary, .discovery, .conclusion, .biographypage {
     width: 75%;
   }
+
+/* WHEN OPENED */
+
 
   h1 span {
     bottom: 14px;
@@ -977,6 +953,10 @@ footer > a {
 
   .yourinfo {
     text-align:center;
+  }
+
+  textarea {
+    font-family: "roboto";
   }
 
   .submitbutton {

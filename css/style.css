@@ -141,7 +141,7 @@ top: 10px;
 
 /* Overlay */
 .menu >div {
-background: rgba(0,0,0,0.95);
+background: rgba(0,0,0, 0.98);
 border-radius: 50%;
 width: 200vw;
 height: 200vw;
@@ -181,7 +181,7 @@ transition: all 0.4s ease;
 }
 
 a:hover {
-  font-size: 4rem;
+  font-size: 3rem;
   transition: all 0.4s ease;
 }
 

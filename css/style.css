@@ -418,13 +418,6 @@ h1 span {
   width: 60%;
 }
 
-.biointro {
-  font-family: "Playfair display";
-  font-size: 7rem;
-  text-align: left;
-  width: 100%;
-}
-
 .bioname {
   display: inline-block;
   font-family: "august script bold free";
@@ -698,6 +691,10 @@ ol {
   width: 50%;
   float: left;
   display: inline;
+    font-family: "Playfair display";
+    font-size: 7rem;
+    text-align: left;
+  }
 }
 
 .mypic1, .mypic2, .mypic3, .mypic4 {
@@ -759,6 +756,9 @@ footer > a {
   .bioname{order:2;}
   }
 
+/* .biointro {
+  width: 100%;
+} */
 /* .biopic {
   width: 75%;
 } */

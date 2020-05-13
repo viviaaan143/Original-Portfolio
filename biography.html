@@ -4,29 +4,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" type="tex/css" href="css/menu.css"> -->
     <meta charset="utf-8">
     <title>Biography page</title>
   </head>
   <body>
-    <header>
       <a href= "index.html"><img class="vnlogo" src= "images/logo.png" alt="VN logo"></a>
-      <section class="topnav">
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-      <!-- List of options at the top -->
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class= "hamburger"><div></div></div>
         <div class= "menu">
-          <a href="index.html">Home</a>
-          <a id="active" href="biography.html">About</a>
-          <a href="index.html#target">Work</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </section>
-    </header>
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biography.html">About</a></li>
+                <li><a href="index.html#target">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
     <div class="container">
-      <div class="biographypage">
-        <h1 class= "biointro">Hi there! <br>My name is</h1>
-        <h1 class="bioname">Vivian.</h1>
-        <img class= "picofme" src= "images/picofme.jpeg" alt="Picture of Vivian">
+      <section class="biographypage">
+        <div class="biotop">
+
+          <div class="biopic">
+            <img class="picofme"src= "images/picofme.jpeg" alt="Picture of Vivian">
+          </div>
+
+          <div class="biointro">
+            <h1"biogreeting">Hi there! <br>My name is</h1>
+            <h1 class="bioname">Vivian.</h1>
+          </div>
+        </div>
+
         <h4>Here's the story...</h4>
         <br>
         <p>Ever since I was young I loved to create. I would take plain things around my house and turn it into something completely new like using gift tissue paper to create animals or nail polish to paint artwork. My passion for art has always been an outlet for my creativity and it was even more of a joy to give to others. When I was younger, I would wait at the salon shop for my mom to finish work. As I sat waiting, I would paint a picture for her clients and coworkers, using the nail polish I had gingerly taken before her appointments. Although it’s a small gesture to give, their smiles of appreciation and warmth filled me up.
@@ -51,7 +64,7 @@
         <br><br>
         <p>Please feel free to reach out if you want to chat or have questions!</p>
         <br><br><br><br><br><br><br><br><br><br>
-      </div>
+      </section>
     </div>
     <!-- footer -->
     <footer>

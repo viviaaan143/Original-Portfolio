@@ -27,13 +27,6 @@ img {
   width: 48%;
 }
 
-/* div for menu options */
-.menu {
-  font-family: "Lora";
-  font-size: 1.8rem;
-  margin: 0 30px 0 0;
-}
-
 .vnlogo {
   float:left;
   height: 125px;
@@ -41,51 +34,34 @@ img {
   width: 125px;
 }
 
+/* div for menu options */
+.menu-wrap {
+  font-family: "Lora";
+  font-size: 1.8rem;
+}
+
 /* links for each menu item */
 .menu a {
-  clear: right;
   color: gray;
-  line-height: 70px;
-  margin: 0 10px;
   text-decoration: none;
+  display:inline;
 }
 
-/* burger menu and full menu */
-.topnav {
-  padding-top: 5rem;
-  text-align: right;
+.menu li {
+  line-height: 5rem;
+  float:right;
+  padding: 1rem;
 }
 
-/* links */
-a {
-  color: black;
-}
 
-/* burger menu lines */
-label {
-  color: #CDC6BB;
-  display: none;
-  float: right;
-  font-size: 50px;
-  line-height: 70px;
-  margin: 0 40px 0 0;
-  padding-top: 2rem;
-  width: 50px;
-}
-
-/* hides burger menu */
-#toggle {
+/* hides checkbox menu */
+.toggler {
   display: none;
 }
 
  /* mouse over*/
 a:hover {
   color:#F1D2CC;
-}
-
-/* selected page*/
-#active {
-background-color:rgb(236, 162, 120);
 }
 
 .more:hover {
@@ -182,7 +158,7 @@ width: 33.33%;
 /* Introduction: name, title, slogan, button */
 .intro {
   background-color:rgba(237, 171, 98, 0.6);
-  margin-top: 1rem;
+  padding-top: 15rem;
   padding-bottom: 3rem;
 }
 
@@ -418,11 +394,11 @@ span {
   width: 100%
 }
 
-li {
+/* li {
   font-size: 2rem;
   text-align: left;
   width: 60%;
-}
+} */
 
 ol {
   font-size: 2rem;
@@ -555,15 +531,27 @@ ol {
   width: 50%;
 }
 
-.picofme {
-  float:right;
-  height: 600px;
-  width: 400px;
+.biotop {
+Display:flex;
+Flex-flow: column;
+}
+
+.biopic {order:3;}
+.biointro {order:1;}
+.bioname{order:2;}
+}
+
+.biointro {
+  width: 50%;
+  float: left;
+  display: inline;
 }
 
 .mypic1, .mypic2, .mypic3, .mypic4 {
   height: 400px;
   width: 300px;
+  margin: 0 auto;
+  padding:0;
 }
 
 /* footer */
@@ -604,42 +592,157 @@ footer > a {
     width: 100%;
   }
 
+  .menu-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity:0;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    /* background: rgba(236,162,120,0.8); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hamburger line */
+  .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    color:red;
+    background: #CDC6BB;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    transition: all 0.4s ease;
+  }
+  /* Top and bottom lines */
+  .menuwrap, .hamburger > div:before,
+  .menuwrap, .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    width: 100%;
+    height: 5px;
+    background: inherit;
+  }
+
+  /* Moves line down */
+  .menu-wrap, .hamburger > div:after {
+  top: 10px;
+  }
+
+  /* Toggler animate */
+  .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+
+  /* Turn lines into X */
+  .toggler:checked + .hamburger > div:before,
+  .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  /* Rotate on hover when checked */
+  .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+
+  /* Show menu */
+
+  .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+
+  .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: 0.8s;
+  }
+
+  .toggler:checked ~ .menu > div > div  {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    visibility: hidden;
+  }
+
+  .menu >div {
+  background: rgba(0,0,0,0.95);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items:center;
+  justify-content:center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  }
+
+  .menu >div >div {
+    text-align:center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .menu >div >div > ul >li {
+    list-style: none;
+    color: gray;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .menu >div >div > ul >li > a {
+    color: #CDC6BB;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+
+  a:hover {
+    font-size: 4rem;
+    transition: all 0.4s ease;
+  }
+
   .intro {
-    margin-top: 8rem;
+    margin-top: 15rem;
   }
 
   .summary, .discovery, .conclusion, .biographypage {
     width: 75%;
-  }
-
-  /* for the burger menu */
-  label {
-    cursor: pointer;
-    display: block;
-  }
-
-  .menu{
-    display:none;
-    font-size: 2.4rem;
-    padding-top: 8rem;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-  }
-
-  .menu a{
-    background-color: rgba(222, 210, 194);
-    border-bottom: 1px solid #787878;
-    display: block;
-    margin: 0;
-  }
-
-  a:hover {
-    color:#fff;
-  }
-
-  #toggle:checked + .menu {
-    display:block;
   }
 
   h1 span {
@@ -772,14 +875,12 @@ footer > a {
     height: 50%;
     width: 50%;
     float:left;
-    display: block;
     padding:0;
   }
   .mypic3, .mypic4 {
     height: 50%;
     width: 50%;
     float:right;
-    display: block;
     padding:0;
   }
 
@@ -859,15 +960,6 @@ footer > a {
     width: 100%;
   }
 
-  #active {
-    color:gray;
-    background-color: rgb(236, 162, 120);
-  }
-
-  #active:hover {
-    color: white;
-  }
-
   input[type=text], input[type=email], textarea{
     margin: 0 auto;
     text-align: center;
@@ -901,5 +993,6 @@ footer {
   .mypic1, .mypic2, .mypic3, .mypic4 {
     height: 400px;
     width: 300px;
+    float:none;
   }
   }

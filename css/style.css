@@ -683,14 +683,9 @@ ol {
   width: 50%;
 }
 
-.biotop {
-Display:flex;
-Flex-flow: column;
-}
-
-.biopic {order:3;}
-.biointro {order:1;}
-.bioname{order:2;}
+.biopic {
+  width: 50%;
+  float:right;
 }
 
 .biointro {
@@ -748,8 +743,15 @@ footer > a {
     width: 75%;
   }
 
-/* WHEN OPENED */
+  .biotop {
+  Display:flex;
+  flex-flow: column;
+  }
 
+  .biopic {order:3;}
+  .biointro {order:1;}
+  .bioname{order:2;}
+  }
 
   h1 span {
     bottom: 14px;

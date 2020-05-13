@@ -71,7 +71,6 @@ img {
   position: relative;
   width: 100%;
   height: 5px;
-  color:red;
   background: #CDC6BB;
   display: flex;
   align-items:center;
@@ -480,13 +479,12 @@ h4 {
 }
 
 h5 {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 2rem;
   font-weight: bold;
   line-height: 200%;
-  margin: 0 auto;
   text-align: left;
-  width: 100%;
+  width: 60%;
 }
 
 h6 {
@@ -508,19 +506,35 @@ span {
 /* description of personas */
 .persona {
   font-size: 2rem;
-  text-align: left;
+  text-align: center;
+  width: 60%;
+  line-height: normal;
 }
 
-.person1, .person2 {
-  position:relative;
-  width: 100%
+.person1 {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  /* width:40%; */
+  float:left;
+  display:inline-block;
 }
 
-/* li {
+.person2 {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  /* width:40%; */
+  float:left;
+}
+
+li {
   font-size: 2rem;
   text-align: left;
   width: 60%;
-} */
+}
 
 ol {
   font-size: 2rem;
@@ -554,12 +568,17 @@ ol {
 }
 
 .persona1, .persona2 {
+  width: 300px;
+  height:225px;
+}
+
+/* .persona1, .persona2 {
   float:left;
   height: 25rem;
   margin-right: 3rem;
   margin-bottom: 3rem;
   width: 35rem;
-}
+} */
 
 .pinterestlogo, .dropboxlogo {
   display: block;
@@ -640,6 +659,17 @@ ol {
   display: inherit;
   margin-left: auto;
   margin-right: auto;
+}
+
+.picofme {
+  width: 260px;
+  height: 400px;
+  float:right;
+}
+
+.biogreeting {
+  font-size: 8rem;
+  width: 100%;
 }
 
 #before{

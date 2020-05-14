@@ -34,7 +34,8 @@ img {
 }
 
 .menu-wrap {
-  z-index: 2;
+  z-index: 3;
+  position: relative;
 }
 
 .menu-wrap .toggler {

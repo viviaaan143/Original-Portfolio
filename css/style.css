@@ -318,7 +318,7 @@ h1 span {
   background-color:rgba(236, 162, 120, 0.8);
   bottom: 1.5rem;
   height:10px;
-  left: 27rem;
+  left: 44rem;
   position: absolute;
   width:24rem;
   z-index:-1;
@@ -443,7 +443,7 @@ h1{
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  width: 50%;
+  width: 75%;
 }
 
 h2 {
@@ -755,7 +755,7 @@ footer > a {
   h1 span {
     bottom: 14px;
     height:7.5px;
-    left: 45px;
+    left: 55px;
     width:21rem;
   }
 

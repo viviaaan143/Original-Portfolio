@@ -686,10 +686,10 @@ display:flex;
   }
 
 .picofme {
-  height: 400px;
-  width: 275px;
+  height: 450px;
+  width: 285px;
   display: inline-block;
-  margin: 2rem;
+  margin-left: 10rem;
 }
 
 .mypic1, .mypic2, .mypic3, .mypic4 {

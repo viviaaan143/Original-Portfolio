@@ -279,6 +279,7 @@ width: 33.33%;
   background-color:rgba(237, 171, 98, 0.6);
   padding-top: 8rem;
   padding-bottom: 5rem;
+  text-align: center;
 }
 
 /* picture captions */
@@ -306,6 +307,7 @@ width: 33.33%;
   line-height: 110%;
   position: relative;
   z-index: 1;
+  display: inline;
 }
 
 @font-face {
@@ -316,19 +318,21 @@ width: 33.33%;
 /* Highlight */
 h1 span {
   background-color:rgba(236, 162, 120, 0.8);
-  bottom: 1.5rem;
+  bottom: 4.5rem;
   height:10px;
-  left: 44rem;
+  left: 5rem;
   position: absolute;
   width:24rem;
   z-index:-1;
+  display: table-row-group;
 }
+
 
 /* My title */
 .mytitle {
   font-family: "lora";
   font-size: 2rem;
-  left: 6rem;
+  left: 4rem;
   margin: 0 auto;
   position:relative;
   text-align:center;
@@ -753,15 +757,13 @@ footer > a {
   }
 
   h1 span {
-    bottom: 14px;
-    height:7.5px;
-    left: 55px;
-    width:21rem;
+    bottom: 4rem;
+    width:22rem;
   }
 
   .mytitle {
     font-size: 1.5rem;
-    left: 8rem;
+    left: 2rem;
     }
 
   .slogan {
@@ -804,8 +806,8 @@ footer > a {
 /* Images */
  .summary img {
    border: 1px solid #B0B0B0;
-   height: 30rem;
-   width: 33.75rem;
+   height: 100%;
+   width: 100%;
  }
 
  .usersurvey{
@@ -848,14 +850,9 @@ width: 100%;
    width: 30rem;
  }
 
- .colors{
-   height: 22.5rem;
-   width: 37.5rem;
- }
-
  .logosketch {
-   height: 15rem;
-  width: 37.5rem;
+   height: 100%;
+  width: 100%;
  }
 
  .dzlogo {
@@ -863,14 +860,9 @@ width: 100%;
    width: 22.5rem;
  }
 
- .test1, .test2, .test3 {
-   height: 30rem;
-   width: 37.5rem;
- }
-
  .s1v1, .s1v2, .s2v1, .s2v2, .s3v1, .s3v2{
-   height: 30rem;
-   width: 37.5rem;
+   height: 100%;
+   width: 100%;
  }
 
  .v1, .v2 {

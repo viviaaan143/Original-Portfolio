@@ -18,7 +18,8 @@ img {
 .container {
   width:100%;
   margin: 0 auto;
-  min-height: 100%;
+  min-height: 100;
+  /* padding-bottom: 5rem; */
 }
 
 .summary, .discovery, .conclusion {
@@ -36,7 +37,9 @@ img {
 .menu-wrap {
   z-index: 3;
   position: relative;
+  padding-bottom: 2rem;
 }
+
 
 .menu-wrap .toggler {
   position: absolute;
@@ -47,7 +50,7 @@ img {
   width: 50px;
   height: 50px;
   opacity:0;
-  padding-top: 50px;
+  margin-top:14px;
 }
 
 .hamburger {
@@ -76,8 +79,8 @@ img {
   transition: all 0.4s ease;
 }
 /* Top and bottom lines */
-.menuwrap, .hamburger > div:before,
-.menuwrap, .hamburger > div:after {
+.hamburger > div:before,
+.hamburger > div:after {
   content: '';
   position: absolute;
   z-index: 2;
@@ -224,6 +227,7 @@ input[type=text], input[type=email], textarea{
  height: 100%;
  padding: 12px 24px;
  width:25%;
+ margin-bottom: 5rem;
 }
 
 button {
@@ -735,12 +739,17 @@ footer > a {
 
   .picofme {
     height: 100%;
+    margin: 0;
     width: 100%;
     padding-bottom: 5rem;
   }
 
   .biotop {
   Flex-flow: column;
+  }
+
+  .biogreeting {
+    font-size: 6rem;
   }
 
   h1 span {

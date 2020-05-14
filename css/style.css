@@ -466,7 +466,7 @@ h4 {
 h5 {
   /* display: inline-block; */
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 200%;
   text-align: left;
   width: 60%;
@@ -525,12 +525,14 @@ ol {
   font-size: 2rem;
   line-height: 200%;
   text-align: left;
+  padding-bottom: 5rem;
 }
 
 .listoftasks {
   font-size: 2rem;
   text-align: left;
   width: 100%;
+  line-height: 150%;
 }
 
 /* images */
@@ -553,10 +555,14 @@ ol {
 }
 
 .persona1, .persona2 {
-  width: 300px;
-  height:225px;
+  width: 100%;
+  height:100%;
 }
-
+.userpersona {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
 .pinterestlogo, .dropboxlogo {
   display: block;
   height: 15rem;
@@ -796,10 +802,15 @@ footer > a {
    width: 100%;
 }
 
- .persona1, .persona2 {
-   height: 18.75rem;
-   width: 26.25rem;
- }
+.person1 {
+  display:block;
+  width: 100%;
+  }
+
+.person2 {
+display:block;
+width: 100%;
+}
 
  .pinterestlogo, .dropboxlogo {
    height: 11.25rem;
@@ -892,7 +903,10 @@ footer > a {
    font-size: 1.5rem;
  }
 
- p {
+.caption2 {
+  width: auto;
+}
+ p, .listsoftasks, .caption1, .caption2 {
    font-size: 1.8rem;
  }
 

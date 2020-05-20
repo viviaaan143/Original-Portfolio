@@ -170,7 +170,7 @@ img {
   transition: all 0.4s ease;
 }
 
-a:hover {
+.menu >div >div > ul >li >a:hover {
   font-size: 4rem;
   transition: all 0.4s ease;
 }

@@ -230,6 +230,9 @@ input[type=text], input[type=email], textarea{
  padding: 12px 24px;
  width:25%;
  margin-bottom: 5rem;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
 }
 
 button {

@@ -996,6 +996,7 @@ footer > a {
   .submitbutton {
      width: 100%;
      -webkit-appearance: none;
+     border: none;
    }
 
 footer {

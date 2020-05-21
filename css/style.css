@@ -186,6 +186,7 @@ img {
   font-size: 1.8rem;
   margin: 0 auto;
   padding: 12px 24px;
+  border:none;
 }
 
 .more:hover {
@@ -230,9 +231,7 @@ input[type=text], input[type=email], textarea{
  padding: 12px 24px;
  width:25%;
  margin-bottom: 5rem;
- -webkit-appearance: none;
- -moz-appearance: none;
- appearance: none;
+ border: none;
 }
 
 button {
@@ -242,6 +241,7 @@ button {
   font-size: 1.8rem;
   opacity: 0.8;
   padding: 12px 24px;
+  border: none;
 }
 
 button:hover, .submitbutton:hover {
@@ -995,6 +995,7 @@ footer > a {
 
   .submitbutton {
      width: 100%;
+     -webkit-appearance: none;
    }
 
 footer {

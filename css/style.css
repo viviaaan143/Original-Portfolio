@@ -1,4 +1,5 @@
-* {
+
+  * {
   Box-sizing: border-box;
 }
 
@@ -244,8 +245,8 @@ button {
   border: none;
 }
 
-button:hover, .submitbutton:hover {
-  background-color: #DABEB8;
+button:hover, .submitbutton:hover, .designzen > button:hover, .busybus > button:hover {
+  background-color: #FF9676;
   cursor:pointer;
 }
 
@@ -334,7 +335,6 @@ h1 span {
 .mytitle {
   font-family: "lora";
   font-size: 2rem;
-  left: 4rem;
   margin: 0 auto;
   position:relative;
   text-align:center;
@@ -387,10 +387,6 @@ h1 span {
   bottom: 8%;
   left: 57%;
   position: absolute;
-}
-
-.designzen > button:hover, .busybus > button:hover {
-  background-color: #DABEB8;
 }
 
 /* Title of section */
@@ -461,7 +457,7 @@ display:flex;
 
 /* block quote */
 .block {
-  font-size: 4.8rem;
+  font-size: 4.5rem;
   line-height: 167%;
 }
 
@@ -479,6 +475,10 @@ h1{
   padding: 0;
   text-align: center;
   width: 75%;
+}
+
+.iam {
+  display: inline;
 }
 
 h2 {
@@ -706,9 +706,16 @@ ol {
 /* footer */
 footer {
   background-color: rgba(222, 210, 194);
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
+
+.copyright {
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
 
 footer > a {
   font-size: 50px;
@@ -721,16 +728,17 @@ footer > a {
   font-size: 2rem;
   font-weight: lighter;
   margin: 0 auto;
+  padding: 2rem 0 1rem 0;
 }
 
 .email {
-  height: 40px;
-  width: 65px;
+  height: 30px;
+  width: 45px;
 }
 
 .linkedin, .github{
-  height: 45px;
-  width: 50px;
+  height: 35px;
+  width: 40px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -794,7 +802,7 @@ footer > a {
 
   .busybus > p, .designzen > p {
     display: inline-block;
-    text-align: center;
+    text-align: left;
     width: 75%;
   }
 
@@ -922,6 +930,10 @@ footer > a {
    font-size: 1.5rem;
  }
 
+ .block {
+   font-size: 3rem;
+ }
+
 /* Captions */
 .caption2 {
   width: auto;
@@ -1011,4 +1023,7 @@ footer {
     width: 300px;
     float:none;
   }
+  .iam {
+  display: inline-block;
+}
   }

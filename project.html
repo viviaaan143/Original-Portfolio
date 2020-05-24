@@ -24,7 +24,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="menu-wrap">
+      <section class="menu-wrap">
         <a href= "index.html"><img class="vnlogo" src= "images/logo.png" alt="VN logo"></a>
         <input type="checkbox" class="toggler">
         <div class= "hamburger"><div></div></div>
@@ -40,7 +40,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section class="summary">
         <h1 class="toptitle">Design Zen</h1>
         <img src= "images/dzlike.gif" alt= "Design Zen gif">
@@ -53,30 +53,30 @@
       <section class="logistics">
         <div id="myrole">
           <h6 class="heading">My role</h6>
-          <h6>- UX research</h6>
-          <h6>- Brand & identity</h6>
-          <h6>- Visual design</h6>
+          <h6>UX research</h6>
+          <h6>Brand & identity</h6>
+          <h6>Visual design</h6>
         </div>
         <div id="deliverables">
           <h6 class="heading">Deliverables</h6>
-          <h6>- User surveys</h6>
-          <h6>- Competitive analysis</h6>
-          <h6>- User personas</h6>
-          <h6>- User stories</h6>
-          <h6>- User flows</h6>
-          <h6>- Content strategy</h6>
-          <h6>- Wireframes(low-fi and high-fi)</h6>
-          <h6>- Prototypes</h6>
-          <h6>- Usability testing</h6>
-          <h6>- Logo design</h6>
-          <h6>- Style guide</h6>
-          <h6>- Preference testing</h6>
+          <h6>User surveys</h6>
+          <h6>Competitive analysis</h6>
+          <h6>User personas</h6>
+          <h6>User stories</h6>
+          <h6>User flows</h6>
+          <h6>Content strategy</h6>
+          <h6>Wireframes(low-fi and high-fi)</h6>
+          <h6>Prototypes</h6>
+          <h6>Usability testing</h6>
+          <h6>Logo design</h6>
+          <h6>Style guide</h6>
+          <h6>Preference testing</h6>
         </div>
         <div id="tools">
           <h6 class="heading">Tools</h6>
-          <h6>- Figma</h6>
-          <h6>- InVision</h6>
-          <h6>- UsabilityHub</h6>
+          <h6>Figma</h6>
+          <h6>InVision</h6>
+          <h6>UsabilityHub</h6>
         </div>
       </section>
 
@@ -92,25 +92,36 @@
       <section class="discovery">
         <br><br>
         <p id="firsttitle">User Survey</p>
-        <p>Knowing that I must first identify what users wanted in a cloud storage application I conducted a survey to see if the features such as adding content, creating documents/notes/spreadsheets, uploading content, sharing items, and allowing real time collaboration were important to users or interesting. This helped identify MVP and focus on these features. First I was able to identify that most of my participants used cloud storage already for school, photo storage, and sharing content with people. While the feature of saving content found on the internet got only 61.5% interest, other features like organizing content, creating notes/documents /spreadsheets, sharing options, uploading, and collaborating peaked the interest of the large majority. I also assessed if people would like this site to be for business related purposes or for creative purposes such as ones related to hobby or social media, and the latter got higher votes. This gave me an idea of where to lead the project.</p>
+        <p>Knowing that I must first identify what users wanted in a cloud storage application I conducted a survey to see if the features such as adding content, creating documents, uploading content, sharing items, and allowing real time collaboration were important to users or interesting. This helped identify the MVP and focus on these features. First I was able to identify that most of my participants used cloud storage already for school, photo storage, and sharing content with people. <p class="block2">While the feature of saving content found on the internet only received 61.5% interest, other features like organizing content, creating documents sharing options, uploading, and collaborating peaked the interest of the large majority.</p>
+        <img class="usersurveys" src="images/usersurveys.png" alt="Pie chart for numerous features for application">
+        <p class= "caption">Interest for organizing content using tags and folders, creating documents, uploading content, sharing items, and real-time collaboration (from left to right). Blue indicates interested, yellow indicates might be interested, and red indicates not interested.</p>
+        <br><br>
+        <p>I also assessed if people would like this site to be for business related purposes or for creative purposes such as ones related to hobby or social media, and the latter got higher votes. This gave me a clearer understanding of where to lead the project.</p>
+        <ul class= "colorcode">
+        <li class= "circleBase circle1"></li><p class="circlecaption">Hard to organize</p>
+        <li class= "circleBase circle2"></li><p class="circlecaption">People I want to share things with do not have an account</p>
+        <li class= "circleBase circle3"></li><p class="circlecaption">Too many steps to save content</p>
+        <li class= "circleBase circle4"></li><p class="circlecaption">Not enough storage space</p>
+        <li class= "circleBase circle5"></li><p class="circlecaption">Not enough options for privacy</p>
+        </ul>
         <img class="usersurvey" src= "images/usersurvey.png" alt= "Pie chart of user frustrations">
         <p class= "title">User Personas</p>
         <section class= "userpersona">
           <div class="person1">
             <img class= "persona1" src= "images/user1.jpg" alt= "Girl at school">
             <p class="persona"><span>Jacqueline</span><br>College student<br>Age: 19<br>Location: Fresno, CA</p>
-            <h5><b>Goals:</h5>
+            <h5>Goals:</h5>
             <ul>
-              <li>- Allow her to upload, share, and save content</li>
-              <li>- Choice to publish or privatize work</li>
-              <li>- Collaboration options</li>
+              <li>Allow her to upload, share, and save content</li>
+              <li>Choice to publish or privatize work</li>
+              <li>Collaboration options</li>
             </ul>
             <br>
             <h5>Pains:</h5>
             <ul>
-              <li>- Required sign in</li>
-              <li>- Apps cost money after a certain amount of storage is used</li>
-              <li>- Wifi connection required</li>
+              <li>Required sign in</li>
+              <li>Apps cost money after a certain amount of storage is used</li>
+              <li>Wifi connection required</li>
             </ul>
             <br><br><br>
           </div>
@@ -119,17 +130,18 @@
             <p class="persona"><span>Paul</span><br>Teacher<br>Age: 43<br>Location: Hampton, VA</p>
             <h5>Goals:</h5>
             <ul>
-              <li>- Organize content his way</li>
-              <li>- Allow privacy control</li>
-              <li>- Sharing with people who don't have an account</li>
+              <li>Organize content his way</li>
+              <li>Allow privacy control</li>
+              <li>Share with people who don't have an account</li>
             </ul>
             <br>
             <h5>Pains:</h5>
             <ul>
-              <li>- Some sites are hard to learn</li>
-              <li>- Untrustworthy sites</li>
-              <li>- Spam</li>
+              <li>Some sites are hard to learn</li>
+              <li>Untrustworthy sites</li>
+              <li>Spam</li>
             </ul>
+            <br><br>
           </div>
         </section>
         <p>These two personas were derived from trends and patterns in the user surveys. The target market are those who use cloud storage for recreational use. Jacqueline is a student who wants to be able to collaborate and grow her connections while Paul, who is older and working, wants to share pictures with family he wants to keep in touch with.</p>
@@ -164,13 +176,13 @@
         </section>
         <section>
           <p class="title">Usability Test: Round One</p>
-          <p><b>Tasks</b>:</p>
+          <p>Tasks:</p>
           <ol>
-            <li class="listoftasks">1. You come upon this new site. How would you sign up for an account?</li>
-            <li class="listoftasks">2. How would you add a piece of content?</li>
-            <li class="listoftasks">3. You want to create a folder to organize your data. How would you do this?</li>
+            <li class="listoftasks">You come upon this new site. How would you sign up for an account?</li>
+            <li class="listoftasks">How would you add a piece of content?</li>
+            <li class="listoftasks">You want to create a folder to organize your data. How would you do this?</li>
           </ol>
-          <p><b>Results</b>:
+          <p>Results:
             <br>All participants were able to successfully identify pages and complete their tasks. However, some users couldn't tell when they succeeded because feedback was too subtle and there was no obvious button to perform the function of adding content. </p>
         </section>
         <section class="visual">
@@ -179,8 +191,10 @@
           <img class="colors" src="images/colors.png" alt="Color, icon, and typography guide">
           <p>The name was inspired by the therapeutic feeling that organization gives as well as the peace that artists feel when they are immersed in their passion.</p>
           <img class="logosketch" src="images/logosketch.png" alt="Sketches of logos">
+          <br><br>
           <p>I wanted the logo to be stacked rocks but there were a number of problems such as it was heavily associated with yoga products, it was indistinguishable to people, and it was hard to scale it. I also planned for the colors to be different shades of green but the pink adds a nice pop of liveliness. The logo is the shape of a paint holder to reinforce the site mainly serves artists. </p>
           <img class="dzlogo"src="images/dzlogo.png" alt="Design Zen logo">
+          <p class="caption3">The final logo design.</p>
         </section>
         <p class="title">Preference Test</p>
         <section class="preference">
@@ -195,7 +209,7 @@
           <img class="s3v2" src="images/signup2.jpg" alt="Sign up page version 2">
         </section>
         <section class= "usabilitytest2">
-          <p class="title">Usability Test: Round Twosx</p>
+          <p class="title">Usability Test: Round Two</p>
           <p>I had users perform the same tasks as the previous usability tests and found the results much more successful. They were able to recognize pages and navigate the site much quicker.</p>
           <div id ="before">
             <img class="v1" src="images/v1.png" alt= "Previous version of upload options">
@@ -211,9 +225,7 @@
       <h3>Conclusion</h3>
       <section class="conclusion">
         <br><br>
-        <p>The layout is simple and achieved the goal of having a consistent branding feel. I learned how to develop this through playing with colors and playing around with different logo iterations. I also learned that through tests, whether usability tests or preference tests, you can learn SO much.
-        <br><br>
-        All in all, I've learned so much! First, branding is so important to communicating to audiences so if something isn't working listen to your users. It's important to not get attached to one idea. I had really loved a different logo I made previously. However, users couldn't identify what the logo was and if it were to be scaled down to a favicon the logo would be indistinguishable. I had to let go of this idea that worked so well in my mind and see what would be something users could easily identify and associate with the brand.
+        <p>All in all, I've learned so much! The layout is simple and achieved the goal of having a consistent branding feel. I learned how to develop this through playing with colors and playing around with different logo iterations. Branding is vital when communicating to audiences so if something isn't working listen to your users. It's important to not get attached to one idea. I had really loved a different logo I made previously. However, users couldn't identify what the logo was and if it were to be scaled down to a favicon the logo would be indistinguishable. I had to let go of this idea that worked so well in my mind and see what would be something users could easily identify and associate with the brand.
         <br><br>
         I've also learned that user testing is such an awesome tool because it tells you so much as to what is effective, what isn't working, what do users typically prefer, etc. The more user testing, the better!
         Looking in retrospect I would have also added more tasks to my usability test such as "While on the homepage how could you tell if you are following someone or not?" This would help me gauge other features that are not working or that is well done. With more time, I would test on more specific features and distribute the task.</p>

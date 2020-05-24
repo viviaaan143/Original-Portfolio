@@ -286,6 +286,7 @@ button:hover, .submitbutton:hover, .designzen > button:hover, .busybus > button:
   line-height: 120%;
   margin: 0 auto;
   width: 100%;
+  text-align: center;
 }
 
 .caption2 {
@@ -295,9 +296,14 @@ button:hover, .submitbutton:hover, .designzen > button:hover, .busybus > button:
   width: 40rem;
 }
 
+.caption3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
 .caption {
   font-size: 2rem;
-  line-height: 120%;
+  line-height: 150%;
 }
 
 /* Introduction: name, title, slogan, button */
@@ -395,6 +401,7 @@ h1 span {
   font-size: 3.6rem;
   font-weight: bold;
   padding-top: 8rem;
+  line-height: 100%;
 }
 
 /* First title (different to change spacing) */
@@ -461,6 +468,12 @@ display:flex;
   line-height: 167%;
 }
 
+.block2 {
+  padding: 4rem 0 4rem 0;
+  font-size: 4rem;
+  line-height: 167%;
+}
+
 .imagestakenbyme {
   padding: 0;
   text-align: center;
@@ -504,8 +517,7 @@ h4 {
 }
 
 h5 {
-  /* display: inline-block; */
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: 200%;
   text-align: left;
@@ -524,8 +536,13 @@ p {
   text-align: left;
 }
 
+.circlecaption {
+  font-size: 1.5rem;
+  text-align:center;
+}
+
 span {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight:bold;
 }
 
@@ -558,6 +575,10 @@ li {
   font-size: 2rem;
   line-height: normal;
   text-align: left;
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 10px;
+  text-indent: -1em;
 }
 
 ol {
@@ -586,11 +607,41 @@ ol {
 }
 
 .usersurvey{
-  display: block;
-  height: 22rem;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 60rem;
+  width: 50%;
+  float:right;
+  margin-bottom: 20rem;
+}
+
+.circleBase {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  margin: 0;
+  display:inline-block;
+}
+
+.colorcode {
+  width: 50%;
+  float:left;
+}
+
+.circle1 {
+  background-color: #4971CA;
+}
+.circle2 {
+  background-color: #4F9A40;
+}
+.circle3 {
+  background-color: #CD5337;
+}
+.circle4 {
+  background-color: #CE5C81;
+}
+.circle5{
+  background-color: #4C9FC6;
 }
 
 .persona1, .persona2 {
@@ -766,7 +817,7 @@ footer > a {
   }
 
   .biogreeting {
-    font-size: 6rem;
+    font-size: 7rem;
   }
 
   .bioname {
@@ -889,11 +940,6 @@ footer > a {
    width: 100%;
  }
 
- .v1, .v2 {
-   height: 18rem;
-   width: 22.5rem;
- }
-
   .mypic1, .mypic2{
     height: 50%;
     float:left;
@@ -926,7 +972,12 @@ footer > a {
    font-size: 5.25rem;
   }
 
- h5, h6, li, ol, .persona{
+
+ h5 {
+   font-size: 2rem;
+ }
+
+  h6, li, ol, .persona{
    font-size: 1.5rem;
  }
 
@@ -938,13 +989,15 @@ footer > a {
 .caption2 {
   width: auto;
 }
- p, .listsoftasks, .caption1, .caption2 {
+
+ p, .listsoftasks, li{
    font-size: 1.8rem;
  }
 
-.caption{
+.caption, .caption1, .caption2, .caption3{
  font-size: 1.5rem;
 }
+
 
 /* Project.html */
 .logistics{
@@ -1013,8 +1066,11 @@ footer > a {
 
 footer {
     line-height: 2px;
-    padding: 0 0 5rem 0;
+    padding: 3rem;
   }
+.links {
+  padding-bottom: 2rem;
+}
 }
 
 @media only screen and (max-width: 565px) {

@@ -615,6 +615,11 @@ ol {
   margin-bottom: 20rem;
 }
 
+.designzenprototype {
+   width: 400px;
+   height: 250px;
+}
+
 .circleBase {
   border-radius: 50%;
   height: 25px;

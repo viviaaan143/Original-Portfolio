@@ -15,11 +15,14 @@ Html, body{
   text-align:right;
   display: inline;
   font-size: 1.8rem;
-  left:0;
+  right:0;
   top: 0;
-  width:100%;
+  padding-top:5rem;
   position:absolute;
-  padding-top: 5rem;
+}
+
+.menu-wrap {
+    padding-bottom: 2rem;
 }
 
 li {
@@ -28,8 +31,9 @@ li {
 
 .menu a{
   clear:right;
-  margin-right: 3rem;
+  padding-right: 3rem;
   text-decoration: none;
+  display: inline-block;
 }
 
 a {
@@ -56,8 +60,9 @@ img {
 
 .vnlogo {
   display: inline-block;
-  height: 125px;
-  width: 125px;
+  height: 100px;
+  width: 100px;
+  margin:1rem 0 0 5rem;
 }
 
 /* About me button */
@@ -690,6 +695,10 @@ ol {
   width: 50%;
 }
 
+.calltoaction {
+  font-size: 4rem;
+}
+
 /* footer */
 footer {
   background-color: rgba(222, 210, 194);
@@ -746,8 +755,12 @@ footer > a {
     width: 100%;
   }
 
+  .vnlogo {
+    margin: 0 auto;
+  }
+
   .menu-wrap {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     position: relative;
     z-index: 3;
   }
@@ -846,10 +859,20 @@ footer > a {
     justify-content:center;
     overflow:hidden;
     position:fixed;
-    right: 0;
     visibility: hidden;
     width: 100%;
   }
+
+  .menu a {
+    display:block;
+    text-align:center;
+    padding:0;
+  }
+
+.menu a:hover {
+  font-size:4rem;
+  transition: all 0.4s ease;
+}
 
   /* Overlay */
   .menu >div {
@@ -887,11 +910,7 @@ footer > a {
     color: #CDC6BB;
     text-decoration: none;
     transition: all 0.4s ease;
-  }
-
-  .menu >div >div > ul >li >a:hover {
-    font-size: 4rem;
-    transition: all 0.4s ease;
+    display: block;
   }
 
   .summary, .discovery, .conclusion, .biographypage {

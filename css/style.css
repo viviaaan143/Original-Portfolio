@@ -518,11 +518,16 @@ ol {
   text-align: left;
 }
 
+.tasks {
+  padding-bottom: 0;
+}
+
 .listoftasks {
   font-size: 2rem;
   line-height: 150%;
   text-align: left;
   width: 100%;
+  display: list-item;
 }
 
 /* images */

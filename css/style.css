@@ -435,6 +435,11 @@ table {
   font-size: 1.5rem;
 }
 
+th {
+  top:0;
+  position:sticky;
+}
+
 tbody{
   display:block;
   overflow-y:scroll;
@@ -518,7 +523,7 @@ ol {
   padding-bottom: 0;
 }
 
-.listoftasks {
+.list {
   font-size: 2rem;
   line-height: 150%;
   text-align: left;

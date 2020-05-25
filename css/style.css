@@ -1,5 +1,4 @@
-
-  * {
+* {
   Box-sizing: border-box;
 }
 
@@ -503,7 +502,7 @@ h2 {
 h3 {
   background-color: #CDC6BB;
   font-family: "Playfair display";
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: lighter;
   padding: 3rem;
   text-align: center;
@@ -684,6 +683,12 @@ ol {
   width: 40rem;
 }
 
+.sketch:hover, .lowfimockup:hover{
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+
 .lowfimockup {
   border: 1px solid #B0B0B0;
   display: block;
@@ -735,7 +740,7 @@ ol {
   width:100%;
 }
 
-.prototype {
+.prototype, .viewbutton{
   display: inherit;
   margin-left: auto;
   margin-right: auto;

@@ -538,10 +538,8 @@ ol {
 }
 
 .usersurvey{
-  display: inline-block;
+  display: flex;
   width: 50%;
-  clear:left;
-  float:left;
   margin-bottom: 5rem;
 }
 
@@ -668,7 +666,13 @@ ol {
   height: 40rem;
   margin-left: auto;
   margin-right: auto;
-  width: 50rem;
+  margin-bottom: 5rem;
+}
+
+.s1v1:hover, .s1v2:hover, .s2v1:hover, .s2v2:hover, .s3v1:hover, .s3v2:hover{
+width: 100%;
+height: 100%;
+transition: all 0.4s ease-in;
 }
 
 .v1, .v2 {
@@ -693,13 +697,25 @@ ol {
   width: 300px;
 }
 
-#before{
+.s1v1, .s2v1, .s3v1{
+  clear:left;
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+.s1v2, .s2v2, .s3v2{
+  float: right;
+  width: 50%;
+  height: 50%;
+}
+
+#before {
   clear:left;
   float: left;
   width: 50%;
 }
 
-#after{
+#after {
   float: right;
   width: 50%;
 }
@@ -1060,6 +1076,10 @@ footer > a {
  .s1v1, .s1v2, .s2v1, .s2v2, .s3v1, .s3v2{
    height: 100%;
    width: 100%;
+ }
+
+ .s1v1, .s2v1, .s3v2 {
+   margin-bottom:0;
  }
 
   .mypic1, .mypic2{

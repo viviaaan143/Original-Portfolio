@@ -190,8 +190,21 @@ button:hover, .submitbutton:hover, .designzen > button:hover, .busybus > button:
 }
 
 .caption {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 150%;
+  width: 100%;
+}
+
+.clickzoom1 {
+  font-size: 1.5rem;
+  margin: 20px auto;
+  width: 40rem;
+  padding:0;
+  margin-top:1rem;
+}
+
+.clickzoom2 {
+  font-size: 1.5rem;
 }
 
 /* Introduction: name, title, slogan, button */
@@ -621,12 +634,6 @@ ol {
   width: 40rem;
 }
 
-.sketch:hover, .lowfimockup:hover{
-  width: 100%;
-  height: 100%;
-  transition: all 0.4s ease;
-}
-
 .lowfimockup {
   border: 1px solid #B0B0B0;
   display: block;
@@ -654,25 +661,20 @@ ol {
 
 .test1, .test2, .test3 {
   display: block;
-  height: 40rem;
   margin-left: auto;
   margin-right: auto;
-  width: 50rem;
 }
 
-.s1v1, .s1v2, .s2v1, .s2v2, .s3v1, .s3v2{
+.s1v1, .s1v2, .s2v1, .s2v2, .s3v1{
   border: 1px solid #B0B0B0;
   display: block;
-  height: 40rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5rem;
 }
-/* 
-.s1v1:hover, .s1v2:hover, .s2v1:hover, .s2v2:hover, .s3v1:hover, .s3v2:hover{
-transform: scale(2);
-transition: all 0.4s ease-in;
-} */
+
+.s3v2 {
+  border: 1px solid #B0B0B0;
+  display: block;
+  margin-bottom: 1rem;
+}
 
 .v1, .v2 {
   height: 100%;
@@ -702,8 +704,8 @@ transition: all 0.4s ease-in;
   width: 50%;
   height: 50%;
 }
+
 .s1v2, .s2v2, .s3v2{
-  float: right;
   width: 50%;
   height: 50%;
 }
@@ -1077,7 +1079,7 @@ footer > a {
    width: 100%;
  }
 
- .s1v1, .s2v1, .s3v2 {
+ .s1v1, .s2v1, .s3v1 {
    margin-bottom:0;
  }
 

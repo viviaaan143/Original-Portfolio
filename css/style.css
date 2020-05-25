@@ -440,10 +440,6 @@ tbody{
   overflow-y:scroll;
 }
 
-thead {
-  display:block;
-}
-
 tbody{
   overflow:auto;
   height:400px;

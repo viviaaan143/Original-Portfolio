@@ -1145,6 +1145,15 @@ footer > a {
  font-size: 1.5rem;
 }
 
+.clickzoom1{
+  font-size: 1rem;
+  width: 80%;
+}
+
+.clickzoom2  {
+  font-size: 1rem;
+}
+
 .colorcode {
   margin:0 auto;
   display: inline-block;

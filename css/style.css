@@ -540,6 +540,8 @@ ol {
 .usersurvey{
   display: inline-block;
   width: 50%;
+  clear:left;
+  float:left;
   margin-bottom: 5rem;
 }
 
@@ -563,8 +565,6 @@ ol {
 }
 
 .colorcode {
-  width: 50%;
-  float:right;
   margin-top: 3rem;
 }
 
@@ -1013,6 +1013,7 @@ footer > a {
  .usersurvey{
    height: 100%;
    width: 100%;
+   display: inline-block;
    margin-bottom: 0;
 }
 
@@ -1124,9 +1125,8 @@ footer > a {
 }
 
 .colorcode {
-  float:none;
   margin:0 auto;
-  display:inline;
+  display: inline-block;
 }
 
 /* Project.html */

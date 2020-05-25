@@ -469,8 +469,8 @@ display:flex;
 
 .block2 {
   padding: 4rem 0 4rem 0;
-  font-size: 4rem;
-  line-height: 167%;
+  font-size: 3.6rem;
+  line-height: 150%;
 }
 
 .imagestakenbyme {
@@ -538,6 +538,48 @@ p {
 .circlecaption {
   font-size: 1.5rem;
   text-align:center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.5rem;
+}
+
+tbody{
+  display:block;
+  overflow-y:scroll;
+}
+
+thead {
+  display:block;
+}
+
+tbody{
+  overflow:auto;
+  height:400px;
+  width:100%;
+}
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+td{
+  padding: 1rem;
+  text-align:left;
 }
 
 span {
@@ -667,7 +709,7 @@ ol {
   width: 15rem;
 }
 
-.userstoriesscreenshot, .userflow, .colors {
+.userflow, .colors {
   display: block;
   height: 100%;
   margin-left: auto;
@@ -849,7 +891,10 @@ footer > a {
     font-size: 3.6rem;
     line-height: 150%;
   }
-
+  .block2 {
+    font-size: 3rem;
+    line-height: 120%;
+  }
 /* Home page */
   h1 span {
     bottom: 4rem;
@@ -923,11 +968,6 @@ footer > a {
  .pinterestlogo, .dropboxlogo {
    height: 11.25rem;
    width: 11.25rem;
- }
-
- .userstoriesscreenshot {
-   height: 100%;
-   width: 100%;
  }
 
  .userflow {
@@ -1008,6 +1048,10 @@ footer > a {
 /* Captions */
 .caption2 {
   width: auto;
+}
+
+.tasks {
+  padding-bottom:0;
 }
 
  p, .listsoftasks, li{

@@ -577,10 +577,19 @@ ol {
 
 .colorcode {
   margin-top: 3rem;
+  display:inline;
+}
+
+.testimage {
+  display:inline;
 }
 
 .options {
   display: flex;
+}
+
+.optionscontainer {
+  display: inline-block;
 }
 
 .circle1 {

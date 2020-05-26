@@ -551,7 +551,6 @@ ol {
 }
 
 .usersurvey{
-  display: flex;
   width: 50%;
   margin-bottom: 5rem;
 }
@@ -577,7 +576,7 @@ ol {
 
 .colorcode {
   margin-top: 3rem;
-  display:inline;
+  display:inline-block;
 }
 
 .testimage {

@@ -90,7 +90,7 @@ button {
   border: none;
 }
 
-button:hover, .submitbutton:hover, .project > button:hover {
+button:hover, .submitbutton:hover, .project > button:hover, .busybus > button:hover {
   background-color: #FF9676;
   cursor:pointer;
 }
@@ -279,14 +279,14 @@ h1 span {
   width: 100%;
 } */
 
-.project > p {
+.project > p, .busybus > p{
   font-size: 1.8rem;
   line-height: 180%;
   padding-bottom: 2rem;
   width: 40%;
 }
 
-.project > img {
+.project > img{
   bottom: 15%;
   left: 50%;
   position: absolute;
@@ -994,11 +994,11 @@ footer > a {
     max-width: 80%;
   }
 
-  .project {
+  .busybus, .project {
     padding: 4rem 0 4rem 0;
   }
 
-  .project > p {
+  .busybus > p, .designzen > p {
     display: inline-block;
     text-align: left;
     width: 75%;
@@ -1020,7 +1020,7 @@ footer > a {
     right: 0;
   } */
 
-  .project > button{
+  .busybus > button, .project > button{
     padding: 9px 18px;
     width: 50%;
   }

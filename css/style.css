@@ -197,6 +197,14 @@ input[type=text], input[type=email], textarea{
   width: 100%;
 }
 
+.optiona {
+  display:inline-block;
+}
+
+.optionb {
+  display:inline-block;
+}
+
 .preftesta {
   font-size: 1.5rem;
   margin: 0 auto;
@@ -651,12 +659,12 @@ ol {
 
 .s1v1, .s1v2, .s2v1, .s2v2, .s3v1{
   border: 1px solid #B0B0B0;
-  display: block;
+  display: inline-block;
 }
 
 .s3v2 {
   border: 1px solid #B0B0B0;
-  display: block;
+  display: inline-block;
   margin-bottom: 1rem;
 }
 
@@ -689,8 +697,6 @@ ol {
 }
 
 .s1v1, .s2v1, .s3v1{
-  clear:left;
-  float: left;
   height: 50%;
   width: 50%;
 }
@@ -1284,14 +1290,6 @@ footer {
 
 .links {
   padding-bottom: 2rem;
-}
-
-.optiona {
-  display:inline-block;
-}
-
-.optionb {
-  display:inline-block;
 }
 
 @media only screen and (max-width: 565px) {

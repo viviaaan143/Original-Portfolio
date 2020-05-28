@@ -199,22 +199,30 @@ input[type=text], input[type=email], textarea{
 
 .optiona {
   display:inline-block;
-  width: 50%;
+  width: 45%;
 }
 
 .optionb {
   display:inline-block;
-  width: 50%;
+  margin-bottom: 5rem;
+  width: 45%;
+}
+
+.lastoptionb {
+  display:inline-block;
+  width: 45%;
 }
 
 .preftesta {
   font-size: 1.5rem;
+  font-weight: bold;
   margin: 0 auto;
   padding: 0;
 }
 
 .preftestb {
   font-size: 1.5rem;
+  font-weight: bold;
   margin: 0 auto;
   padding: 0;
 }
@@ -659,15 +667,9 @@ ol {
   margin-right: auto;
 }
 
-.s1v1, .s1v2, .s2v1, .s2v2, .s3v1{
+.s1v1, .s1v2, .s2v1, .s2v2, .s3v1, .s3v2{
   border: 1px solid #B0B0B0;
   display: inline-block;
-}
-
-.s3v2 {
-  border: 1px solid #B0B0B0;
-  display: inline-block;
-  margin-bottom: 1rem;
 }
 
 .v1, .v2 {
@@ -772,14 +774,17 @@ footer > a {
 }
 
 #myBtn {
-
-  bottom: 10px;
-  border-radius: 4px;
-  max-width: 30px;
+  background-color: inherit;
+  bottom: 30px;
+  max-width: 50px;
   padding: .5px;
   position: fixed;
   right: 10%;
   width: 100%;
+}
+
+#myBtn:hover {
+  background-color: #ECA278;
 }
 
 .links {
@@ -1282,6 +1287,13 @@ footer {
 
 .links {
   padding-bottom: 2rem;
+}
+
+#myBtn {
+  background-color: #ECA278;
+  bottom: 10px;
+  max-width: 40px;
+  right: 2%;
 }
 
 @media only screen and (max-width: 565px) {

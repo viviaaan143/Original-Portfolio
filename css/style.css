@@ -199,21 +199,14 @@ input[type=text], input[type=email], textarea{
 
 .preftesta {
   font-size: 1.5rem;
-  margin-bottom:0;
-    padding:0;
-    height:50%;
-    width: 50%;
-    float:left;
-    clear:left;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .preftestb {
   font-size: 1.5rem;
-  display:inline;
-  height:50%;
-  width: 50%;
-  float:right;
-  padding-bottom:0;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .clickzoom1 {
@@ -395,6 +388,13 @@ display:flex;
 .block2 {
   padding: 4rem 0 4rem 0;
   font-size: 3.6rem;
+  line-height: 150%;
+}
+
+.boldedblock {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 5rem;
   line-height: 150%;
 }
 
@@ -1019,9 +1019,14 @@ footer > a {
     font-size: 3.6rem;
     line-height: 150%;
   }
+
   .block2 {
     font-size: 3rem;
     line-height: 120%;
+  }
+
+  .boldedblock {
+    font-size: 4rem;
   }
 
 /* Home page */
@@ -1181,10 +1186,6 @@ footer > a {
    font-size: 1.5rem;
  }
 
- .block {
-   font-size: 3rem;
- }
-
 /* Captions */
 .caption2 {
   width: auto;
@@ -1280,9 +1281,17 @@ footer {
     line-height: 2px;
     padding: 3rem;
   }
+
 .links {
   padding-bottom: 2rem;
 }
+
+.optiona {
+  display:inline-block;
+}
+
+.optionb {
+  display:inline-block;
 }
 
 @media only screen and (max-width: 565px) {

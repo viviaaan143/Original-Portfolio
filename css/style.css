@@ -199,10 +199,12 @@ input[type=text], input[type=email], textarea{
 
 .optiona {
   display:inline-block;
+  width: 50%;
 }
 
 .optionb {
   display:inline-block;
+  width: 50%;
 }
 
 .preftesta {
@@ -694,16 +696,6 @@ ol {
   margin: 0 auto;
   padding:0;
   width: 300px;
-}
-
-.s1v1, .s2v1, .s3v1{
-  height: 50%;
-  width: 50%;
-}
-
-.s1v2, .s2v2, .s3v2{
-  height: 50%;
-  width: 50%;
 }
 
 #before {

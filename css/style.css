@@ -1206,6 +1206,14 @@ footer > a {
  font-size: 1.5rem;
 }
 
+.clickzoom1 {
+  padding-left: 5rem;
+}
+
+.caption, .clickzoom2 {
+  padding-left:2rem;
+}
+
 .clickzoom1, .clickzoom2  {
   font-size: 1rem;
 }
@@ -1290,7 +1298,6 @@ footer {
 }
 
 #myBtn {
-  background-color: #ECA278;
   bottom: 10px;
   max-width: 40px;
   right: 2%;

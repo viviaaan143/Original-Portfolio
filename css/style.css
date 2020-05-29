@@ -1194,11 +1194,20 @@ footer > a {
   width: auto;
 }
 
+.optiona, .optionb, .lastoptionb{
+  width: 100%;
+}
+
+.preftesta, .preftestb {
+  text-align: center;
+}
+
+
 .tasks {
   padding-bottom:0;
 }
 
- p, .listsoftasks, li{
+ p, li, .list{
    font-size: 1.8rem;
  }
 
@@ -1210,12 +1219,12 @@ footer > a {
   padding-left: 5rem;
 }
 
-.caption, .clickzoom2 {
+.caption {
   padding-left:2rem;
 }
 
 .clickzoom1, .clickzoom2  {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .colorcode {

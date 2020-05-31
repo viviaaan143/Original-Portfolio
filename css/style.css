@@ -3,9 +3,8 @@
 }
 
 Html, body{
-  Font-family: "roboto";
+  Font-family: "Avenir Next";
   Font-size: 10px;
-  Font-weight: lighter;
   height: 100%;
   margin: 0;
   width: 100%;
@@ -25,7 +24,7 @@ img {
   display: inline-block;
   height: 100px;
   width: 100px;
-  margin:1rem 0 0 5rem;
+  margin:3rem 0 0 3rem;
 }
 
 /* Burger menu */
@@ -55,7 +54,7 @@ a {
 }
 
 a:hover {
-  color:#F1D2CC;
+  color:#FF1111;
 }
 
 .toggler {
@@ -64,15 +63,13 @@ a:hover {
 
 /* About me button */
 .more {
-  background-color: black;
+  border:none;
   border-radius: 3px;
   color: #ffffff;
   display: block;
-  font-family: "Lora";
   font-size: 1.8rem;
   margin: 0 auto;
   padding: 12px 24px;
-  border:none;
 }
 
 .more:hover {
@@ -81,9 +78,11 @@ a:hover {
 }
 
 button {
-  background-color: #F1D2CC;
-  border-radius: 3px;
-  font-family: "Lora";
+  background-color:#FF1111;
+  border: none;
+  border-radius: 36px;
+  color: white;
+  font-family: "Work sans";
   font-size: 1.8rem;
   opacity: 0.8;
   padding: 12px 24px;
@@ -91,8 +90,12 @@ button {
 }
 
 button:hover, .submitbutton:hover, .project > button:hover, .busybus > button:hover {
-  background-color: #FF9676;
+  background-color: white;
+  border: 2px solid #FF1111;
+  color: #FF1111;
   cursor:pointer;
+  padding: 10px 24px;
+
 }
 
 .calltoaction {
@@ -106,11 +109,20 @@ input[type=text], input[type=email], textarea{
   width: 100%;
 }
 
+textarea, input {
+  font-family: "Avenir next";
+}
+
 /* Project.html */
-.summary, .discovery, .conclusion {
+.summary, .discovery{
   margin: 0 auto;
   padding-bottom: 5rem;
   width: 48%;
+}
+
+.conclusion {
+ margin: 0 auto;
+ width: 48%;
 }
 
 /* Contact.html */
@@ -130,14 +142,17 @@ input[type=text], input[type=email], textarea{
 }
 
 .submitbutton {
- background-color: #F1D2CC;
- font-family: "Lora";
+  background-color:#FF1111;
  font-size: 1.8rem;
  height: 100%;
  padding: 12px 24px;
+ opacity: 0.8;
  width:25%;
  margin-bottom: 5rem;
  border: none;
+ border-radius: 36px;
+ color: white;
+ font-family: "Work sans";
 }
 
 /* my role, deliverables, and tools */
@@ -164,7 +179,6 @@ input[type=text], input[type=email], textarea{
 
 /* "My role", "Deliverables", "Tools" */
 .heading {
-  font-family: "Playfair display";
   font-size: 3.6rem;
   font-weight: bold;
   padding-top: 2rem;
@@ -241,7 +255,7 @@ input[type=text], input[type=email], textarea{
 
 /* Introduction: name, title, slogan, button */
 .intro {
-  background-color:rgba(237, 171, 98, 0.6);
+  /* background-color:rgba(237, 171, 98, 0.6); */
   padding-bottom: 5rem;
   padding-top: 8rem;
   text-align: center;
@@ -250,6 +264,7 @@ input[type=text], input[type=email], textarea{
 .name {
   display: inline;
   font-family: "august script bold free";
+  font-weight: 100;
   line-height: 110%;
   position: relative;
   z-index: 1;
@@ -262,17 +277,16 @@ input[type=text], input[type=email], textarea{
 
 /* Highlight */
 h1 span {
-  background-color:rgba(236, 162, 120, 0.8);
-  bottom: 4.5rem;
+  background-color:rgba(255, 17, 17, 0.8);
+  bottom: 3rem;
   height:10px;
-  left: 5rem;
+  left: 10rem;
   position: absolute;
-  width:24rem;
+  width:20rem;
   z-index:-1;
 }
 
 .mytitle {
-  font-family: "lora";
   font-size: 2rem;
   margin: 0 auto;
   position:relative;
@@ -282,7 +296,6 @@ h1 span {
 
 .slogan {
   font-size: 2rem;
-  font-weight: lighter;
   margin: 0 auto;
   min-width: 40%;
   padding-bottom: 2rem;
@@ -296,7 +309,10 @@ h1 span {
   padding-right: 20rem;
   padding-top: 5rem;
   position: relative;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 10px 10px 10px 10px #ddd;
+  margin-bottom: 5rem;
 }
 
 /* .busybus {
@@ -330,7 +346,6 @@ h1 span {
 
 /* Title of section */
 .title {
-  font-family: "Playfair display";
   font-size: 3.6rem;
   font-weight: bold;
   padding-top: 8rem;
@@ -339,20 +354,17 @@ h1 span {
 
 /* First title (different to change spacing) */
 #firsttitle {
-  font-family: "Playfair display";
   font-size: 3.6rem;
+  padding:0;
 }
 
 /* Title of the page */
 .toptitle {
-  font-family: "Playfair display";
   font-size: 7rem;
-  font-weight: lighter;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
   width: 100%;
-
 }
 
 /* biography.html */
@@ -363,10 +375,12 @@ h1 span {
 
 .bioname {
   display: inline-block;
-  font-family: "august script bold free";
+  font-family: "August Script Bold free";
+  font-weight: 100;
   line-height: 110%;
   padding-bottom: 10rem;
   text-align: left;
+  width: 45%;
 }
 
 .biotop {
@@ -379,7 +393,6 @@ display:flex;
 
 .biointro {
     display: inline;
-    font-family: "Playfair display";
     font-size: 7rem;
     text-align: left;
 }
@@ -410,16 +423,15 @@ display:flex;
 }
 
 .boldedblock {
-  font-family: "Roboto";
-  font-weight: 900;
+  font-weight: 700;
   font-size: 5rem;
   line-height: 150%;
 }
 
 /* text */
 h1{
-  font-family: "playfair display";
   font-size: 10rem;
+  font-weight: bold;
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -431,26 +443,22 @@ h1{
 }
 
 h2 {
-  font-family: "Lora";
   font-size: 4.8rem;
+  font-weight: bold;
   padding: 1rem 0 1rem 0;
 }
 
 h3 {
-  background-color: #CDC6BB;
-  font-family: "Playfair display";
   font-size: 6rem;
-  font-weight: lighter;
   padding: 3rem;
   text-align: center;
   line-height: 120%;
 }
 
 h4 {
-  font-family: "Playfair display";
   font-size: 3.6rem;
-  font-weight: lighter;
   text-align: left;
+  font-weight: 600;
 }
 
 h5 {
@@ -518,8 +526,7 @@ td{
 
 span {
   font-size: 3rem;
-  font-weight:bold;
-  font-family: "Playfair Display";
+  font-weight:600;
 }
 
 /* description of personas */
@@ -628,6 +635,10 @@ ol {
   width: 100%;
 }
 
+.colors{
+  margin-bottom: 4rem;
+}
+
 .sketch{
   display: block;
   height: 28rem;
@@ -651,6 +662,7 @@ ol {
   margin-left: auto;
   margin-right: auto;
   width: 50rem;
+  margin-bottom: 5rem;
 }
 
 .dzlogo {
@@ -688,6 +700,7 @@ ol {
 }
 
 .prototype, .viewbutton{
+  font-family: "Cera Pro";
   display: inherit;
   margin-left: auto;
   margin-right: auto;
@@ -757,7 +770,6 @@ ol {
 
 /* footer */
 footer {
-  background-color: rgb(222, 210, 194);
   padding: 1rem;
   text-align: center;
 }
@@ -783,13 +795,11 @@ footer > a {
   width: 100%;
 }
 
-#myBtn:hover {
-  background-color: #ECA278;
+.backtotop:hover {
+  border:none;
 }
 
 .links {
-  background-color: rgb(222, 210, 194);
-  font-family: "Lora";
   font-size: 2rem;
   font-weight: lighter;
   margin: 0 auto;
@@ -813,10 +823,8 @@ footer > a {
 }
 
 .bold {
-  font-family: "Playfair display";
   font-size: 3rem;
   padding:0;
-  text-decoration: underline;
   line-height: normal;
 }
 
@@ -835,7 +843,6 @@ footer > a {
 
   .vnlogo {
     margin: 0 auto;
-    padding-left: 1rem;
   }
 
   .menu-wrap {
@@ -1034,8 +1041,9 @@ footer > a {
 
 /* Home page */
   h1 span {
-    bottom: 4rem;
-    width:22rem;
+    bottom: 2.5rem;
+    left: 7rem;
+    width:17rem;
   }
 
   .mytitle {
@@ -1078,6 +1086,10 @@ footer > a {
   .busybus > button, .project > button{
     padding: 9px 18px;
     width: 50%;
+  }
+
+  .busybus > button:hover, .project > button:hover {
+    padding:7px 18px;
   }
 
 /* Images */
@@ -1288,7 +1300,6 @@ footer > a {
   }
 
   textarea {
-    font-family: "roboto";
   }
 
   .submitbutton {

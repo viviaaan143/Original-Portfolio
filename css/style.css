@@ -96,7 +96,6 @@ button:hover, .submitbutton:hover, .project > button:hover {
   color: #FF1111;
   cursor:pointer;
   padding: 10px 24px;
-
 }
 
 .calltoaction {
@@ -309,11 +308,10 @@ h1 span {
   padding-bottom: 5rem;
   padding-left: 5%;
   padding-top: 5rem;
-  position: relative;
   width: 80%;
   margin: 0 auto;
   box-shadow: 10px 10px 10px 10px #ddd;
-  margin-bottom: 5rem;
+  display: flex;
 }
 
 .project > p {
@@ -324,9 +322,7 @@ h1 span {
 }
 
 .project > img{
-  bottom: 5%;
-  left: 50%;
-  position: absolute;
+  display: inline-block;
 }
 
 /* Title of section */
@@ -824,7 +820,6 @@ footer > a {
   .project > p {
     display:inline-block;
     text-align:center;
-    width: 85%;
   }
 
   .vnlogo {
@@ -1044,17 +1039,7 @@ footer > a {
   }
 
   .project {
-    padding: 4rem 0 4rem 0;
-  }
-
-  .project > img {
-    height: 200px;
-    left:0;
-    padding-bottom: 1rem;
-    padding-top: 2rem;
-    position: relative;
-    right: 0;
-    width: 300px;
+    display:block;
   }
 
   .project > button{

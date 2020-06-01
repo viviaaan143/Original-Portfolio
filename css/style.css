@@ -22,7 +22,7 @@ img {
 
 .vnlogo {
   display: inline-block;
-  height: 100px;
+  height: 90px;
   width: 100px;
   margin:3rem 0 0 3rem;
 }
@@ -305,25 +305,21 @@ h1 span {
 }
 
 .project{
-  padding-bottom: 5rem;
-  padding-left: 5%;
-  padding-top: 5rem;
+  padding: 5rem 5rem 5rem 10%;
   width: 80%;
   margin: 0 auto;
   box-shadow: 10px 10px 10px 10px #ddd;
   display: flex;
 }
 
-.project > p {
-  font-size: 1.8rem;
+.project p {
   line-height: 180%;
   padding-bottom: 2rem;
-  width: 40%;
+  width: 80%;
 }
 
-.project > img{
-  display: inline-block;
-  margin-right: 2rem;
+.project img {
+  min-width: 50%;
 }
 
 /* Title of section */
@@ -818,7 +814,7 @@ footer > a {
     width: 100%;
   }
 
-  .project > p {
+  .project p {
     display:inline-block;
     text-align:center;
   }
@@ -1044,15 +1040,6 @@ footer > a {
     padding: 3rem;
   }
 
-  .project > button{
-    padding: 9px 18px;
-    width: 50%;
-  }
-
-  .project > button:hover {
-    padding:7px 18px;
-  }
-
 /* Images */
  .solutionproto {
    border: 1px solid #B0B0B0;
@@ -1142,7 +1129,7 @@ footer > a {
   /* text */
   h1 {
     display: inline-block;
-    font-size: 8rem;
+    font-size: 6rem;
     width: 100%;
   }
 

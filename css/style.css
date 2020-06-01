@@ -317,10 +317,8 @@ h1 span {
 
 .slogan {
   font-size: 2rem;
-  margin: 0 6rem 0 6rem;
   min-width: 40%;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -842,9 +840,14 @@ footer > a {
 .project {
   width: 100%;
 }
+
   .project p {
     display:inline-block;
     text-align:center;
+  }
+
+  .project img {
+    min-width: 100%;
   }
 
   .vnlogo {
@@ -1061,7 +1064,7 @@ footer > a {
   .slogan {
     display: inline-block;
     font-size: 2rem;
-    max-width: 80%;
+    width: 100%;
   }
 
   .project {

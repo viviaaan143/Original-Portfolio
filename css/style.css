@@ -317,7 +317,7 @@ h1 span {
 
 .project {
   padding: 5rem 5rem 5rem 10%;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   background-image: linear-gradient(to right, #FFDACF, #FAD0C4);
   display: flex;
@@ -336,6 +336,10 @@ h1 span {
 
 .project img {
   min-width: 50%;
+  width: 50%;
+  height: 50%;
+  display:block;
+  margin-right:5rem;
 }
 
 /* Title of section */
@@ -600,12 +604,6 @@ ol {
   width: 50%;
 }
 
-.designzenprototype {
-  width: 50%;
-  height: 50%;
-  display:block;
-}
-
 .persona1, .persona2 {
   height:40%;
   width: 40%;
@@ -831,9 +829,9 @@ footer > a {
     width: 100%;
   }
 
-.project {
-  width: 100%;
-}
+  .project {
+    width: 100%;
+  }
 
   .project p {
     display:inline-block;

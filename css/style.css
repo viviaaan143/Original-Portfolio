@@ -90,7 +90,7 @@ button {
   border: none;
 }
 
-button:hover, .submitbutton:hover, .project > button:hover {
+button:hover, .submitbutton:hover {
   background-color: white;
   border: 2px solid #FF1111;
   color: #FF1111;
@@ -98,25 +98,18 @@ button:hover, .submitbutton:hover, .project > button:hover {
   padding: 10px 24px;
 }
 
-.project {
-  position:relative;
+.projectbutton {
+  background-color: white;
+  color: #474747;
+  border:2px solid #474747;
 }
 
-.project:after {
-  content: '';
-  width: 100%;
-  height:100%;
-  top:0;
-  left:0;
-  position:absolute;
-  background:rgba(0,0,0,0.2);
-  opacity:0;
+.projectbutton:hover {
+  background-color: #474747;
+  border:none;
+  color: white;
   cursor:pointer;
-  transition: all 0.4s ease-in-out;
-}
-
-.project:hover:after{
-  opacity:1;
+  padding: 14px 26px;
 }
 
 .calltoaction {
@@ -274,7 +267,7 @@ textarea, input {
   font-size: 1.5rem;
 }
 
-/* Introduction: name, title, slogan, button */
+/* Introduction: name, title, motto, button */
 .intro {
   padding-bottom: 10rem;
   padding-top: 5rem;
@@ -315,14 +308,14 @@ h1 span {
   width: 50%;
 }
 
-.slogan {
+.motto {
   font-size: 2rem;
   min-width: 40%;
   padding: 2rem;
   text-align: center;
 }
 
-.project{
+.project {
   padding: 5rem 5rem 5rem 10%;
   width: 80%;
   margin: 0 auto;
@@ -395,7 +388,7 @@ h1 span {
 }
 
 .biotop {
-display:flex;
+display: flex;
 }
 
 .biopic {
@@ -610,6 +603,7 @@ ol {
 .designzenprototype {
   width: 50%;
   height: 50%;
+  display:block;
 }
 
 .persona1, .persona2 {
@@ -847,7 +841,9 @@ footer > a {
   }
 
   .project img {
+    margin-top: 4rem;
     min-width: 100%;
+    display: block;
   }
 
   .vnlogo {
@@ -951,7 +947,7 @@ footer > a {
 
   .menu {
     align-items: center;
-    display:flex;
+    display: flex;
     height: 100%;
     justify-content:center;
     overflow:hidden;
@@ -1061,7 +1057,7 @@ footer > a {
     left: 2rem;
   }
 
-  .slogan {
+  .motto {
     display: inline-block;
     font-size: 2rem;
     width: 100%;
@@ -1070,6 +1066,8 @@ footer > a {
   .project {
     display:block;
     padding: 3rem;
+    width: 80%;
+    margin: 0 auto;
   }
 
 /* Images */

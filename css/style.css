@@ -83,7 +83,7 @@ button {
   border: none;
   border-radius: 36px;
   color: white;
-  font-family: "Work sans";
+  font-family: "Cera pro", "Gill sans";
   font-size: 1.8rem;
   opacity: 0.8;
   padding: 12px 24px;
@@ -96,6 +96,27 @@ button:hover, .submitbutton:hover, .project > button:hover {
   color: #FF1111;
   cursor:pointer;
   padding: 10px 24px;
+}
+
+.project {
+  position:relative;
+}
+
+.project:after {
+  content: '';
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  position:absolute;
+  background:rgba(0,0,0,0.2);
+  opacity:0;
+  cursor:pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.project:hover:after{
+  opacity:1;
 }
 
 .calltoaction {
@@ -152,7 +173,7 @@ textarea, input {
  border: none;
  border-radius: 36px;
  color: white;
- font-family: "Work sans";
+ font-family: "Cera Pro", "Gill sans";
 }
 
 /* my role, deliverables, and tools */
@@ -262,7 +283,7 @@ textarea, input {
 
 .name {
   display: inline;
-  font-family: "august script bold free";
+  font-family: "August script bold free";
   font-size: 10rem;
   font-weight: 100;
   line-height: 110%;
@@ -301,18 +322,22 @@ h1 span {
   padding-bottom: 2rem;
   padding-top: 2rem;
   text-align: center;
-
 }
 
 .project{
   padding: 5rem 5rem 5rem 10%;
   width: 80%;
   margin: 0 auto;
-  box-shadow: 10px 10px 10px 10px #ddd;
+  background-image: linear-gradient(to right, #FFDACF, #FAD0C4);
   display: flex;
 }
 
+.project h2 {
+  color:#474747;
+}
+
 .project p {
+  color:#474747;
   line-height: 180%;
   padding-bottom: 2rem;
   width: 80%;
@@ -328,6 +353,16 @@ h1 span {
   font-weight: bold;
   padding-top: 8rem;
   line-height: 100%;
+}
+
+.usertitle {
+  font-size: 3.6rem;
+  font-weight: bold;
+  padding-top: 8rem;
+  line-height: 100%;
+  width:70%;
+  text-align:center;
+  padding:0;
 }
 
 /* First title (different to change spacing) */
@@ -507,13 +542,6 @@ span {
   font-weight:600;
 }
 
-/* description of personas */
-.persona {
-  font-size: 2rem;
-  line-height: normal;
-  text-align: center;
-}
-
 .person1 {
   float:left;
   height: 100%;
@@ -554,13 +582,13 @@ ol {
   padding-bottom: 0;
 }
 
-.list {
+/* .list {
   font-size: 2rem;
   line-height: 150%;
   text-align: left;
   width: 100%;
   display: list-item;
-}
+} */
 
 /* images */
 .solutionproto {
@@ -582,19 +610,22 @@ ol {
 }
 
 .designzenprototype {
-   width: 400px;
-   height: 250px;
+  width: 50%;
+  height: 50%;
 }
 
 .persona1, .persona2 {
-  height:100%;
-    width: 100%;
+  height:40%;
+  width: 40%;
+  flex: 1;
+  display: flex;
 }
 
 .userpersona {
-  display: inline-block;
+  padding: 3rem;
   height: 100%;
   width: 100%;
+  display: flex;
 }
 
 .pinterestlogo, .dropboxlogo {
@@ -678,7 +709,7 @@ ol {
 }
 
 .prototype, .viewbutton{
-  font-family: "Cera Pro";
+  font-family: "Cera pro", "Gill sans";
   display: inherit;
   margin-left: auto;
   margin-right: auto;
@@ -800,12 +831,6 @@ footer > a {
   margin-bottom: 2px;
 }
 
-.bold {
-  font-size: 3rem;
-  padding:0;
-  line-height: normal;
-}
-
 @media only screen and (max-width: 768px) {
   .container {
     margin: 0 auto;
@@ -814,6 +839,9 @@ footer > a {
     width: 100%;
   }
 
+.project {
+  width: 100%;
+}
   .project p {
     display:inline-block;
     text-align:center;
@@ -1000,6 +1028,7 @@ footer > a {
   }
 
   .bioname {
+    font-size:8rem;
     padding-bottom: 5rem;
     width:100%;
   }
@@ -1054,14 +1083,17 @@ footer > a {
    /* margin-bottom: 0; */
 }
 
-.person1 {
-  display:block;
-  width: 100%;
-  }
+.persona1, .persona2 {
+  height:80%;
+  width: 80%;
+  display:inline;
+}
 
-.person2 {
+.userpersona {
   display:block;
-  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  text-align:center;
 }
 
  .pinterestlogo, .dropboxlogo {
@@ -1149,7 +1181,7 @@ footer > a {
    font-size: 2rem;
  }
 
-  h6, li, ol, .persona{
+  h6, li, ol {
    font-size: 1.5rem;
  }
 
@@ -1166,12 +1198,17 @@ footer > a {
   text-align: center;
 }
 
+.bold {
+  font-size: 3rem;
+  padding:0;
+  line-height: normal;
+}
 
 .tasks {
   padding-bottom:0;
 }
 
- p, li, .list{
+ p, li {
    font-size: 1.8rem;
  }
 
@@ -1249,9 +1286,6 @@ footer > a {
 
   .yourinfo {
     text-align:center;
-  }
-
-  textarea {
   }
 
   .submitbutton {

@@ -65,7 +65,7 @@ a:hover {
 /* About me button */
 .more {
   border:none;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #ffffff;
   display: block;
   font-size: 1.8rem;
@@ -339,15 +339,21 @@ h1 span {
   align-items: center;
 }
 
-.project2 h2 {
+.project h2, .project2 h2 {
   color: white;
+}
+
+.project p {
+  color:white;
+  line-height: 180%;
+  padding-bottom: 2rem;
+  width: 80%;
 }
 
 .project2 p {
   color:white;
   line-height: 180%;
   padding-bottom: 2rem;
-  width: 80%;
 }
 
 .project2 img {
@@ -363,20 +369,9 @@ h1 span {
   padding: 5rem 5rem 5rem 10%;
   width: 90%;
   margin: 0 auto;
-  background-image: linear-gradient(to right, #FFDACF, #FAD0C4);
+  background-image: linear-gradient(to right, #FDB1AE, #FBC5BC);
   display: flex;
   align-items: center;
-}
-
-.project h2 {
-  color:#474747;
-}
-
-.project p {
-  color:#474747;
-  line-height: 180%;
-  padding-bottom: 2rem;
-  width: 80%;
 }
 
 .project img {
@@ -389,8 +384,16 @@ h1 span {
   margin: 0 auto;
 }
 
+.project button, .project2 button {
+  width: 40%;
+}
+
+.test1 {
+  width: 100%;
+}
 .test2 {
   margin-bottom: 8rem;
+  width: 50%;
 }
 
 /* Title of section */
@@ -1408,7 +1411,7 @@ footer > a {
     width: 300px;
     float:none;
   }
-  
+
 h1 span {
   left: 7rem;
 }

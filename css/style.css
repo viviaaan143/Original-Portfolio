@@ -101,7 +101,7 @@ button:hover, .submitbutton:hover {
 .projectbutton {
   background-color: white;
   color: #474747;
-  border:2px solid #474747;
+  /* border:2px solid #474747; */
 }
 
 .projectbutton:hover {
@@ -109,7 +109,7 @@ button:hover, .submitbutton:hover {
   border:none;
   color: white;
   cursor:pointer;
-  padding: 14px 26px;
+  padding: 12px 24px;
 }
 
 .calltoaction {
@@ -326,6 +326,7 @@ h1 span {
   margin: 0 auto;
   background-image: linear-gradient(to right, #F3A125, #FFC556);
   display: flex;
+  align-items: center;
 }
 
 .project2 h2 {
@@ -344,7 +345,8 @@ h1 span {
   width: 15%;
   height: 15%;
   display:block;
-  /* margin-right:5rem; */
+  text-align: center;
+  margin: 0 auto;
 }
 
 .project {
@@ -353,6 +355,7 @@ h1 span {
   margin: 0 auto;
   background-image: linear-gradient(to right, #FFDACF, #FAD0C4);
   display: flex;
+  align-items: center;
 }
 
 .project h2 {
@@ -372,6 +375,12 @@ h1 span {
   height: 50%;
   display:block;
   margin-right:5rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.test2 {
+  margin-bottom: 8rem;
 }
 
 /* Title of section */
@@ -593,6 +602,17 @@ span {
   width:50%;
 }
 
+.bold {
+  font-weight: 600;
+  font-size: 3rem;
+  padding:0;
+  line-height: normal;
+}
+
+.ca {
+  line-height:normal;
+}
+
 li {
   display:inline;
   font-size: 2rem;
@@ -662,6 +682,8 @@ ol {
   margin-left: auto;
   margin-right: auto;
   width: 15rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .userflow, .colors {
@@ -710,12 +732,6 @@ ol {
   width: 30rem;
 }
 
-.test1, .test2, .test3 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .s1v1, .s1v2, .s2v1, .s2v2, .s3v1, .s3v2{
   border: 1px solid #B0B0B0;
   display: inline-block;
@@ -753,6 +769,12 @@ ol {
 .maze {
   height: 50%;
   width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.centerimage {
+  display: block;
   margin: 0 auto;
 }
 
@@ -873,8 +895,18 @@ footer > a {
     width: 100%;
   }
 
-  .project, .project2 {
+  .project{
     width: 80%;
+  }
+
+  .project2 {
+    flex: none;
+    display: block;
+    width: 80%;
+  }
+
+  .test2 {
+    margin-bottom: 0;
   }
 
   .project p, .project2 p {
@@ -883,9 +915,9 @@ footer > a {
   }
 
   .project2 img {
-   margin-top: 4rem;
-   min-width: 30%;
-   display: block;
+    margin-top: 4rem;
+   min-width: 40%;
+   display: inline-block;
  }
 
   .project img {

@@ -116,6 +116,11 @@ button:hover, .submitbutton:hover {
   font-size: 4rem;
 }
 
+.calltoaction button {
+  margin: 0 auto;
+  display: block;
+}
+
 /* Input boxes for contact page */
 input[type=text], input[type=email], textarea{
   border: 1px solid #CCC;
@@ -315,6 +320,33 @@ h1 span {
   text-align: center;
 }
 
+.project2 {
+  padding: 5rem 5rem 5rem 10%;
+  width: 90%;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #F3A125, #FFC556);
+  display: flex;
+}
+
+.project2 h2 {
+  color: white;
+}
+
+.project2 p {
+  color:white;
+  line-height: 180%;
+  padding-bottom: 2rem;
+  width: 80%;
+}
+
+.project2 img {
+  max-width: 50%;
+  width: 15%;
+  height: 15%;
+  display:block;
+  /* margin-right:5rem; */
+}
+
 .project {
   padding: 5rem 5rem 5rem 10%;
   width: 90%;
@@ -344,18 +376,18 @@ h1 span {
 
 /* Title of section */
 .title {
-  font-size: 3.6rem;
+  font-size: 5rem;
   font-weight: bold;
   padding-top: 8rem;
   line-height: 100%;
 }
 
 .usertitle {
-  font-size: 3.6rem;
+  font-size: 5rem;
   font-weight: bold;
   padding-top: 8rem;
   line-height: 100%;
-  width:70%;
+  width:80%;
   text-align:center;
   padding:0;
 }
@@ -433,6 +465,12 @@ display: flex;
 .boldedblock {
   font-weight: 700;
   font-size: 5rem;
+  line-height: 150%;
+}
+
+.boldedblock2 {
+  font-weight: 600;
+  font-size: 4rem;
   line-height: 150%;
 }
 
@@ -618,7 +656,7 @@ ol {
   display: flex;
 }
 
-.pinterestlogo, .dropboxlogo {
+.ca1, .ca2 {
   display: block;
   height: 15rem;
   margin-left: auto;
@@ -710,6 +748,12 @@ ol {
   margin: 0 auto;
   padding:0;
   width: 300px;
+}
+
+.maze {
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 #before {
@@ -829,14 +873,20 @@ footer > a {
     width: 100%;
   }
 
-  .project {
-    width: 100%;
+  .project, .project2 {
+    width: 80%;
   }
 
-  .project p {
+  .project p, .project2 p {
     display:inline-block;
     text-align:center;
   }
+
+  .project2 img {
+   margin-top: 4rem;
+   min-width: 30%;
+   display: block;
+ }
 
   .project img {
     margin-top: 4rem;
@@ -1095,7 +1145,7 @@ footer > a {
   text-align:center;
 }
 
- .pinterestlogo, .dropboxlogo {
+ .ca1, .ca2 {
    height: 11.25rem;
    width: 11.25rem;
  }

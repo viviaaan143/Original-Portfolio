@@ -1141,11 +1141,6 @@ footer > a {
   }
 
 /* Home page */
-  h1 span {
-    bottom: 2.5rem;
-    left: 7rem;
-  }
-
   .mytitle {
     font-size: 1.5rem;
     left: 2rem;
@@ -1413,6 +1408,10 @@ footer > a {
     width: 300px;
     float:none;
   }
+  
+h1 span {
+  left: 7rem;
+}
 
   .iam {
   display: inline-block;

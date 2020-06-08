@@ -29,7 +29,7 @@ img {
 }
 
 .menu {
-  text-align:right;
+  text-align:center;
   display: inline;
   font-size: 1.8rem;
   right:0;
@@ -921,6 +921,7 @@ footer > a {
 
   .menu a {
     display: inline;
+    padding: 0;
   }
 
   .project{
@@ -956,8 +957,7 @@ footer > a {
   }
 
   .vnlogo {
-    /* right: 20px; */
-    margin-top:2rem;
+    margin: 2rem 0 0 0;
   }
 
   .summary, .discovery, .conclusion, .biographypage {

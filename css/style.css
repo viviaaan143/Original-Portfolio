@@ -385,12 +385,13 @@ h1 span {
 }
 
 .project button, .project2 button {
-  width: 40%;
+  min-width: 50%;
 }
 
 .test1 {
   width: 100%;
 }
+
 .test2 {
   margin-bottom: 8rem;
   width: 50%;
@@ -927,10 +928,6 @@ footer > a {
     width: 100%;
   }
 
-  .project button, .project2 button {
-    width: 50%;
-  }
-
   .project p, .project2 p {
     display:inline-block;
     text-align:center;
@@ -989,7 +986,6 @@ footer > a {
   .hamburger > div {
     align-items:center;
     background:gray;
-    /* background: #CDC6BB; */
     display: flex;
     height: 5px;
     justify-content:center;

@@ -424,7 +424,6 @@ h1 span {
 /* Title of the page */
 .toptitle {
   font-size: 7rem;
-  padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
   width: 100%;
@@ -434,6 +433,7 @@ h1 span {
 .biographypage {
   margin: auto;
   width: 60%;
+  padding-top:5rem;
 }
 
 .bioname {
@@ -913,6 +913,11 @@ footer > a {
     width: 100%;
   }
 
+  .menu {
+    display: block;
+    margin-top: 8rem;
+  }
+
   .project{
     width: 80%;
   }
@@ -947,161 +952,7 @@ footer > a {
 
   .vnlogo {
     margin: 0 auto;
-  }
-
-  .menu-wrap {
-    padding-bottom: 3rem;
-    position: relative;
-    z-index: 3;
-  }
-
-  .menu-wrap .toggler {
-    cursor: pointer;
-    height: 50px;
-    margin-top:14px;
-    opacity:0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50px;
-    z-index: 3;
-    visibility:visible;
-  }
-
-  .hamburger {
-    align-items: center;
-    display: flex;
-    height: 60px;
-    justify-content: center;
-    padding: 1rem;
-    padding-top: 50px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 60px;
-    z-index: 2;
-  }
-
-  /* Hamburger line */
-  .hamburger > div {
-    align-items:center;
-    background:gray;
-    display: flex;
-    height: 5px;
-    justify-content:center;
-    position: relative;
-    transition: all 0.4s ease;
-    width: 100%;
-  }
-
-  /* Top and bottom lines */
-  .hamburger > div:before,
-  .hamburger > div:after {
-    content: '';
-    background: inherit;
-    height: 5px;
-    position: absolute;
-    top: -10px;
-    width: 100%;
-    z-index: 2;
-  }
-
-  /* Moves line down */
-  .menu-wrap, .hamburger > div:after {
-    top: 10px;
-  }
-
-  /* Toggler animate */
-  .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-  }
-
-  /* Turn lines into X */
-  .toggler:checked + .hamburger > div:before,
-  .toggler:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-
-  /* Rotate on hover when checked */
-  .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
-  }
-
-  /* Show menu */
-  .toggler:checked ~ .menu {
-    visibility: visible;
-  }
-
-  .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    transition-duration: 0.8s;
-  }
-
-  .toggler:checked ~ .menu > div > div  {
-    opacity: 1;
-    transition: opacity 0.4s ease;
-  }
-
-  .menu {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content:center;
-    overflow:hidden;
-    position:fixed;
-    visibility: hidden;
-    width: 100%;
-  }
-
-  .menu a {
-    display:block;
-    text-align:center;
-    padding:0;
-  }
-
-.menu a:hover {
-  font-size:4rem;
-  transition: all 0.4s ease;
-}
-
-  /* Overlay */
-  .menu >div {
-    align-items:center;
-    background: rgba(0,0,0,0.98);
-    border-radius: 50%;
-    display: flex;
-    flex: none;
-    height: 200vw;
-    justify-content:center;
-    transform: scale(0);
-    transition: all 0.4s ease;
-    width: 200vw;
-  }
-
-  .menu >div >div {
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    text-align:center;
-    transition: opacity 0.4s ease;
-  }
-
-  .menu >div >div > ul >li {
-    color: gray;
-    font-size: 2rem;
-    list-style: none;
-    padding: 2rem;
-    text-align: center;
-    width: auto;
-    display: block;
-  }
-
-  .menu >div >div > ul >li > a {
-    color: #CDC6BB;
-    text-decoration: none;
-    transition: all 0.4s ease;
-    display: block;
+    margin-top:2rem;
   }
 
   .summary, .discovery, .conclusion, .biographypage {
@@ -1277,6 +1128,10 @@ footer > a {
 
   h6, li, ol {
    font-size: 1.5rem;
+ }
+
+ .toptitle {
+   padding-top: 5rem;
  }
 
 /* Captions */

@@ -924,6 +924,11 @@ footer > a {
 
   .test2 {
     margin-bottom: 0;
+    width: 100%;
+  }
+
+  .project button, .project2 button {
+    width: 50%;
   }
 
   .project p, .project2 p {

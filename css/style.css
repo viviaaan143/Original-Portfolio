@@ -916,6 +916,11 @@ footer > a {
   .menu {
     display: block;
     margin-top: 8rem;
+    width: 100%;
+  }
+
+  .menu a {
+    display: inline;
   }
 
   .project{
@@ -951,7 +956,7 @@ footer > a {
   }
 
   .vnlogo {
-    margin: 0 auto;
+    /* right: 20px; */
     margin-top:2rem;
   }
 

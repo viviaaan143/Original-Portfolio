@@ -240,6 +240,7 @@ textarea, input {
   font-size: 1.5rem;
   line-height: 150%;
   width: 100%;
+  padding-left:1rem;
 }
 
 .optiona {
@@ -284,6 +285,7 @@ textarea, input {
 
 .clickzoom2 {
   font-size: 1.5rem;
+  padding-left: 1rem;
 }
 
 .positivemessage, .reflectiontab {
@@ -671,13 +673,13 @@ ol {
   padding-bottom: 0;
 }
 
-/* .list {
+.list {
   font-size: 2rem;
   line-height: 150%;
   text-align: left;
   width: 100%;
   display: list-item;
-} */
+}
 
 /* images */
 .solutionproto {

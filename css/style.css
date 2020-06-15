@@ -263,6 +263,7 @@ textarea, input {
   font-weight: bold;
   margin: 0 auto;
   padding: 0;
+  padding-left:1rem;
 }
 
 .preftestb {
@@ -270,6 +271,7 @@ textarea, input {
   font-weight: bold;
   margin: 0 auto;
   padding: 0;
+  padding-left:1rem;
 }
 
 .clickzoom1 {

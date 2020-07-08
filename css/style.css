@@ -237,6 +237,7 @@ textarea, input {
 }
 
 .caption {
+  font-style: italic;
   font-size: 1.5rem;
   line-height: 150%;
   width: 100%;
@@ -517,7 +518,7 @@ display: flex;
 
 .boldedblock2 {
   font-weight: 600;
-  font-size: 4rem;
+  /* font-size: 4rem; */
   line-height: 150%;
 }
 

@@ -61,14 +61,14 @@ a {
 }
 
 .menu a:hover {
-  border-bottom: 5px solid rgba(255, 17, 17, 0.8);;
+  border-bottom: 5px solid #E13D10;
   transform: translate(30px, 20px) rotate(90deg);
   transition: 0.4s ease;
   height: 4rem;
 }
 
 .active {
-  color:rgba(255, 17, 17, 0.8);
+  color: #E13D10;
 }
 
 .toggler {
@@ -78,7 +78,7 @@ a {
 /* About me button */
 .more {
   border:none;
-  color: #FF1111;
+  color: #C8856F;
   background-color: inherit;
   font-size: 1.8rem;
   margin: 0 auto;
@@ -91,10 +91,11 @@ a {
     text-decoration: underline;
     border:none;
     padding: 0;
+    color: #C8856F;
 }
 
 button {
-  background-color:#FF1111;
+  background-color:#E13D10;
   border: none;
   border-radius: 36px;
   color: white;
@@ -107,8 +108,8 @@ button {
 
 button:hover, .submitbutton:hover {
   background-color: white;
-  border: 2px solid #FF1111;
-  color: #FF1111;
+  border: 2px solid #E13D10;
+  color: #E13D10;
   cursor:pointer;
   padding: 10px 24px;
 }
@@ -119,11 +120,10 @@ button:hover, .submitbutton:hover {
 }
 
 .projectbutton:hover {
-  background-color: #474747;
-  border:none;
+  background-color: transparent;
+  border: 2px solid white;
   color: white;
   cursor:pointer;
-  padding: 12px 24px;
 }
 
 .calltoaction {
@@ -175,7 +175,7 @@ textarea, input {
 }
 
 .submitbutton {
-  background-color:#FF1111;
+  background-color:#E13D10;
  font-size: 1.8rem;
  height: 100%;
  padding: 12px 24px;
@@ -186,6 +186,9 @@ textarea, input {
  border-radius: 36px;
  color: white;
  font-family: "Cera Pro", "Gill sans";
+ /* animation-name: animateBtn;
+ animation-duration:1s;
+ animation-fill-mode: backwards; */
 }
 
 /* my role, deliverables, and tools */
@@ -367,7 +370,7 @@ textarea, input {
 
 /* Highlight */
 h1 span {
-  background-color:rgba(255, 17, 17, 0.8);
+  background-color:#FCC19F;
   bottom: 3rem;
   height:10px;
   left: 8rem;
@@ -402,7 +405,7 @@ h1 span {
   width: 60px;
   height: 60px;
   bottom: 4%;
-  left:75%;
+  left:80%;
   transform: translateY(-80px) translateX(-50%) rotate(45deg);
 }
 
@@ -411,8 +414,8 @@ h1 span {
   display: block;
   width: 100%;
   height: 100%;
-  border-bottom: 4px solid #474747;
-  border-right: 4px solid #474747;
+  border-bottom: 4px solid #C76548;
+  border-right: 4px solid #C76548;
   animation: animate 2s linear infinite;
   opacity: 0;
 }
@@ -461,7 +464,7 @@ h1 span {
   padding: 5rem 5rem 5rem 10%;
   width: 90%;
   margin: 0 auto;
-  background-image: linear-gradient(to right, #F3A125, #FFC556);
+  background-image: linear-gradient(to right, #E13D10, #EA5D36);
   display: flex;
   align-items: center;
 }
@@ -497,7 +500,7 @@ h1 span {
   padding: 5rem 5rem 5rem 10%;
   width: 90%;
   margin: 0 auto;
-  background-image: linear-gradient(to right, #FDB1AE, #FBC5BC);
+  background-image: linear-gradient(to right, #FFA36D, #FCC19F);
   display: flex;
   align-items: center;
 }
@@ -1400,6 +1403,15 @@ footer > a {
   }
 
 /* Contact */
+@keyframes animateBtn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
   input[type=text], input[type=email], textarea{
     margin: 0 auto;
     text-align: center;
@@ -1421,7 +1433,6 @@ footer > a {
   .submitbutton {
      width: 100%;
      -webkit-appearance: none;
-     border: none;
    }
 
    .box {

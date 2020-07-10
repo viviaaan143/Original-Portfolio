@@ -54,7 +54,7 @@ img {
 }
 
 a {
-  color:gray;
+  color:#474747;
   padding-left:1rem;
   padding-right: 1rem;
 }
@@ -77,17 +77,17 @@ a {
 /* About me button */
 .more {
   border:none;
-  border-radius: 5px;
-  color: #ffffff;
-  display: block;
+  color: #FF1111;
+  background-color: inherit;
   font-size: 1.8rem;
   margin: 0 auto;
-  padding: 12px 24px;
+  padding:0;
 }
 
 .more:hover {
-  background-color: #fff;
-  color: #000;
+    text-decoration: underline;
+    border:none;
+    padding: 0;
 }
 
 button {
@@ -309,9 +309,16 @@ textarea, input {
 }
 /* Introduction: name, title, motto, button */
 .intro {
-  padding-bottom: 10rem;
-  padding-top: 5rem;
-  text-align: center;
+  padding-bottom:8rem;
+  padding-top: 7rem;
+  text-align: left;
+  padding-left: 15%;
+}
+
+.intro h1 {
+  text-align: left;
+  margin: 0;
+  font-size: 10rem;
 }
 
 .name {
@@ -344,15 +351,66 @@ h1 span {
   font-size: 2rem;
   margin: 0 auto;
   position:relative;
-  text-align:center;
-  width: 50%;
+  bottom: 0;
+  left: 20rem;
 }
 
 .motto {
-  font-size: 2rem;
+  font-size: 3rem;
   min-width: 40%;
-  padding: 2rem;
-  text-align: center;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.scrollDown {
+  position:absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 4%;
+  left:75%;
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrollDown span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 4px solid #474747;
+  border-right: 4px solid #474747;
+  animation: animate 2s linear infinite;
+  opacity: 0;
+}
+
+.scrollDown span:nth-child(1) {
+  transform: translate(-15px, -15px);
+  animation-delay: -0.2s;
+}
+.scrollDown span:nth-child(2) {
+  transform: translate(0,0);
+  animation-delay: 0s;
+}
+.scrollDown span:nth-child(3) {
+  transform: translate(15px, 15px);
+  animation-delay: -0.2s;
+}
+
+@keyframes animate {
+0% {
+  top: -5px;
+  left: -5px;
+  opacity:0;
+}
+25% {
+  top: 0px;
+  left: 0px;
+  opacity:1;
+}
+50%, 100% {
+  top: 5px;
+  left: 5px;
+  opacity:0;
+}
 }
 
 .project2 {
@@ -960,10 +1018,20 @@ footer > a {
     padding-right: 0;
   }
 
-  /* .menu li {
-    padding-right: 3rem;
-    font-weight: 700;
-  } */
+  .scrollDown {
+    visibility:hidden;
+  }
+
+  .intro {
+    text-align:center;
+    padding: 8rem 3rem 5rem 3rem;
+  }
+
+  .intro h1, .intro > .name {
+    text-align: center;
+    /* display:flex; */
+    font-size: 8rem;
+  }
 
   .project{
     width: 80%;
@@ -1049,12 +1117,17 @@ footer > a {
   .mytitle {
     font-size: 1.5rem;
     left: 2rem;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 50%;
   }
 
   .motto {
     display: inline-block;
     font-size: 2rem;
     width: 100%;
+    text-align: center;
   }
 
   .project {
@@ -1075,7 +1148,6 @@ footer > a {
    height: 100%;
    width: 100%;
    display: inline-block;
-   /* margin-bottom: 0; */
 }
 
 .persona1, .persona2 {

@@ -69,6 +69,7 @@ a {
 
 .active {
   color: #E13D10;
+  border-bottom: 2px solid #E13D10;
 }
 
 .toggler {
@@ -186,9 +187,6 @@ textarea, input {
  border-radius: 36px;
  color: white;
  font-family: "Cera Pro", "Gill sans";
- /* animation-name: animateBtn;
- animation-duration:1s;
- animation-fill-mode: backwards; */
 }
 
 /* my role, deliverables, and tools */
@@ -567,41 +565,48 @@ h1 span {
   padding-top:5rem;
 }
 
-.bioname {
-  display: inline-block;
-  font-family: "August Script Bold free";
-  font-weight: 100;
-  line-height: 110%;
-  padding-bottom: 10rem;
-  text-align: left;
-  width: 45%;
-}
-
-.biotop {
-display: flex;
-}
-
-.biopic {
-  min-width: 50%;
-}
-
-.biointro {
-    display: inline;
-    font-size: 7rem;
-    text-align: left;
-}
-
 .picofme {
   display: inline-block;
-  height: 450px;
+  height: 50%;
   margin-left: 10rem;
-  width: 285px;
+  width: 50%;
+  position:relative;
+}
+
+.rectangle1 {
+  position:absolute;
+  left:670px;
+  z-index: -1;
+  bottom: -200px;
+  animation-name: moveToRight;
+  animation-duration:2s;
+}
+
+.rectangle2 {
+  position:absolute;
+  left:1000px;
+  z-index: -1;
+  top: 300px;
+  animation-name: moveToLeft;
+  animation-duration:2s;
+}
+
+.spots {
+  width: 100px;
+  height: 100px;
+  left:48%;
+  z-index: 0;
+  position:absolute;
+  bottom: -170px;
 }
 
 .biogreeting {
   font-size: 7rem;
   text-align: left;
   width: 100%;
+  padding: 2rem 2rem 4rem 0;
+  animation-name: moveToRight;
+  animation-duration:1s;
 }
 
 /* block quote */
@@ -1135,7 +1140,6 @@ footer > a {
   .picofme {
     height: 100%;
     margin: 0;
-    padding-bottom: 5rem;
     width: 100%;
   }
 
@@ -1145,12 +1149,6 @@ footer > a {
 
   .biogreeting {
     font-size: 7rem;
-  }
-
-  .bioname {
-    font-size:8rem;
-    padding-bottom: 5rem;
-    width:100%;
   }
 
   .block {
@@ -1403,14 +1401,6 @@ footer > a {
   }
 
 /* Contact */
-@keyframes animateBtn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity:1;
-  }
-}
 
   input[type=text], input[type=email], textarea{
     margin: 0 auto;

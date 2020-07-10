@@ -18,6 +18,7 @@ img {
 .container {
   margin: 0 auto;
   min-height: 100;
+  overflow:hidden;
   width:100%;
 }
 
@@ -82,6 +83,8 @@ a {
   font-size: 1.8rem;
   margin: 0 auto;
   padding:0;
+  animation-name: moveToRight;
+  animation-duration:2s;
 }
 
 .more:hover {
@@ -306,6 +309,29 @@ textarea, input {
   margin: 0 auto;
   text-align: center;
 }
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(120px);
+    opacity:0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-120px);
+    opacity:0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+
 /* Introduction: name, title, motto, button */
 .intro {
   padding-bottom:8rem;
@@ -318,6 +344,8 @@ textarea, input {
   text-align: left;
   margin: 0;
   font-size: 10rem;
+  animation-name: moveToLeft;
+  animation-duration:2s;
 }
 
 .name {
@@ -328,6 +356,8 @@ textarea, input {
   line-height: 110%;
   position: relative;
   z-index: 1;
+  animation-name: moveToLeft;
+  animation-duration:2s;
 }
 
 @font-face {
@@ -344,6 +374,8 @@ h1 span {
   position: absolute;
   width:20rem;
   z-index:-1;
+  animation-name: moveToLeft;
+  animation-duration:2s;
 }
 
 .mytitle {
@@ -352,6 +384,8 @@ h1 span {
   position:relative;
   bottom: 0;
   left: 20rem;
+  animation-name: moveToLeft;
+  animation-duration:2s;
 }
 
 .motto {
@@ -359,6 +393,8 @@ h1 span {
   min-width: 40%;
   text-align: left;
   margin: 0 auto;
+  animation-name: moveToRight;
+  animation-duration:2s;
 }
 
 .scrollDown {

@@ -575,7 +575,7 @@ h1 span {
 }
 
 .rectangle1 {
-  position:absolute;
+  /* position:absolute; */
   left:670px;
   z-index: -1;
   bottom: -200px;
@@ -584,7 +584,7 @@ h1 span {
 }
 
 .rectangle2 {
-  position:absolute;
+  /* position:absolute; */
   left:1000px;
   z-index: -1;
   top: 300px;
@@ -597,7 +597,7 @@ h1 span {
   height: 100px;
   left:48%;
   z-index: 0;
-  position:absolute;
+  /* position:absolute; */
   bottom: -170px;
 }
 

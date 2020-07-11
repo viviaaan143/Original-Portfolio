@@ -1045,6 +1045,12 @@ footer > a {
   margin-bottom: 2px;
 }
 
+@media only screen and (max-width: 1400px) {
+  .rectangle1, .rectangle2, .spots {
+    visibility: hidden;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     margin: 0 auto;

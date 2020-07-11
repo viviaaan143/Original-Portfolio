@@ -1038,12 +1038,6 @@ footer > a {
   margin-bottom: 2px;
 }
 
-@media only screen and (max-width: 1400px) {
-  .rectangle1, .rectangle2, .spots {
-    transform:scale(0);
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .container {
     margin: 0 auto;
@@ -1291,8 +1285,6 @@ footer > a {
    font-size: 5.25rem;
   }
 
-
-
 .calltoaction {
   font-size: 3rem;
 }
@@ -1370,28 +1362,9 @@ footer > a {
    display: block;
  }
 
-  #myrole, #deliverables {
-    padding: 0;
-  }
-
-  #myrole {
-    display:block;
-    padding: 0;
-    width: 100%;
-  }
-
-  #deliverables {
-    display:block;
-    padding: 0;
-    width: 100%;
-  }
-
-  #tools {
-  display:block;
-  margin-bottom: 10rem;
-  padding: 0;
+#timeline {
   width: 100%;
-  }
+}
 
   #before{
     width: 100%;

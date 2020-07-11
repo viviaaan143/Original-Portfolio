@@ -371,6 +371,11 @@ textarea, input {
   src: url(cera.otf) format('opentype');
 }
 
+@font-face {
+  font-family: "Avenir Next";
+  src: url(avenirnext.ttc) format('truetype');
+}
+
 /* Highlight */
 h1 span {
   background-color:#FCC19F;
@@ -618,7 +623,6 @@ h1 span {
 
 .boldedblock2 {
   font-weight: 600;
-  /* font-size: 4rem; */
   line-height: 150%;
 }
 

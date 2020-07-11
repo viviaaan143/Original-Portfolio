@@ -366,6 +366,11 @@ textarea, input {
   src: url(august.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: "Cera Pro";
+  src: url(cera.otf) format('opentype');
+}
+
 /* Highlight */
 h1 span {
   background-color:#FCC19F;

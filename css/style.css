@@ -580,37 +580,13 @@ h1 span {
 
 .picofme {
   display: inline-block;
-  height: 50%;
+  max-width: 60%;
   margin-left: 10rem;
-  width: 50%;
-  position:relative;
-}
-
-.rectangle1 {
-  position:absolute;
-  left:670px;
-  z-index: -1;
-  bottom: -200px;
-  animation-name: moveToRight;
-  animation-duration:2s;
-}
-
-.rectangle2 {
-  position:absolute;
-  left:1000px;
-  z-index: -1;
-  top: 300px;
+  max-height:60%;
+  height: 50%;
+  width:50%;
   animation-name: moveToLeft;
-  animation-duration:2s;
-}
-
-.spots {
-  width: 100px;
-  height: 100px;
-  left:48%;
-  z-index: 0;
-  position:absolute;
-  bottom: -170px;
+  animation-duration:1s;
 }
 
 .biogreeting {

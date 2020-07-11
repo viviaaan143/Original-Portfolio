@@ -629,6 +629,7 @@ h1 span {
 .boldedblock2 {
   font-weight: 600;
   line-height: 150%;
+  background-color:#FCC19F;
 }
 
 /* text */
@@ -1168,6 +1169,10 @@ footer > a {
 
   .boldedblock {
     font-size: 4rem;
+  }
+
+  .boldedblock2 {
+    font-size:2.8rem;
   }
 
 /* Home page */

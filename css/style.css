@@ -129,11 +129,13 @@ button:hover, .submitbutton:hover {
 
 .calltoaction {
   font-size: 4rem;
+  text-decoration: none;
 }
 
 .calltoaction button {
   margin: 0 auto;
   display: block;
+  text-decoration: none;
 }
 
 /* Input boxes for contact page */
@@ -190,25 +192,21 @@ textarea, input {
 }
 
 /* my role, deliverables, and tools */
+.logistics {
+  display:flex;
+  justify-content: center;
+}
 #myrole {
-  float:left;
-  padding-left: 12rem;
   text-align: center;
-  width: 33.33%;
 }
 
-#deliverables {
-  float:left;
+#timeline {
   text-align: center;
-  width: 33.33%;
+  width: 25%;
 }
 
 #tools {
-  float:left;
-  padding-bottom: 35rem;
-  padding-right: 12rem;
   text-align: center;
-  width: 33.33%;
 }
 
 /* "My role", "Deliverables", "Tools" */
@@ -216,6 +214,7 @@ textarea, input {
   font-size: 3.6rem;
   font-weight: bold;
   padding-top: 2rem;
+  font-family: "Cera Pro";
 }
 
 /* picture captions */
@@ -554,22 +553,14 @@ h1 span {
   font-weight: bold;
   padding-top: 8rem;
   line-height: 100%;
-}
-
-.usertitle {
-  font-size: 5rem;
-  font-weight: bold;
-  padding-top: 8rem;
-  line-height: 100%;
-  width:75%;
-  text-align:center;
-  padding:0;
+  font-family: "Cera Pro";
 }
 
 /* First title (different to change spacing) */
 #firsttitle {
-  font-size: 3.6rem;
+  font-size: 5rem;
   padding:0;
+  font-family: "Cera Pro";
 }
 
 /* Title of the page */
@@ -629,7 +620,7 @@ h1 span {
 .boldedblock2 {
   font-weight: 600;
   line-height: 150%;
-  background-color:#FCC19F;
+  background-color:rgba(252,193,159,0.6);
 }
 
 /* text */
@@ -658,6 +649,7 @@ h3 {
   padding: 3rem;
   text-align: center;
   line-height: 120%;
+  text-decoration: underline #E13D10;
 }
 
 h4 {
@@ -1027,6 +1019,7 @@ footer > a {
   font-weight: lighter;
   margin: 0 auto;
   padding: 2rem 0 1rem 0;
+  text-decoration:none;
 }
 
 .email {
@@ -1298,6 +1291,8 @@ footer > a {
    font-size: 5.25rem;
   }
 
+
+
 .calltoaction {
   font-size: 3rem;
 }
@@ -1347,10 +1342,6 @@ footer > a {
 
  li {
    font-size: 1.8rem;
- }
-
- .usertitle {
-   width: 90%;
  }
 
 .caption, .caption1, .caption2, .caption3{

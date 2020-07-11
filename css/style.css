@@ -3,7 +3,7 @@
 }
 
 Html, body{
-  Font-family: "Avenir Next";
+  Font-family: "Avenir";
   Font-size: 10px;
   height: 100%;
   margin: 0;
@@ -144,7 +144,7 @@ input[type=text], input[type=email], textarea{
 }
 
 textarea, input {
-  font-family: "Avenir next";
+  font-family: "Avenir";
 }
 
 /* Project.html */
@@ -374,6 +374,11 @@ textarea, input {
 @font-face {
   font-family: "Avenir Next";
   src: url(avenirnext.ttc) format('truetype');
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(Avenir.ttc) format('truetype');
 }
 
 /* Highlight */
@@ -629,6 +634,7 @@ h1 span {
 /* text */
 h1{
   font-size: 8rem;
+  font-family: "Avenir Next";
   font-weight: bold;
   margin: 0 auto;
   padding: 0;
@@ -642,7 +648,7 @@ h1{
 
 h2 {
   font-size: 6rem;
-  font-weight: bold;
+  font-family:"Avenir Next";
   padding: 1rem 0 1rem 0;
 }
 

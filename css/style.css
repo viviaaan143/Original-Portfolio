@@ -150,10 +150,9 @@ textarea, input {
 }
 
 /* Project.html */
-.summary, .discovery{
+.middle{
   margin: 0 auto;
-  padding-bottom: 5rem;
-  width: 48%;
+  width: 50%;
 }
 
 .conclusion {
@@ -289,20 +288,6 @@ textarea, input {
 .clickzoom2 {
   font-size: 1.5rem;
   padding-left: 1rem;
-}
-
-.positivemessage, .reflectiontab {
-  width: 45%;
-  height: 45%;
-  display: inline-block;
-}
-
-.expandedtabimage {
-  width: 30%;
-  height: 30%;
-  margin: 0 auto;
-  display:block;
-  margin-bottom: 3rem;
 }
 
 .finalproduct {
@@ -825,8 +810,36 @@ ol {
   margin-left: auto;
   margin-right: auto;
   width: 15rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
+}
+
+.centered {
+  vertical-align: middle;
+  width: 1200px;
+  height: 900px;
+  margin: 0 auto;
+  display: block;
+}
+
+.midspacing {
+  padding: 3rem;
+  margin: 0 auto;
+  width: 75%;
+}
+
+#left, #right{
+display:flex;
+flex:2;
+flex-direction: column;
+}
+
+#right {
+  padding-left: 3rem;
+}
+
+.sidebyside {
+  display:flex;
+  flex-direction:row;
 }
 
 .userflow, .colors {
@@ -835,6 +848,10 @@ ol {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+.userflow {
+  margin-bottom: 5rem;
 }
 
 .colors{
@@ -918,8 +935,6 @@ ol {
 
 .rounded {
   border: 2px solid black;
-  width: 60%;
-  height: 60%;
   margin: 0 auto;
   display: block;
 }
@@ -1126,7 +1141,7 @@ footer > a {
     margin-left: 2rem;
   }
 
-  .summary, .discovery, .conclusion, .biographypage {
+  .middle, .conclusion, .biographypage {
     width: 85%;
   }
 
@@ -1218,9 +1233,17 @@ footer > a {
    width: 11.25rem;
  }
 
- .userflow {
-   height: 43rem;
+ #right {
+   margin-top: 4rem;
+ }
+
+ #left, #right {
+   display:block;
    width: 100%;
+ }
+
+ .sidebyside {
+   display:block;
  }
 
  .sketch{
@@ -1373,6 +1396,14 @@ footer > a {
 
   #after{
     width: 100%;
+  }
+
+  .centered {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
   }
 
 /* Contact */

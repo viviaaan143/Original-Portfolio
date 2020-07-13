@@ -540,7 +540,7 @@ h1 span {
   color: #E16645;
   font-family: "Cera Pro";
   font-size: 10rem;
-  line-height: normal;
+  line-height: 100%;
   padding:0;
 }
 

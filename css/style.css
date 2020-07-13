@@ -529,6 +529,11 @@ h1 span {
   width: 50%;
 }
 
+.calendly-inline-widget {
+  min-width:320px;
+  height:630px;
+}
+
 /* Title of section */
 .title {
   font-size: 5rem;
@@ -1403,7 +1408,6 @@ footer > a {
   }
 
 /* Contact */
-
   input[type=text], input[type=email], textarea{
     margin: 0 auto;
     text-align: center;

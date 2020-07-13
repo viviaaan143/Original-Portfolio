@@ -768,12 +768,6 @@ ol {
   display: list-item;
 }
 
-.solutionhelp {
-  width:50%;
-  align-items:center;
-  display: inline;
-}
-
 /* images */
 .solutionproto {
   border: 1px solid #B0B0B0;
@@ -836,11 +830,6 @@ ol {
   margin: 0 auto;
   width: 100%;
 }
-
-
-/* .competitiveanalysis .midspacing {
-  width:50%;
-} */
 
 #left, #right{
 display:flex;
@@ -1240,8 +1229,10 @@ footer > a {
    width: 11.25rem;
  }
 
- .smallmiddle {
-   width: 75%;
+ .smallandmiddle{
+   padding-left:6rem;
+   padding-right:6rem;
+   width: 100%;
  }
 
  #right {
@@ -1365,6 +1356,7 @@ footer > a {
 .bold {
   font-size: 3rem;
   padding:0;
+  text-align:center;
   line-height: normal;
 }
 
@@ -1394,14 +1386,6 @@ footer > a {
 }
 
 /* Project.html */
-.logistics{
-   display: block;
- }
-
-#timeline {
-  width: 100%;
-}
-
   #before{
     width: 100%;
   }

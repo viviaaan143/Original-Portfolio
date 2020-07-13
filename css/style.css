@@ -155,6 +155,11 @@ textarea, input {
   width: 50%;
 }
 
+.smallandmiddle{
+  margin: 0 auto;
+  width: 50%;
+}
+
 .conclusion {
  margin: 0 auto;
  width: 48%;
@@ -277,15 +282,7 @@ textarea, input {
   padding-left:1rem;
 }
 
-.clickzoom1 {
-  font-size: 1.5rem;
-  margin: 20px auto;
-  width: 40rem;
-  padding:0;
-  margin-top:1rem;
-}
-
-.clickzoom2 {
+.clickzoom {
   font-size: 1.5rem;
   padding-left: 1rem;
 }
@@ -777,17 +774,15 @@ ol {
   display: inline;
 }
 
-.solutionleft{
-display:flex;
-}
-
 /* images */
 .solutionproto {
   border: 1px solid #B0B0B0;
   height: 50rem;
   width: 55rem;
-  margin-left:3rem;
   margin-bottom: 6rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .topproto {
@@ -799,17 +794,18 @@ display:flex;
 }
 
 .persona1, .persona2 {
-  height: 600px;
-  width: 800px;
+  height: 40%;
+  width: 40%;
   display: flex;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .userpersona {
+  padding-top:4rem;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 3rem;
 }
 
 .ca1, .ca2 {
@@ -823,8 +819,8 @@ display:flex;
 
 .centered {
   vertical-align: middle;
-  width: 1200px;
-  height: 900px;
+  width: 90%;
+  height: 90%;
   margin: 0 auto;
   display: block;
 }
@@ -835,9 +831,20 @@ display:flex;
   width: 75%;
 }
 
+.largeandmiddle {
+  padding:0
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+/* .competitiveanalysis .midspacing {
+  width:50%;
+} */
+
 #left, #right{
 display:flex;
-flex:2;
+flex:initial;
 flex-direction: column;
 }
 
@@ -867,7 +874,6 @@ flex-direction: column;
 }
 
 .sketch{
-  display: block;
   height: 28rem;
   margin-left: auto;
   margin-right: auto;
@@ -876,7 +882,6 @@ flex-direction: column;
 
 .lowfimockup {
   border: 1px solid #B0B0B0;
-  display: block;
   height: 28rem;
   margin-left: auto;
   margin-right: auto;
@@ -1211,6 +1216,11 @@ footer > a {
   }
 
 /* Images */
+
+.topproto {
+  padding: 0 0 2rem 0;
+}
+
  .solutionproto {
    border: 1px solid #B0B0B0;
    height: 100%;
@@ -1218,11 +1228,6 @@ footer > a {
    display:block;
    margin: 0 auto;
  }
-
- .solutionleft{
- display:block;
- }
-
 
  .usersurvey{
    height: 100%;
@@ -1233,6 +1238,10 @@ footer > a {
  .ca1, .ca2 {
    height: 11.25rem;
    width: 11.25rem;
+ }
+
+ .smallmiddle {
+   width: 75%;
  }
 
  #right {
@@ -1248,14 +1257,19 @@ footer > a {
    display:block;
  }
 
- .sketch{
-   height: 21rem;
-   width: 30rem;
+ .persona1, .persona2 {
+   height: 100%;
+   width: 100%;
  }
 
- .lowfimockup {
-   height: 21rem;
-   width: 30rem;
+ .sketch, .lowfimockup{
+   width: 100%;
+   height:100%;
+   margin:0 auto;
+ }
+
+.sidebyside #right{
+   padding:0;
  }
 
  .logosketch {
@@ -1366,15 +1380,11 @@ footer > a {
  font-size: 1.5rem;
 }
 
-.clickzoom1 {
-  padding-left: 5rem;
-}
-
 .caption {
   padding-left:2rem;
 }
 
-.clickzoom1, .clickzoom2  {
+.clickzoom  {
   font-size: 1.5rem;
 }
 

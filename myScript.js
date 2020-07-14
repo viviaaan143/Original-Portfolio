@@ -1,7 +1,7 @@
 // window.onscroll = function() {myFunction()};
 //
 // // Get the navbar
-// var centeredband = document.getElementById("navbar");
+// var centeredband = document.getElementById("centeredband");
 //
 // // Get the offset position of the navbar
 // var sticky = centeredband.offsetTop;

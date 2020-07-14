@@ -148,6 +148,17 @@ textarea, input {
   font-family: "Avenir";
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
 /* Project.html */
 .centeredband {
   background-color: rgba(236,162,120,0.8);
@@ -160,7 +171,6 @@ textarea, input {
   padding-right:8rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  position:sticky;
 }
 
 .centeredband a {
@@ -610,6 +620,15 @@ h1 span {
   line-height: 100%;
   padding:0;
 }
+
+#titleunder{
+  color: #E16645;
+  font-family: "Cera Pro";
+  font-size: 10rem;
+  line-height: 100%;
+  padding:0;
+}
+
 
 /* Title of the page */
 .toptitle {
@@ -1400,9 +1419,18 @@ footer > a {
     font-size:5rem;
   }
 
+  #titleunder {
+    font-size:5rem;
+    padding-top: 8rem;
+  }
+
   .title {
     font-size:5rem;
     padding-top: 8rem;
+  }
+
+  .heading {
+    font-size: 2.4rem;
   }
 
 .calltoaction {
@@ -1475,6 +1503,9 @@ footer > a {
 }
 
 /* Project.html */
+  .centeredband {
+    display:none;
+  }
   #before {
     width: 100%;
   }

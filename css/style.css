@@ -394,7 +394,7 @@ h1 span {
 }
 
 .scrollDown {
-  bottom: 4%;
+  bottom: 20%;
   height: 60px;
   left:80%;
   position:absolute;
@@ -452,6 +452,34 @@ h1 span {
   width: 90%;
 }
 
+.references {
+  background-color:#C2B2A4;
+  margin: 0 auto;
+  padding: 10rem 20rem 10rem 20rem;
+  width: 90%;
+}
+
+.textreference {
+  color: white;
+  font-size: 2.4rem;
+  padding-top: 4rem;
+}
+
+.namereference {
+  color: white;
+  font-family: "Avenir Next";
+  font-size: 4rem;
+  padding: 0;
+}
+
+.titlereference {
+  color: white;
+  font-size: 1.8rem;
+  font-style:italic;
+  line-height: 0;
+  padding: 0;
+}
+
 .project2 {
   align-items: center;
   background-image: linear-gradient(to right, #E13D10, #EA5D36);
@@ -505,6 +533,11 @@ h1 span {
   min-width: 50%;
   text-align: center;
   width: 50%;
+}
+
+.project img:hover, .project2 img:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
 }
 
 .project button, .project2 button {
@@ -1142,7 +1175,21 @@ footer > a {
     top: 0;
   }
 
-  .middle, .conclusion, .biographypage {
+  .references {
+    padding:3rem 2rem 3rem 2rem;
+    width:100%;
+  }
+
+  .titlereference {
+    line-height: normal;
+  }
+
+  .textreference {
+  font-size: 1.4rem;
+  padding-top:2rem;
+  }
+
+  .middle, .biographypage {
     width: 85%;
   }
 

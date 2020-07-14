@@ -18,7 +18,13 @@ img {
 .container {
   margin: 0 auto;
   min-height: 100;
-  /* overflow:hidden; */
+  width:100%;
+}
+
+.container2 {
+  margin: 0 auto;
+  min-height: 100;
+  overflow:hidden;
   width:100%;
 }
 
@@ -1134,7 +1140,7 @@ footer > a {
 }
 
 @media only screen and (max-width: 768px) {
-  .container {
+  .container, .container2 {
     margin: 0 auto;
     overflow-x: hidden;
     text-align: center;
@@ -1234,7 +1240,7 @@ footer > a {
   padding-top:2rem;
   }
 
-  .middle, .biographypage {
+  .middle, .conclusion, .biographypage {
     width: 85%;
   }
 

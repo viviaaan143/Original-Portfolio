@@ -531,15 +531,33 @@ h1 span {
   width: 90%;
 }
 
-.project h2, .project2 h2 {
+.project4 {
+  align-items: center;
+  background-image: linear-gradient(to right, #748474, #8EADA2);
+  display: flex;
+  margin: 0 auto;
+  padding: 5rem 5rem 5rem 10%;
+  width: 90%;
+}
+
+.projects h2 {
   color: white;
 }
 
-.project .description {
+.projects .description {
   color: white;
   line-height: 180%;
   padding-bottom: 3rem;
   width: 80%;
+}
+
+.project3 {
+  align-items: center;
+  background-image: linear-gradient(to right, #B59C42, #D9B431);
+  display: flex;
+  margin: 0 auto;
+  padding: 5rem 5rem 5rem 10%;
+  width: 90%;
 }
 
 .project2 .description {
@@ -577,12 +595,12 @@ h1 span {
   width: 50%;
 }
 
-.project img:hover, .project2 img:hover {
+.projects img:hover {
   transform: scale(1.1);
   transition: 0.2s ease;
 }
 
-.project button, .project2 button {
+.projects button {
   min-width: 50%;
 }
 

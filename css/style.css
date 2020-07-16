@@ -496,9 +496,8 @@ h1 span {
 .references {
   background-color:#C2B2A4;
   margin: 0 auto;
-  padding: 10rem 20rem 10rem 20rem;
+  padding: 10rem 10% 10rem 10%;
   width: 90%;
-  margin-bottom:
 }
 
 .textreference {
@@ -518,7 +517,6 @@ h1 span {
   color: white;
   font-size: 1.8rem;
   font-style:italic;
-  line-height: 0;
   padding: 0;
 }
 
@@ -1104,13 +1102,12 @@ flex-direction: column;
 
 /* footer */
 footer {
-  padding: 1rem;
   text-align: center;
 }
 
 footer > a {
-  font-size: 50px;
   text-decoration: none;
+  width: 100%;
 }
 
 .copyright {
@@ -1134,11 +1131,20 @@ footer > a {
 }
 
 .links {
-  font-size: 2rem;
-  font-weight: lighter;
+  display:block;
   margin: 0 auto;
-  padding: 2rem 0 1rem 0;
-  text-decoration: none;
+  background-color: inherit;
+  color:#C76548;
+  font-size: 4rem;
+  padding: 12px 24px;
+}
+
+.links:hover {
+  border:none;
+  color:#C76548;
+  padding: 12px 24px;
+  margin: 0 auto;
+  background-color:none;
 }
 
 .email {
@@ -1247,10 +1253,6 @@ footer > a {
   .references {
     padding:3rem 2rem 3rem 2rem;
     width:100%;
-  }
-
-  .titlereference {
-    line-height: normal;
   }
 
   .textreference {

@@ -363,16 +363,12 @@ textarea, input {
 }
 
 .intro h1 {
-  animation-name: moveToLeft;
-  animation-duration:2s;
   font-size: 10rem;
   margin: 0;
   text-align: left;
 }
 
 .name {
-  animation-name: moveToLeft;
-  animation-duration:2s;
   display: inline;
   font-family: "August script bold free";
   font-size: 10rem;
@@ -416,8 +412,6 @@ h1 span {
 }
 
 .mytitle {
-  animation-name: moveToLeft;
-  animation-duration:2s;
   bottom: 0;
   font-size: 2rem;
   left: 20rem;
@@ -426,8 +420,6 @@ h1 span {
 }
 
 .motto {
-  animation-name: moveToRight;
-  animation-duration:2s;
   font-size: 3rem;
   margin: 0 auto;
   min-width: 40%;

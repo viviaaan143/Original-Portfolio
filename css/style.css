@@ -512,9 +512,27 @@ h1 span {
   padding: 0;
 }
 
+.project {
+  align-items: center;
+  background-image: linear-gradient(to right, #FFA36D, #FCC19F);
+  display: flex;
+  margin: 0 auto;
+  padding: 5rem 5rem 5rem 10%;
+  width: 90%;
+}
+
 .project2 {
   align-items: center;
   background-image: linear-gradient(to right, #E13D10, #EA5D36);
+  display: flex;
+  margin: 0 auto;
+  padding: 5rem 5rem 5rem 10%;
+  width: 90%;
+}
+
+.project3 {
+  align-items: center;
+  background-image: linear-gradient(to right, #B59C42, #D9B431);
   display: flex;
   margin: 0 auto;
   padding: 5rem 5rem 5rem 10%;
@@ -541,37 +559,10 @@ h1 span {
   width: 80%;
 }
 
-.project3 {
-  align-items: center;
-  background-image: linear-gradient(to right, #B59C42, #D9B431);
-  display: flex;
-  margin: 0 auto;
-  padding: 5rem 5rem 5rem 10%;
-  width: 90%;
-}
-
 .project2 .description {
   color: white;
   line-height: 180%;
   padding-bottom: 3rem;
-  width: 90%;
-}
-
-.project2 img {
-  display:block;
-  height: 15%;
-  margin: 0 auto;
-  max-width: 50%;
-  text-align: center;
-  width: 15%;
-}
-
-.project {
-  align-items: center;
-  background-image: linear-gradient(to right, #FFA36D, #FCC19F);
-  display: flex;
-  margin: 0 auto;
-  padding: 5rem 5rem 5rem 10%;
   width: 90%;
 }
 
@@ -583,6 +574,22 @@ h1 span {
   min-width: 50%;
   text-align: center;
   width: 50%;
+}
+
+.project2 img {
+  display:block;
+  height: 15%;
+  margin: 0 auto;
+  max-width: 50%;
+  text-align: center;
+  width: 15%;
+}
+
+.project3 img {
+  display:block;
+  margin: 0 auto;
+  max-width: 50%;
+  text-align: center;
 }
 
 .projects img:hover {
@@ -1004,6 +1011,10 @@ flex-direction: column;
   width: 100%;
 }
 
+.screen {
+  border: 1px solid black;
+}
+
 .prototype, .viewbutton{
   display: inherit;
   font-family: "Cera pro", "Gill sans";
@@ -1201,13 +1212,6 @@ footer > a {
     text-align: center;
   }
 
-  .project2 {
-    display: block;
-    flex: none;
-    padding-left: 0;
-    padding-right:0;
-  }
-
   .test2 {
     margin-bottom: 0;
     width: 100%;
@@ -1222,17 +1226,30 @@ footer > a {
     font-size: 1.6rem;
   }
 
-  .project2 img {
-    display: inline-block;
-    margin-top: 4rem;
-    min-width: 40%;
- }
+  .project2, .project3 {
+    display: block;
+    flex: none;
+    padding-left: 0;
+    padding-right:0;
+  }
 
   .project img {
     display: block;
     margin-top: 4rem;
     min-width: 100%;
   }
+
+  .project2 img {
+    display: inline-block;
+    margin-top: 4rem;
+    min-width: 40%;
+ }
+
+ .project3 img {
+   display: inline-block;
+   margin-top: 4rem;
+   max-width: 70%;
+}
 
   .vnlogo {
     display: block;

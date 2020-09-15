@@ -180,7 +180,7 @@ textarea, input {
 }
 
 .centeredband a:hover {
-  border-bottom: 2px solid white;
+  color: #474747;
 }
 
 .centeredband p {
